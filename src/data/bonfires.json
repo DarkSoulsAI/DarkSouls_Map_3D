@@ -1,0 +1,165 @@
+[
+  {
+    "id": "firelink_shrine",
+    "name_zh": "传火祭祀场",
+    "name_en": "Firelink Shrine",
+    "order": 1,
+    "region": "firelink",
+    "difficulty_tier": 1,
+    "world_position": [8.0, -78.0, -148.0],
+    "depth_tier": 0,
+    "cinematic_pose": {
+      "camera_position": [28.0, -65.0, -125.0],
+      "look_at": [8.0, -78.0, -148.0],
+      "duration_seconds": 8
+    },
+    "cinematic_caption": "一切的起点,也是薪火的归宿。",
+    "first_visit_state": "你刚刚逃出不死人庇护所,带着一枚古老的硬币与被诅咒的烙印走到这里。篝火还在燃烧,但世界正在缓缓熄灭。",
+    "lore_text": "传火祭祀场是洛德兰的心脏。废墟之间的篝火如同世界最后的体温——守火女奎拉格坐在那里,将她的生命力注入火焰,让路过的不死人得以休憩与传送。\n\n这里汇聚了各色旅人:来自索鲁蒙德的白袍牧师彼特鲁斯护卫着同行的修女莉娅;带着金色铠甲与邪念的拉特雷克蜷缩在圆拱之下;无尽骑士奥斯卡用他最后的气息将你从庇护所的囚笼中释放,而后在此地死去。\n\n传火祭祀场本身是个残缺的中枢——通往不死镇与不死教区的上行之路,通往新隆德废都与幽谷的下行之路,通往黑森林的隐秘通道,以及远方传火仪式祭坛所在的上古王都洛德兰本身,都以此地为交叉节点。篝火的光芒在此汇聚,世界的命运也将由你在此决定:是向初火献身,还是拒绝这薪火的循环。",
+    "npcs_present": ["anastacia_of_astora", "petrus_of_thorolund", "lautrec_of_carim", "solaire_of_astora"],
+    "items_unlocked": ["estus_flask", "coiled_sword_fragment"],
+    "events_triggered": ["oscar_death", "lautrec_imprisonment"],
+    "lore_anchors": [
+      {
+        "type": "item_description",
+        "source_zh": "篝火——Estus瓶",
+        "source_en": "Estus Flask",
+        "text_en": "Undead treasure these dull golden flasks. Fill with Estus at a bonfire. Fills HP. The Undead treasure Estus Flasks above all else.",
+        "text_zh": "不死人将这些暗金色的瓶子视若珍宝。在篝火处注满「活力液」。恢复HP。不死人无比珍视活力瓶。",
+        "interpretation": "篝火与Estus瓶的绑定关系揭示了薪火体系的核心机制：篝火是不死人在衰朽世界中存活的最后依托，Estus是从篝火的火焰本身汲取的生命能量。",
+        "confidence": "canon",
+        "source_ref": {
+          "site": "in_game",
+          "page_title": "Estus Flask item description"
+        }
+      },
+      {
+        "type": "dialogue",
+        "source_zh": "奥斯卡的临终独白",
+        "source_en": "Oscar's dying words",
+        "text_en": "Thou must be ash... Seek Lordvessel... Ring the Bells of Awakening... and link the Fire...",
+        "text_zh": "你必化为灰烬……寻求洛德容器……敲响觉醒之钟……并连接火焰……",
+        "interpretation": "奥斯卡在传火祭祀场重新出现并死亡，将使命的重担传递给主角。这段对白是整个游戏叙事的驱动引擎，也暗示了薪火循环的宿命性——每一代不死人都要重走这条路。",
+        "confidence": "canon",
+        "source_ref": {
+          "site": "in_game",
+          "page_title": "Oscar of Astora NPC dialogue"
+        }
+      }
+    ],
+    "prerequisite_bonfires": [],
+    "next_bonfires": ["undead_parish", "new_londo_ruins"],
+    "sources": [
+      {
+        "site": "fextralife",
+        "url": "https://darksouls.wiki.fextralife.com/Firelink+Shrine",
+        "page_title": "Firelink Shrine"
+      }
+    ]
+  },
+  {
+    "id": "undead_parish",
+    "name_zh": "不死教区",
+    "name_en": "Undead Parish",
+    "order": 3,
+    "region": "undead_parish",
+    "difficulty_tier": 1,
+    "world_position": [20.0, -62.0, -128.0],
+    "depth_tier": 1,
+    "cinematic_pose": {
+      "camera_position": [42.0, -50.0, -108.0],
+      "look_at": [20.0, -62.0, -128.0],
+      "duration_seconds": 8
+    },
+    "cinematic_caption": "钟声响彻废墟，觉醒的序曲。",
+    "first_visit_state": "穿越不死镇的僵尸街道，爬上狭窄的城墙梯道，教区礼拜堂的钟楼终于近在眼前。铸铁山巨人把守着城门，Capra恶魔潜伏在下水道入口。",
+    "lore_text": "不死教区曾是白袍教徒礼拜的圣地，如今却是不死军团的要塞。教区大教堂的顶层栖息着铸铁恶魔，这只被人遗弃的大恶魔守护着第一口觉醒之钟。\n\n教区内最重要的存在是安德烈，王城洛德兰的锻冶师，他在一间小屋里叮叮作响地打铁，为所有来者升级武器与盔甲。另一位关键人物是太阳战士的传令官索雷尔——这位狂热的太阳崇拜者会在教区礼拜堂入口处与你签订契约，让你的征途不再孤独。\n\n教区本身的建筑充满了贝尔加马斯文化的遗迹：彩绘玻璃的碎片、圣人的石雕与被倒置的蜡烛台。当第一口觉醒之钟在教区钟楼被敲响，沉睡在塞恩要塞尽头的巨人们才会苏醒，打开通往神之城安鲁多的道路。",
+    "npcs_present": ["andre_of_astora", "solaire_of_astora", "lautrec_of_carim"],
+    "items_unlocked": ["basement_key", "ring_of_the_sun_princess"],
+    "events_triggered": ["first_bell_rung", "knight_lautrec_rescue"],
+    "lore_anchors": [
+      {
+        "type": "item_description",
+        "source_zh": "黄金松香",
+        "source_en": "Gold Pine Resin",
+        "text_en": "Rare pine resin with golden luster. Rub on weapon to temporarily grant lightning. Effective against monsters that are resistant to other elements.",
+        "text_zh": "光泽金黄的稀有松脂。涂抹于武器上，暂时赋予雷属性。对抗拒其他属性的怪物特别有效。",
+        "interpretation": "教区周围存在大量具有雷属性弱点的敌人（铸铁恶魔、石骑士），松脂的分布暗示了这片区域的战斗设计逻辑，也体现了DS1道具描述作为世界叙事的一部分。",
+        "confidence": "canon",
+        "source_ref": {
+          "site": "in_game",
+          "page_title": "Gold Pine Resin item description"
+        }
+      }
+    ],
+    "prerequisite_bonfires": ["firelink_shrine"],
+    "next_bonfires": ["sens_fortress", "depths"],
+    "sources": [
+      {
+        "site": "fextralife",
+        "url": "https://darksouls.wiki.fextralife.com/Undead+Parish",
+        "page_title": "Undead Parish"
+      }
+    ]
+  },
+  {
+    "id": "new_londo_ruins",
+    "name_zh": "新隆德废都",
+    "name_en": "New Londo Ruins",
+    "order": 2,
+    "region": "new_londo",
+    "difficulty_tier": 3,
+    "world_position": [2.0, -110.0, -152.0],
+    "depth_tier": -2,
+    "cinematic_pose": {
+      "camera_position": [22.0, -95.0, -132.0],
+      "look_at": [2.0, -110.0, -152.0],
+      "duration_seconds": 10
+    },
+    "cinematic_caption": "水淹之城，黑暗将一切吞没。",
+    "first_visit_state": "从传火祭祀场向下走，潮湿的电梯带你进入半淹的废墟。幽灵从墙壁穿出，普通武器无法伤害它们。这里曾经繁华，如今只剩黑水与哀嚎。",
+    "lore_text": "新隆德曾是洛德兰最繁华的城市之一，四王在此统治并得到格温赐予的黑暗之魂的力量。然而黑暗诱使他们堕落，四王被暗渊侵蚀，最终化为虚无游荡的存在。\n\n守火神西古梅尔为阻止黑暗蔓延，命令将新隆德引水淹城，困住四王与他们召唤的黑暗存在。死去的市民成为永恒游荡的幽灵，无法被普通武器所伤——只有「诅咒袪除之戒」或「幽灵之刃」才能伤害它们。\n\n洪水在游戏开始时尚未完全退去。要进入四王的领地，需要向幽灵王雅娜获取「黑暗之戒」，并在大洪门处使用它才能排水，揭开深埋于暗渊中的最深处。这里是DS1最晦暗的角落之一——黑暗魔法的发源地，也是薪火体系崩溃威胁最直接的体现。",
+    "npcs_present": ["ingward", "yulva_the_witch"],
+    "items_unlocked": ["key_to_the_seal", "dark_ember"],
+    "events_triggered": ["seal_opened", "four_kings_accessible"],
+    "lore_anchors": [
+      {
+        "type": "item_description",
+        "source_zh": "西古梅尔的灵魂",
+        "source_en": "Soul of Sif",
+        "text_en": "Soul of the Four Kings, who were granted their own kindled Lordvessel.",
+        "text_zh": "获得了属于自己的炽燃洛德容器的四王之魂。",
+        "interpretation": "四王曾是格温的心腹，被赐予了与洛德容器同等地位的灵魂容器。他们的堕落不是命运的随机，而是格温给予力量后必然产生的熵——这与整个薪火循环的悲剧主题高度一致。",
+        "confidence": "consensus",
+        "source_ref": {
+          "site": "fextralife",
+          "url": "https://darksouls.wiki.fextralife.com/Soul+of+the+Four+Kings",
+          "page_title": "Soul of the Four Kings"
+        }
+      },
+      {
+        "type": "environmental",
+        "source_zh": "新隆德的洪水设计",
+        "source_en": "New Londo flood design",
+        "text_en": "The city was purposely flooded to contain the Darkwraiths and Four Kings infected by the Abyss.",
+        "text_zh": "新隆德被有意引水淹没，以困住被暗渊侵染的黑暗鬼将和四王。",
+        "interpretation": "洪水作为封印手段，是格温时代统治者面对黑暗威胁时的惯用策略——毁灭城市来换取世界的短暂稳定。这与整个DS1「以牺牲维持现状」的主题形成呼应。",
+        "confidence": "canon",
+        "source_ref": {
+          "site": "fandom",
+          "url": "https://darksouls.fandom.com/wiki/New_Londo_Ruins",
+          "page_title": "New Londo Ruins"
+        }
+      }
+    ],
+    "prerequisite_bonfires": ["firelink_shrine"],
+    "next_bonfires": ["valley_of_drakes"],
+    "sources": [
+      {
+        "site": "fextralife",
+        "url": "https://darksouls.wiki.fextralife.com/New+Londo+Ruins",
+        "page_title": "New Londo Ruins"
+      }
+    ]
+  }
+]

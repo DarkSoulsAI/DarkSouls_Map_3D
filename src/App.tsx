@@ -5,6 +5,7 @@ import { ModeToggle } from './ui/ModeToggle'
 import { AudioManager } from './ui/AudioManager'
 import { CinematicCaption } from './ui/CinematicCaption'
 import { PositionEditor } from './scene/PositionEditor'
+import { PositionPickerUI } from './ui/PositionPickerUI'
 
 function LoadingScreen() {
   return (
@@ -27,6 +28,7 @@ export default function App() {
       <Sidebar />
       <AudioManager />
       {import.meta.env.DEV && <PositionEditor />}
+      {import.meta.env.DEV && <PositionPickerUI />}
     </>
   )
 }

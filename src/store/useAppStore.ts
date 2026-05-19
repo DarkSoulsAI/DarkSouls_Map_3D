@@ -9,6 +9,7 @@ interface AppState {
   visitedIds: Set<string>
   mode: 'cinema' | 'free'
   positionOverrides: Record<string, [number, number, number]>
+  pickingBonfireId: string | null
 
   setCurrentBonfire: (id: string) => void
   closeSidebar: () => void
@@ -16,6 +17,7 @@ interface AppState {
   prevBonfire: () => void
   setMode: (mode: 'cinema' | 'free') => void
   setPositionOverride: (id: string, pos: [number, number, number]) => void
+  setPickingBonfireId: (id: string | null) => void
 }
 
 const sortedBonfires = [...(bonfireData as Bonfire[])].sort((a, b) => a.order - b.order)
@@ -27,6 +29,7 @@ export const useAppStore = create<AppState>((set, get) => ({
   visitedIds: new Set(),
   mode: 'free',
   positionOverrides: {},
+  pickingBonfireId: null,
 
   setCurrentBonfire: (id) => {
     set(state => ({
@@ -58,4 +61,6 @@ export const useAppStore = create<AppState>((set, get) => ({
 
   setPositionOverride: (id, pos) =>
     set(state => ({ positionOverrides: { ...state.positionOverrides, [id]: pos } })),
+
+  setPickingBonfireId: (id) => set({ pickingBonfireId: id }),
 }))

@@ -1,7 +1,9 @@
 import { useGLTF } from '@react-three/drei'
-import { useMemo, Component, type ReactNode } from 'react'
+import { useMemo, useRef, Component, type ReactNode } from 'react'
+import { useThree } from '@react-three/fiber'
 import * as THREE from 'three'
 import { ProceduralMap } from './ProceduralMap'
+import { useAppStore } from '../store/useAppStore'
 
 class ModelErrorBoundary extends Component<
   { children: ReactNode; fallback: ReactNode },
@@ -14,16 +16,14 @@ class ModelErrorBoundary extends Component<
   }
 }
 
-// DS1 vertical layers: Y ranges map to regions (local coords = world coords after scale fix)
-// Anor Londo (top) → Ash Lake (deepest)
 const REGION_BANDS: Array<{ minY: number; color: string }> = [
-  { minY: -65,  color: '#c8a855' }, // Anor Londo             — warm gold
-  { minY: -78,  color: '#a07858' }, // Sen's / Undead Parish  — stone brown
-  { minY: -90,  color: '#7a9e6a' }, // Firelink / Darkroot    — forest green
-  { minY: -103, color: '#5a7094' }, // New Londo / Depths     — steel blue
-  { minY: -115, color: '#7a8a4a' }, // Blighttown             — toxic olive
-  { minY: -123, color: '#a05830' }, // Izalith / Demon Ruins  — dark ember
-  { minY: -999, color: '#3a7888' }, // Ash Lake               — deep teal
+  { minY: -65,  color: '#c8a855' },
+  { minY: -78,  color: '#a07858' },
+  { minY: -90,  color: '#7a9e6a' },
+  { minY: -103, color: '#5a7094' },
+  { minY: -115, color: '#7a8a4a' },
+  { minY: -123, color: '#a05830' },
+  { minY: -999, color: '#3a7888' },
 ]
 
 const REGION_MATS = REGION_BANDS.map(b =>
@@ -31,6 +31,8 @@ const REGION_MATS = REGION_BANDS.map(b =>
 )
 
 const EDGE_MAT = new THREE.LineBasicMaterial({ color: '#ffffff', linewidth: 1 })
+const CURSOR_MAT = new THREE.MeshBasicMaterial({ color: '#ffdd44', transparent: true, opacity: 0.9 })
+const CURSOR_RING_MAT = new THREE.MeshBasicMaterial({ color: '#ffffff', transparent: true, opacity: 0.6, wireframe: true })
 
 function getRegionMat(worldCenterY: number): THREE.MeshBasicMaterial {
   for (let i = 0; i < REGION_BANDS.length; i++) {
@@ -41,11 +43,19 @@ function getRegionMat(worldCenterY: number): THREE.MeshBasicMaterial {
 
 function GltfModel() {
   const { scene } = useGLTF('/models/dark_souls_map/scene.gltf')
+  const { gl } = useThree()
+
+  const pickingBonfireId = useAppStore(s => s.pickingBonfireId)
+  const setPositionOverride = useAppStore(s => s.setPositionOverride)
+  const setPickingBonfireId = useAppStore(s => s.setPickingBonfireId)
+  const bonfires = useAppStore(s => s.bonfires)
+
+  const cursorRef = useRef<THREE.Group>(null)
+  const isPicking = pickingBonfireId !== null
 
   useMemo(() => {
     scene.visible = true
 
-    // Pass 1: fix the ~1302× Sketchfab scale on intermediate nodes
     scene.traverse((child) => {
       child.visible = true
       child.frustumCulled = false
@@ -56,7 +66,6 @@ function GltfModel() {
 
     scene.updateMatrixWorld(true)
 
-    // Pass 2: color by elevation + add white edge lines
     scene.traverse((child) => {
       if (child instanceof THREE.Mesh || child instanceof THREE.SkinnedMesh) {
         const bbox = new THREE.Box3().setFromObject(child)
@@ -65,11 +74,9 @@ function GltfModel() {
           : (bbox.min.y + bbox.max.y) / 2
         child.material = getRegionMat(centerY)
 
-        // Remove any previously added edge lines to avoid duplicates on hot reload
         const existing = child.children.filter(c => c.userData.__edges)
         existing.forEach(c => child.remove(c))
 
-        // Add white edges on hard angles (≥15°)
         const edges = new THREE.EdgesGeometry(child.geometry as THREE.BufferGeometry, 15)
         const lines = new THREE.LineSegments(edges, EDGE_MAT)
         lines.frustumCulled = false
@@ -79,7 +86,57 @@ function GltfModel() {
     })
   }, [scene])
 
-  return <primitive object={scene} />
+  // Change cursor style when picking
+  useMemo(() => {
+    gl.domElement.style.cursor = isPicking ? 'crosshair' : 'default'
+  }, [isPicking, gl])
+
+  const handleClick = (e: { point: THREE.Vector3; stopPropagation: () => void }) => {
+    if (!pickingBonfireId) return
+    e.stopPropagation()
+    const pt = e.point
+    setPositionOverride(pickingBonfireId, [
+      Math.round(pt.x * 10) / 10,
+      Math.round(pt.y * 10) / 10,
+      Math.round(pt.z * 10) / 10,
+    ])
+    // Auto-advance to next bonfire
+    const idx = bonfires.findIndex(b => b.id === pickingBonfireId)
+    setPickingBonfireId(idx < bonfires.length - 1 ? bonfires[idx + 1].id : null)
+  }
+
+  const handlePointerMove = (e: { point: THREE.Vector3; stopPropagation: () => void }) => {
+    if (!isPicking || !cursorRef.current) return
+    e.stopPropagation()
+    cursorRef.current.position.copy(e.point)
+    cursorRef.current.visible = true
+  }
+
+  const handlePointerOut = () => {
+    if (cursorRef.current) cursorRef.current.visible = false
+  }
+
+  return (
+    <>
+      <primitive
+        object={scene}
+        onClick={isPicking ? handleClick : undefined}
+        onPointerMove={isPicking ? handlePointerMove : undefined}
+        onPointerOut={isPicking ? handlePointerOut : undefined}
+      />
+      {/* Yellow dot cursor that follows mouse on model surface when picking */}
+      <group ref={cursorRef} visible={false}>
+        <mesh>
+          <sphereGeometry args={[0.5, 12, 12]} />
+          <primitive object={CURSOR_MAT} attach="material" />
+        </mesh>
+        <mesh>
+          <sphereGeometry args={[1.2, 8, 8]} />
+          <primitive object={CURSOR_RING_MAT} attach="material" />
+        </mesh>
+      </group>
+    </>
+  )
 }
 
 export function LordranModel() {

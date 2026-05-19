@@ -30,14 +30,12 @@ export function Scene() {
       <Canvas
         camera={{ position: FREE_CAM_POS, fov: 52, near: 0.5, far: 1200 }}
         gl={{ antialias: true, alpha: false }}
-        style={{ background: '#ffffff' }}
+        style={{ background: '#000000' }}
       >
-        {/* White scene background — must be set on scene, not just CSS */}
-        <color attach="background" args={['#f8f6f2']} />
+        <color attach="background" args={['#000000']} />
 
-        {/* Subtle directional to give depth cues on white fills */}
-        <ambientLight intensity={1.0} color="#ffffff" />
-        <directionalLight position={[60, 80, 40]} intensity={0.3} color="#e0ddd8" />
+        <ambientLight intensity={0.8} color="#ffffff" />
+        <directionalLight position={[60, 80, 40]} intensity={0.4} color="#ffffff" />
 
         <Suspense fallback={<LoadingFallback />}>
           <LordranModel />

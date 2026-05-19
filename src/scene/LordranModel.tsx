@@ -30,6 +30,8 @@ const REGION_MATS = REGION_BANDS.map(b =>
   new THREE.MeshBasicMaterial({ color: b.color, side: THREE.DoubleSide })
 )
 
+const EDGE_MAT = new THREE.LineBasicMaterial({ color: '#ffffff', linewidth: 1 })
+
 function getRegionMat(worldCenterY: number): THREE.MeshBasicMaterial {
   for (let i = 0; i < REGION_BANDS.length; i++) {
     if (worldCenterY >= REGION_BANDS[i].minY) return REGION_MATS[i]
@@ -43,8 +45,7 @@ function GltfModel() {
   useMemo(() => {
     scene.visible = true
 
-    // Pass 1: fix the ~1302× Sketchfab scale on intermediate nodes so that
-    // the mesh local coords (already in DS1 world space) become world coords.
+    // Pass 1: fix the ~1302× Sketchfab scale on intermediate nodes
     scene.traverse((child) => {
       child.visible = true
       child.frustumCulled = false
@@ -53,10 +54,9 @@ function GltfModel() {
       }
     })
 
-    // Ensure world matrices reflect the corrected scales
     scene.updateMatrixWorld(true)
 
-    // Pass 2: color each mesh by its world-space Y center
+    // Pass 2: color by elevation + add white edge lines
     scene.traverse((child) => {
       if (child instanceof THREE.Mesh || child instanceof THREE.SkinnedMesh) {
         const bbox = new THREE.Box3().setFromObject(child)
@@ -64,6 +64,17 @@ function GltfModel() {
           ? child.getWorldPosition(new THREE.Vector3()).y
           : (bbox.min.y + bbox.max.y) / 2
         child.material = getRegionMat(centerY)
+
+        // Remove any previously added edge lines to avoid duplicates on hot reload
+        const existing = child.children.filter(c => c.userData.__edges)
+        existing.forEach(c => child.remove(c))
+
+        // Add white edges on hard angles (≥15°)
+        const edges = new THREE.EdgesGeometry(child.geometry as THREE.BufferGeometry, 15)
+        const lines = new THREE.LineSegments(edges, EDGE_MAT)
+        lines.frustumCulled = false
+        lines.userData.__edges = true
+        child.add(lines)
       }
     })
   }, [scene])

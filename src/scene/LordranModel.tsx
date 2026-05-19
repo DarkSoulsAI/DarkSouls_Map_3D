@@ -95,11 +95,19 @@ function GltfModel() {
     if (!pickingBonfireId) return
     e.stopPropagation()
     const pt = e.point
-    setPositionOverride(pickingBonfireId, [
+    const pos: [number, number, number] = [
       Math.round(pt.x * 10) / 10,
       Math.round(pt.y * 10) / 10,
       Math.round(pt.z * 10) / 10,
-    ])
+    ]
+    // Update in-memory store immediately
+    setPositionOverride(pickingBonfireId, pos)
+    // Persist to bonfires.json via Vite dev middleware
+    fetch('/api/save-position', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ id: pickingBonfireId, position: pos }),
+    }).catch(err => console.warn('[picker] save failed:', err))
     // Auto-advance to next bonfire
     const idx = bonfires.findIndex(b => b.id === pickingBonfireId)
     setPickingBonfireId(idx < bonfires.length - 1 ? bonfires[idx + 1].id : null)

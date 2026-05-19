@@ -13,9 +13,9 @@
       "look_at": [8.0, -78.0, -148.0],
       "duration_seconds": 8
     },
-    "cinematic_caption": "一切的起点,也是薪火的归宿。",
-    "first_visit_state": "你刚刚逃出不死人庇护所,带着一枚古老的硬币与被诅咒的烙印走到这里。篝火还在燃烧,但世界正在缓缓熄灭。",
-    "lore_text": "传火祭祀场是洛德兰的心脏。废墟之间的篝火如同世界最后的体温——守火女奎拉格坐在那里,将她的生命力注入火焰,让路过的不死人得以休憩与传送。\n\n这里汇聚了各色旅人:来自索鲁蒙德的白袍牧师彼特鲁斯护卫着同行的修女莉娅;带着金色铠甲与邪念的拉特雷克蜷缩在圆拱之下;无尽骑士奥斯卡用他最后的气息将你从庇护所的囚笼中释放,而后在此地死去。\n\n传火祭祀场本身是个残缺的中枢——通往不死镇与不死教区的上行之路,通往新隆德废都与幽谷的下行之路,通往黑森林的隐秘通道,以及远方传火仪式祭坛所在的上古王都洛德兰本身,都以此地为交叉节点。篝火的光芒在此汇聚,世界的命运也将由你在此决定:是向初火献身,还是拒绝这薪火的循环。",
+    "cinematic_caption": "一切的起点，也是薪火的归宿。",
+    "first_visit_state": "你刚刚逃出不死人庇护所，带着一枚古老的硬币与被诅咒的烙印走到这里。篝火还在燃烧，但世界正在缓缓熄灭。",
+    "lore_text": "传火祭祀场是洛德兰的心脏。废墟之间的篝火如同世界最后的体温——守火女奎拉格坐在那里，将她的生命力注入火焰，让路过的不死人得以休憩与传送。\n\n这里汇聚了各色旅人：来自索鲁蒙德的白袍牧师彼特鲁斯护卫着同行的修女莉娅；带着金色铠甲与邪念的拉特雷克蜷缩在圆拱之下；无尽骑士奥斯卡用他最后的气息将你从庇护所的囚笼中释放，而后在此地死去。\n\n传火祭祀场本身是个残缺的中枢——通往不死镇与不死教区的上行之路，通往新隆德废都与幽谷的下行之路，通往黑森林的隐秘通道，以及远方传火仪式祭坛所在的上古王都洛德兰本身，都以此地为交叉节点。篝火的光芒在此汇聚，世界的命运也将由你在此决定：是向初火献身，还是拒绝这薪火的循环。",
     "npcs_present": ["anastacia_of_astora", "petrus_of_thorolund", "lautrec_of_carim", "solaire_of_astora"],
     "items_unlocked": ["estus_flask", "coiled_sword_fragment"],
     "events_triggered": ["oscar_death", "lautrec_imprisonment"],
@@ -24,8 +24,8 @@
         "type": "item_description",
         "source_zh": "篝火——Estus瓶",
         "source_en": "Estus Flask",
-        "text_en": "Undead treasure these dull golden flasks. Fill with Estus at a bonfire. Fills HP. The Undead treasure Estus Flasks above all else.",
-        "text_zh": "不死人将这些暗金色的瓶子视若珍宝。在篝火处注满「活力液」。恢复HP。不死人无比珍视活力瓶。",
+        "text_en": "Undead treasure these dull golden flasks. Fill with Estus at a bonfire. Fills HP.",
+        "text_zh": "不死人将这些暗金色的瓶子视若珍宝。在篝火处注满「活力液」。恢复HP。",
         "interpretation": "篝火与Estus瓶的绑定关系揭示了薪火体系的核心机制：篝火是不死人在衰朽世界中存活的最后依托，Estus是从篝火的火焰本身汲取的生命能量。",
         "confidence": "canon",
         "source_ref": {
@@ -48,12 +48,58 @@
       }
     ],
     "prerequisite_bonfires": [],
-    "next_bonfires": ["undead_parish", "new_londo_ruins"],
+    "next_bonfires": ["undead_burg", "new_londo_ruins", "darkroot_basin"],
     "sources": [
       {
         "site": "fextralife",
         "url": "https://darksouls.wiki.fextralife.com/Firelink+Shrine",
         "page_title": "Firelink Shrine"
+      }
+    ]
+  },
+  {
+    "id": "undead_burg",
+    "name_zh": "不死镇",
+    "name_en": "Undead Burg",
+    "order": 2,
+    "region": "undead_burg",
+    "difficulty_tier": 1,
+    "world_position": [18.0, -70.0, -132.0],
+    "depth_tier": 1,
+    "cinematic_pose": {
+      "camera_position": [38.0, -58.0, -112.0],
+      "look_at": [18.0, -70.0, -132.0],
+      "duration_seconds": 7
+    },
+    "cinematic_caption": "破败的城墙，第一道考验。",
+    "first_visit_state": "从传火祭祀场沿城堡墙根攀爬，不死士兵在每个拐角守候，弓箭手在屋顶俯瞰。迷宫般的街道里，一只Taurus恶魔把守着通往不死教区的城门楼。",
+    "lore_text": "不死镇是洛德兰城邦落幕后留下的空壳。曾经熙攘的商业街道如今只剩不死士兵的游荡与荒废的民宅。这是新手最初真正面对的战场——狭窄的小巷里无从回避，必须学会格挡与反击。\n\n不死镇有两个层次：上层通往不死教区的城门；下层通往深渊地窖与恶臭之地。这里是路网的枢纽，也是游戏节奏设计的教学场——从石头地板到木制吊桥，每一处地形都经过精心设计以教会玩家基础战术。\n\n守护城门楼的Taurus恶魔是第一道真正的关卡。击败它，你才能继续向上，听到不死教区的钟声。",
+    "npcs_present": ["merchant_havel"],
+    "items_unlocked": ["undead_burg_key", "fire_bomb"],
+    "events_triggered": ["taurus_demon_defeated"],
+    "lore_anchors": [
+      {
+        "type": "environmental",
+        "source_zh": "不死镇的商人",
+        "source_en": "Undead Burg Merchant",
+        "text_en": "A merchant found huddled behind a broken wall, selling what few goods remain in the desolate burg.",
+        "text_zh": "一个缩在断壁后的商人，在这荒芜的小镇里出售所剩无几的物品。",
+        "interpretation": "不死镇的商人是DS1最早的NPc之一，其存在暗示了即便在末日般的环境中，人类社会的某些功能仍在艰难维持——商业作为生存本能的体现。",
+        "confidence": "canon",
+        "source_ref": {
+          "site": "fextralife",
+          "url": "https://darksouls.wiki.fextralife.com/Undead+Burg",
+          "page_title": "Undead Burg"
+        }
+      }
+    ],
+    "prerequisite_bonfires": ["firelink_shrine"],
+    "next_bonfires": ["undead_parish", "depths"],
+    "sources": [
+      {
+        "site": "fextralife",
+        "url": "https://darksouls.wiki.fextralife.com/Undead+Burg",
+        "page_title": "Undead Burg"
       }
     ]
   },
@@ -73,7 +119,7 @@
     },
     "cinematic_caption": "钟声响彻废墟，觉醒的序曲。",
     "first_visit_state": "穿越不死镇的僵尸街道，爬上狭窄的城墙梯道，教区礼拜堂的钟楼终于近在眼前。铸铁山巨人把守着城门，Capra恶魔潜伏在下水道入口。",
-    "lore_text": "不死教区曾是白袍教徒礼拜的圣地，如今却是不死军团的要塞。教区大教堂的顶层栖息着铸铁恶魔，这只被人遗弃的大恶魔守护着第一口觉醒之钟。\n\n教区内最重要的存在是安德烈，王城洛德兰的锻冶师，他在一间小屋里叮叮作响地打铁，为所有来者升级武器与盔甲。另一位关键人物是太阳战士的传令官索雷尔——这位狂热的太阳崇拜者会在教区礼拜堂入口处与你签订契约，让你的征途不再孤独。\n\n教区本身的建筑充满了贝尔加马斯文化的遗迹：彩绘玻璃的碎片、圣人的石雕与被倒置的蜡烛台。当第一口觉醒之钟在教区钟楼被敲响，沉睡在塞恩要塞尽头的巨人们才会苏醒，打开通往神之城安鲁多的道路。",
+    "lore_text": "不死教区曾是白袍教徒礼拜的圣地，如今却是不死军团的要塞。教区大教堂的顶层栖息着铸铁恶魔，这只被人遗弃的大恶魔守护着第一口觉醒之钟。\n\n教区内最重要的存在是安德烈，王城洛德兰的锻冶师，他在一间小屋里叮叮作响地打铁，为所有来者升级武器与盔甲。另一位关键人物是太阳战士的传令官索雷尔——这位狂热的太阳崇拜者会在教区礼拜堂入口处与你签订契约，让你的征途不再孤独。\n\n当第一口觉醒之钟在教区钟楼被敲响，沉睡在塞恩要塞尽头的巨人们才会苏醒，打开通往神之城安鲁多的道路。",
     "npcs_present": ["andre_of_astora", "solaire_of_astora", "lautrec_of_carim"],
     "items_unlocked": ["basement_key", "ring_of_the_sun_princess"],
     "events_triggered": ["first_bell_rung", "knight_lautrec_rescue"],
@@ -82,9 +128,9 @@
         "type": "item_description",
         "source_zh": "黄金松香",
         "source_en": "Gold Pine Resin",
-        "text_en": "Rare pine resin with golden luster. Rub on weapon to temporarily grant lightning. Effective against monsters that are resistant to other elements.",
-        "text_zh": "光泽金黄的稀有松脂。涂抹于武器上，暂时赋予雷属性。对抗拒其他属性的怪物特别有效。",
-        "interpretation": "教区周围存在大量具有雷属性弱点的敌人（铸铁恶魔、石骑士），松脂的分布暗示了这片区域的战斗设计逻辑，也体现了DS1道具描述作为世界叙事的一部分。",
+        "text_en": "Rare pine resin with golden luster. Rub on weapon to temporarily grant lightning.",
+        "text_zh": "光泽金黄的稀有松脂。涂抹于武器上，暂时赋予雷属性。",
+        "interpretation": "教区周围存在大量具有雷属性弱点的敌人（铸铁恶魔、石骑士），松脂的分布暗示了这片区域的战斗设计逻辑。",
         "confidence": "canon",
         "source_ref": {
           "site": "in_game",
@@ -92,8 +138,8 @@
         }
       }
     ],
-    "prerequisite_bonfires": ["firelink_shrine"],
-    "next_bonfires": ["sens_fortress", "depths"],
+    "prerequisite_bonfires": ["undead_burg"],
+    "next_bonfires": ["sens_fortress", "darkroot_garden"],
     "sources": [
       {
         "site": "fextralife",
@@ -103,22 +149,521 @@
     ]
   },
   {
+    "id": "darkroot_garden",
+    "name_zh": "暗根庭园",
+    "name_en": "Darkroot Garden",
+    "order": 4,
+    "region": "darkroot",
+    "difficulty_tier": 2,
+    "world_position": [-15.0, -72.0, -148.0],
+    "depth_tier": 0,
+    "cinematic_pose": {
+      "camera_position": [5.0, -60.0, -128.0],
+      "look_at": [-15.0, -72.0, -148.0],
+      "duration_seconds": 9
+    },
+    "cinematic_caption": "幽暗的森林，石骑士沉睡于苔藓之间。",
+    "first_visit_state": "从不死教区的铁门穿过，世界的色调忽然变深。苔藓覆盖的石板路上，身着厚甲的石骑士纹丝不动，直到你走近才缓缓抬起剑来。树冠投下密密麻麻的阴影，每一步都像是走进了世界的记忆。",
+    "lore_text": "暗根庭园是大魔女伊扎里斯时代遗留下来的圣地，也是西卡特里斯的森林守护者所在之处。这片被古代魔力浸润的森林横亘在不死教区与暗根盆地之间，是通往故老白龙赛司领地的隐秘门廊。\n\n石骑士是庭园最古老的守护者，由精钢与魔法铸成，永不疲倦地在林间巡逻。他们不说话，也不退缩，只是沉默地履行着亘古的职责。击败花卉巨人安兹可获得「森林守护者契约」，加入这片古林的守护行列。\n\n庭园深处是故老白龙赛司的陵墓。赛司曾是大法师乌格拉西尔最强大的学生，后来被伊扎里斯之火烫伤并变得疯狂，最终在这片森林里死去。他的龙鳞与结晶至今仍散落于地下水晶洞窟之中。",
+    "npcs_present": ["alvina", "shiva_of_the_east"],
+    "items_unlocked": ["crest_of_artorias", "stone_armor_set"],
+    "events_triggered": ["forest_hunter_covenant"],
+    "lore_anchors": [
+      {
+        "type": "item_description",
+        "source_zh": "草人石",
+        "source_en": "Grass Crest Shield",
+        "text_en": "A large green crest decorates this shield. Slightly speeds stamina recovery. The crest is lush and green.",
+        "text_zh": "巨大的绿色纹章装饰着这块盾牌，略微加速耐力恢复。纹章郁郁葱葱，生机盎然。",
+        "interpretation": "草人盾是暗根庭园最著名的战利品，其「加速耐力恢复」的效果与庭园生机勃勃的视觉语言形成一体——自然之力渗透进了物品的魔力之中。",
+        "confidence": "canon",
+        "source_ref": {
+          "site": "in_game",
+          "page_title": "Grass Crest Shield item description"
+        }
+      }
+    ],
+    "prerequisite_bonfires": ["undead_parish"],
+    "next_bonfires": ["darkroot_basin"],
+    "sources": [
+      {
+        "site": "fextralife",
+        "url": "https://darksouls.wiki.fextralife.com/Darkroot+Garden",
+        "page_title": "Darkroot Garden"
+      }
+    ]
+  },
+  {
+    "id": "darkroot_basin",
+    "name_zh": "暗根盆地",
+    "name_en": "Darkroot Basin",
+    "order": 5,
+    "region": "darkroot",
+    "difficulty_tier": 2,
+    "world_position": [-22.0, -85.0, -158.0],
+    "depth_tier": -1,
+    "cinematic_pose": {
+      "camera_position": [-2.0, -72.0, -138.0],
+      "look_at": [-22.0, -85.0, -158.0],
+      "duration_seconds": 8
+    },
+    "cinematic_caption": "水晶蜥蜴与拳击恶龙栖居的幽谷。",
+    "first_visit_state": "沿暗根庭园的陡峭山崖向下，瀑布声由远渐近。湖边的草地上趴着一只巨大的青铜龙——海德拉，它的多个头颅同时喷射出水柱。这里也是阿尔托利亚斯犯下错误之地的入口所在。",
+    "lore_text": "暗根盆地是庭园与幽谷的连接点，也是通往往昔之盾牌阿尔托利亚斯所守护的黑暗圣地「欧拉西亚」的入口。湖畔的海德拉是庭园最古老的守护者之一，用水魔法阻止不速之客。\n\n盆地底部隐藏着通往「欧拉西亚」的入口——需要阿尔托利亚斯的墓碑方能打开。这片隐秘之地将在DLC「阿尔托利亚斯的深渊」中被展开叙述，揭示阿尔托利亚斯、犬与蝴蝶四人的悲剧命运。",
+    "npcs_present": ["dusk_of_oolacile"],
+    "items_unlocked": ["pendant_oolacile", "hydra_soul"],
+    "events_triggered": ["hydra_defeated", "dusk_rescued"],
+    "lore_anchors": [
+      {
+        "type": "item_description",
+        "source_zh": "欧拉西亚吊坠",
+        "source_en": "Antiquated Dress Set",
+        "text_en": "Attire of a princess of the ancient land of Oolacile, where ancient sorceries were studied.",
+        "text_zh": "古代大地欧拉西亚的公主所穿的服装，那里曾研究远古的魔术。",
+        "interpretation": "欧拉西亚公主达斯克与暗根盆地的绑定是整个DLC叙事的起点，她的出现使玩家意识到这片盆地远比表面更深邃——时间本身都在这里扭曲。",
+        "confidence": "canon",
+        "source_ref": {
+          "site": "in_game",
+          "page_title": "Antiquated Dress description"
+        }
+      }
+    ],
+    "prerequisite_bonfires": ["darkroot_garden"],
+    "next_bonfires": ["valley_of_drakes"],
+    "sources": [
+      {
+        "site": "fextralife",
+        "url": "https://darksouls.wiki.fextralife.com/Darkroot+Basin",
+        "page_title": "Darkroot Basin"
+      }
+    ]
+  },
+  {
+    "id": "depths",
+    "name_zh": "地窖",
+    "name_en": "The Depths",
+    "order": 6,
+    "region": "depths",
+    "difficulty_tier": 2,
+    "world_position": [12.0, -95.0, -140.0],
+    "depth_tier": -1,
+    "cinematic_pose": {
+      "camera_position": [32.0, -82.0, -120.0],
+      "look_at": [12.0, -95.0, -140.0],
+      "duration_seconds": 7
+    },
+    "cinematic_caption": "污水弥漫，老鼠爬行，下沉的序章。",
+    "first_visit_state": "从不死镇的下层通道进入，脚下是积了半尺深的污水。这里是通往恶臭之地的唯一道路，也是你第一次在黑暗中遭遇咒蛙的地方。",
+    "lore_text": "地窖是洛德兰地下排水系统的残骸，是通往恶臭之地最自然的入口。下水道里充斥着大鼠、食人僵尸和危险的咒蛙——被后者吐到的玩家会被施以「半咒」状态，血量上限减半。\n\n这里也是NPC厨师鲁西亚特的驻扎地，他会在你购买烹饪食材后传授「巨力戒指」的位置。地窖的迷宫式布局是游戏探索设计的精华之一——没有地图，只有黑暗与隐约的水声引路。\n\nGaping Dragon（裂口之龙）是地窖的头目，这只被贪婪扭曲的古龙在此守候，其身形之大足以阻断整个大厅的视野。",
+    "npcs_present": ["laurentius_of_the_great_swamp", "rickert_of_vinheim"],
+    "items_unlocked": ["large_ember", "bottomless_box"],
+    "events_triggered": ["gaping_dragon_defeated"],
+    "lore_anchors": [
+      {
+        "type": "enemy_description",
+        "source_zh": "裂口之龙",
+        "source_en": "Gaping Dragon",
+        "text_en": "A distant descendant of the Everlasting Dragons, the Gaping Dragon has been twisted by a bottomless appetite.",
+        "text_zh": "永恒之龙的遥远后裔，裂口之龙被无尽的贪欲扭曲了身体。",
+        "interpretation": "裂口之龙是「堕落」主题的极端体现——原本高贵的龙族因为「欲望」这一人类属性而彻底异化，成为一个纯粹的消化器官。这与格温之子过度汲取火焰产生的异化形成镜像。",
+        "confidence": "canon",
+        "source_ref": {
+          "site": "fextralife",
+          "url": "https://darksouls.wiki.fextralife.com/Gaping+Dragon",
+          "page_title": "Gaping Dragon"
+        }
+      }
+    ],
+    "prerequisite_bonfires": ["undead_burg"],
+    "next_bonfires": ["blighttown"],
+    "sources": [
+      {
+        "site": "fextralife",
+        "url": "https://darksouls.wiki.fextralife.com/The+Depths",
+        "page_title": "The Depths"
+      }
+    ]
+  },
+  {
+    "id": "blighttown",
+    "name_zh": "恶臭之地",
+    "name_en": "Blighttown",
+    "order": 7,
+    "region": "blighttown",
+    "difficulty_tier": 3,
+    "world_position": [-2.0, -108.0, -158.0],
+    "depth_tier": -2,
+    "cinematic_pose": {
+      "camera_position": [18.0, -95.0, -138.0],
+      "look_at": [-2.0, -108.0, -158.0],
+      "duration_seconds": 10
+    },
+    "cinematic_caption": "毒沼、木架与诅咒，最深的深处。",
+    "first_visit_state": "木架与脚手架在黑暗中延伸向无尽的深处，吹箭手隐藏在狭窄的平台边缘。每一步都可能是致命的失足，毒素正在游戏中第一次真正威胁你的生命。",
+    "lore_text": "恶臭之地是洛德兰最令人闻风丧胆的区域之一——不是因为敌人有多强，而是因为环境本身就是最致命的对手。竹制脚手架在虚空中悬挂，一不小心便是万丈深渊；吹箭手的毒素悄无声息地腐蚀你的HP；下层的沼泽更是瞬间堆满中毒状态。\n\n恶臭之地的建筑语言令人绝望：这里是社会最底层人的居所，是被文明遗弃的失败者用腐木与绳索搭建的「家」。与光明灿烂的安鲁多神都形成了洛德兰最强烈的社会对比。\n\n沼泽深处的卡俄斯之女克蕾特（奎拉格的姐妹）盘踞在第二口觉醒之钟旁，失去了双腿与神智，等待着不死人的到来终结她的痛苦。",
+    "npcs_present": ["quelaan", "eingyi"],
+    "items_unlocked": ["large_flame_ember", "poison_mist"],
+    "events_triggered": ["second_bell_rung_accessible"],
+    "lore_anchors": [
+      {
+        "type": "environmental",
+        "source_zh": "恶臭之地的建筑",
+        "source_en": "Blighttown architecture",
+        "text_en": "Blighttown is a ramshackle shantytown built on a foundation of wooden scaffolding deep below Lordran.",
+        "text_zh": "恶臭之地是一座由木制脚手架支撑的破烂棚屋区，深藏于洛德兰地下。",
+        "interpretation": "恶臭之地的存在本身是对洛德兰社会结构的控诉——王都的辉煌是建立在最底层居民的苦难之上的。这片垂直城市是DS1阶级隐喻最直白的体现。",
+        "confidence": "consensus",
+        "source_ref": {
+          "site": "fextralife",
+          "url": "https://darksouls.wiki.fextralife.com/Blighttown",
+          "page_title": "Blighttown"
+        }
+      }
+    ],
+    "prerequisite_bonfires": ["depths"],
+    "next_bonfires": ["quelaags_domain"],
+    "sources": [
+      {
+        "site": "fextralife",
+        "url": "https://darksouls.wiki.fextralife.com/Blighttown",
+        "page_title": "Blighttown"
+      }
+    ]
+  },
+  {
+    "id": "quelaags_domain",
+    "name_zh": "奎拉格领域",
+    "name_en": "Quelaag's Domain",
+    "order": 8,
+    "region": "blighttown",
+    "difficulty_tier": 3,
+    "world_position": [-8.0, -112.0, -165.0],
+    "depth_tier": -3,
+    "cinematic_pose": {
+      "camera_position": [12.0, -98.0, -145.0],
+      "look_at": [-8.0, -112.0, -165.0],
+      "duration_seconds": 10
+    },
+    "cinematic_caption": "熔岩与蛛网，卡俄斯之女的领地。",
+    "first_visit_state": "越过恶臭之地的沼泽，白色蜘蛛网将洞穴出口包裹起来。蜘蛛守卫们退开道路，洞穴内部燃烧着橙红色的岩浆——这里是奎拉格的领域，第二口觉醒之钟就在这片岩浆之上的高台。",
+    "lore_text": "奎拉格领域是伊扎里斯之女们落难后的居所。大法师伊扎里斯试图用自己的灵魂复现初始火焰，结果创造出了混沌之火——一种失控的、烈性的原始力量。她的女儿们，包括奎拉格与她的双胞胎姐妹，都在这场灾难中产生了变异。\n\n奎拉格是人蛇的融合体：上半身是美丽的女性，下半身是巨大的火焰蜘蛛。她守护着第二口觉醒之钟，同时也守护着她的姐妹——失去双腿、流着脓液、被毒素侵蚀的卡俄斯之女克蕾特。击败奎拉格后，克蕾特会解除对这片区域的封印，建立「卡俄斯仆役」契约的入口也将就此开放。",
+    "npcs_present": ["quelaan", "eingyi", "fair_lady"],
+    "items_unlocked": ["soul_of_quelaag", "chaos_ember"],
+    "events_triggered": ["second_bell_rung", "chaos_servant_covenant"],
+    "lore_anchors": [
+      {
+        "type": "item_description",
+        "source_zh": "奎拉格之魂",
+        "source_en": "Soul of Quelaag",
+        "text_en": "Soul of Quelaag, daughter of the Witch of Izalith, who was transformed along with her sisters into a Chaos Demon.",
+        "text_zh": "以扎里斯魔女之女奎拉格之魂，她与姐妹们一同被转化为混沌恶魔。",
+        "interpretation": "奎拉格的魂魄是母亲灾难的直接后果，她的变形不是恶意而是牺牲——为了保护她的姐妹而留在这片岩浆之中。这使她成为DS1最具悲剧色彩的Boss之一。",
+        "confidence": "canon",
+        "source_ref": {
+          "site": "in_game",
+          "page_title": "Soul of Quelaag item description"
+        }
+      }
+    ],
+    "prerequisite_bonfires": ["blighttown"],
+    "next_bonfires": ["demon_ruins", "ash_lake"],
+    "sources": [
+      {
+        "site": "fextralife",
+        "url": "https://darksouls.wiki.fextralife.com/Quelaag%27s+Domain",
+        "page_title": "Quelaag's Domain"
+      }
+    ]
+  },
+  {
+    "id": "sens_fortress",
+    "name_zh": "塞恩要塞",
+    "name_en": "Sen's Fortress",
+    "order": 9,
+    "region": "sens_fortress",
+    "difficulty_tier": 3,
+    "world_position": [22.0, -60.0, -120.0],
+    "depth_tier": 2,
+    "cinematic_pose": {
+      "camera_position": [42.0, -47.0, -100.0],
+      "look_at": [22.0, -60.0, -120.0],
+      "duration_seconds": 9
+    },
+    "cinematic_caption": "钟声敲响，神都的铁门缓缓开启。",
+    "first_visit_state": "两口觉醒之钟同时鸣响，巨大的铁门从山体中缓缓分开。这座用来试炼前往安鲁多的战士的要塞，从设计之初便是一座杀戮器械——摆锤陷阱、滚石陷阱、铁球通道，每一处都是对不死战士意志的淬炼。",
+    "lore_text": "塞恩要塞是洛德兰神界留下的最后一道关卡，也是通向神都安鲁多的必经之路。要塞建造者的意图明确：不够强大的战士，不配踏上神都的土地。\n\n要塞内的陷阱密度堪称洛德兰之最：弯刀摆锤在走廊里来回扫荡，巨大铁球在斜坡上倾泻而下，石块机关在任何踏入的身影经过时投下致命的重量。守卫们——Serpent Soldiers与Serpent Mages——是蛇人族的精锐，冷酷而高效。\n\n要塞顶端的铁巨人是最后的守门人，它的死亡打开了通往安鲁多的路。疯狂的传教士被关在顶层的牢笼里，是整个要塞设计里唯一一丝人性的残影。",
+    "npcs_present": ["siegmeyer_of_catarina", "crestfallen_merchant"],
+    "items_unlocked": ["slabs", "serpent_ring"],
+    "events_triggered": ["iron_golem_defeated", "anor_londo_accessible"],
+    "lore_anchors": [
+      {
+        "type": "environmental",
+        "source_zh": "要塞陷阱设计",
+        "source_en": "Sen's Fortress trap design",
+        "text_en": "Sen's Fortress is the proving grounds for the undead destined to ring the Bells of Awakening.",
+        "text_zh": "塞恩要塞是注定要敲响觉醒之钟的不死人的试炼场。",
+        "interpretation": "要塞的存在暗示神界对「资质」的要求——这不仅是物理考验，更是意志考验。只有在整个洛德兰中磨炼足够的战士，才有资格进入神都。这与格温建立「薪火循环」的管控逻辑一致。",
+        "confidence": "canon",
+        "source_ref": {
+          "site": "fextralife",
+          "url": "https://darksouls.wiki.fextralife.com/Sen%27s+Fortress",
+          "page_title": "Sen's Fortress"
+        }
+      }
+    ],
+    "prerequisite_bonfires": ["undead_parish"],
+    "next_bonfires": ["anor_londo"],
+    "sources": [
+      {
+        "site": "fextralife",
+        "url": "https://darksouls.wiki.fextralife.com/Sen%27s+Fortress",
+        "page_title": "Sen's Fortress"
+      }
+    ]
+  },
+  {
+    "id": "anor_londo",
+    "name_zh": "安鲁多神都",
+    "name_en": "Anor Londo",
+    "order": 10,
+    "region": "anor_londo",
+    "difficulty_tier": 3,
+    "world_position": [28.0, -57.0, -108.0],
+    "depth_tier": 3,
+    "cinematic_pose": {
+      "camera_position": [48.0, -42.0, -88.0],
+      "look_at": [28.0, -57.0, -108.0],
+      "duration_seconds": 12
+    },
+    "cinematic_caption": "神都的光明，是谎言编织的最美幻象。",
+    "first_visit_state": "一群蝙蝠翅膀的天使将你从塞恩要塞顶端托起，云层穿过，眼前猛然开阔——金色的尖塔、宏伟的飞扶壁与白色大理石阶梯，安鲁多在落日中燃烧，无比壮丽。这是游戏里最动人的一幕，也是最大的谎言。",
+    "lore_text": "安鲁多是格温太阳神的神都，是整个洛德兰最壮观的建筑成就。然而当你到达时，神已离开。格温为了维持薪火循环而投身初始之火，其余神明随之离散——奥尔纳斯泰因与史摩领着狮鹫骑士团守卫着空荡荡的王座。\n\n大公主关拿维尔在神都的最高塔中等待，她是格温的女儿，洛德容器便放置在她的寝殿里——套上洛德容器才能为四个主公开启封印，获取它们的「主公之魂」。\n\n奥尔纳斯泰因与史摩的战斗是DS1玩家公认最艰难的Boss战之一：长枪骑士奥尔纳斯泰因迅捷如风，执锤者史摩巨大如山，两人配合密切，死亡率极高。然而战斗结束后，神都空寂的走廊令人心碎——格温遗留下的繁华，只剩无尽的空洞。",
+    "npcs_present": ["gwynevere", "gwyndolin", "sieglinde_of_catarina"],
+    "items_unlocked": ["lordvessel", "leo_ring", "soul_of_ornstein"],
+    "events_triggered": ["lordvessel_obtained", "darkmoon_covenant"],
+    "lore_anchors": [
+      {
+        "type": "dialogue",
+        "source_zh": "关拿维尔的幻象",
+        "source_en": "Gwynevere illusion",
+        "text_en": "Brave Undead... I am Gwynevere, Princess of Sunlight. Please accept this... the Lordvessel.",
+        "text_zh": "勇敢的不死人……我是阳光公主关拿维尔。请接受这个……洛德容器。",
+        "interpretation": "关拿维尔本人是古温多林用魔法维持的幻象——这意味着「神都最美的光明」完全是谎言。真正的格温早已离去，留下的只是一个精心设计的骗局来诱使不死人走向薪火循环的终点。",
+        "confidence": "canon",
+        "source_ref": {
+          "site": "in_game",
+          "page_title": "Gwynevere dialogue"
+        }
+      }
+    ],
+    "prerequisite_bonfires": ["sens_fortress"],
+    "next_bonfires": ["painted_world", "dukes_archives"],
+    "sources": [
+      {
+        "site": "fextralife",
+        "url": "https://darksouls.wiki.fextralife.com/Anor+Londo",
+        "page_title": "Anor Londo"
+      }
+    ]
+  },
+  {
+    "id": "painted_world",
+    "name_zh": "阿尔雅米斯绘画世界",
+    "name_en": "Painted World of Ariamis",
+    "order": 11,
+    "region": "painted_world",
+    "difficulty_tier": 3,
+    "world_position": [50.0, -62.0, -112.0],
+    "depth_tier": 3,
+    "cinematic_pose": {
+      "camera_position": [70.0, -50.0, -92.0],
+      "look_at": [50.0, -62.0, -112.0],
+      "duration_seconds": 10
+    },
+    "cinematic_caption": "画框之内，被遗弃者的孤岛。",
+    "first_visit_state": "安鲁多神都顶层的走廊里有一幅巨画，握着古老黑羽毛的你被吸入其中。雪地覆盖着废弃的庄园，鸦人在四处游荡——这里是世界之外的世界，也是被遗弃之人的最后避难所。",
+    "lore_text": "绘画世界是由一位失落画家用古老魔法创造的异次元空间，专门用来容纳「不被世界所容」的存在：鸦人（人与乌鸦的混合体）、腐败的不死人、被污名化的龙族后裔普里西拉。\n\n龙巫女普里西拉是这个世界的守护者，也是格温的半血孙女——她拥有龙血，无法被世界接纳，只能活在这幅画中。她不主动攻击玩家，甚至请求被留在这里：「此处没有任何东西能伤害你，请离开这幅画，忘掉这里。」\n\n绘画世界是DS1最深刻的「边缘人」寓言。所有被「正常秩序」排斥的存在聚集于此，在雪地里找到了彼此的陪伴。击杀普里西拉是一个可选择的悲剧，她的「生命猎镰」记录着「生命本身可以被收割」这一残酷的存在主义命题。",
+    "npcs_present": ["crossbreed_priscilla"],
+    "items_unlocked": ["lifehunt_scythe", "velkas_rapier"],
+    "events_triggered": ["painted_world_explored"],
+    "lore_anchors": [
+      {
+        "type": "dialogue",
+        "source_zh": "普里西拉的请求",
+        "source_en": "Priscilla's plea",
+        "text_en": "Thou must returneth from whence thou came. This land is peaceful, its inhabitants kind. Undead warrior, plunge not into misery.",
+        "text_zh": "你应回到你来处。这片土地安宁，其居民善良。不死战士，不要陷入苦难之中。",
+        "interpretation": "普里西拉没有索取——她只要求被遗忘。这是DS1最克制也最令人心碎的NPC台词，揭示了「绘画世界」作为避难所而非监狱的本质：它是弱者主动选择的庇护，不是强权强加的放逐。",
+        "confidence": "canon",
+        "source_ref": {
+          "site": "in_game",
+          "page_title": "Crossbreed Priscilla NPC dialogue"
+        }
+      }
+    ],
+    "prerequisite_bonfires": ["anor_londo"],
+    "next_bonfires": [],
+    "sources": [
+      {
+        "site": "fextralife",
+        "url": "https://darksouls.wiki.fextralife.com/Painted+World+of+Ariamis",
+        "page_title": "Painted World of Ariamis"
+      }
+    ]
+  },
+  {
+    "id": "dukes_archives",
+    "name_zh": "公爵档案馆",
+    "name_en": "Duke's Archives",
+    "order": 12,
+    "region": "crystal_cave",
+    "difficulty_tier": 4,
+    "world_position": [45.0, -63.0, -118.0],
+    "depth_tier": 2,
+    "cinematic_pose": {
+      "camera_position": [65.0, -50.0, -98.0],
+      "look_at": [45.0, -63.0, -118.0],
+      "duration_seconds": 9
+    },
+    "cinematic_caption": "知识的宫殿，疯狂的代价。",
+    "first_visit_state": "从安鲁多神都向东，水晶蜥蜴在城堡高处游荡。赛司的档案馆是一座五层的巨大图书馆，里面装满了各种魔法典籍与实验记录。第一次来到这里，你会被赛司抓获，锁在笼子里——这是游戏里少数几次让玩家直接经历失败叙事的场景。",
+    "lore_text": "公爵档案馆是白龙赛司在安鲁多时代留下的知识宫殿。赛司是洛德兰最伟大的魔法师，曾是格温最忠实的朋友和盟友。他获得了故老白龙的鳞片与灵魂，并用这些力量追求「不死」——然而过度的结晶魔法侵蚀了他的理性，使他从伟大的学者变成了被自身欲望吞噬的疯狂研究者。\n\n档案馆里囚禁着被他用于实验的人类，水晶骑士四处游荡守护着书架间的秘密。击败赛司后，他的灵魂化为「重生的白龙赛司」，成为一个身陷结晶洞穴的不完整存在——既无法死去，也无法完成他追求的永恒。",
+    "npcs_present": ["seath_the_scaleless", "sieglinde_of_catarina"],
+    "items_unlocked": ["crystal_ember", "soul_of_seath"],
+    "events_triggered": ["seath_defeated", "logan_questline"],
+    "lore_anchors": [
+      {
+        "type": "item_description",
+        "source_zh": "赛司之魂",
+        "source_en": "Soul of Seath the Scaleless",
+        "text_en": "Soul of Seath the Scaleless, who betrayed his own kind and is no longer a true dragon.",
+        "text_zh": "背叛同类、不再是真正龙族的无鳞白龙赛司之魂。",
+        "interpretation": "赛司是DS1最悲剧的自我背叛者——他为了得到龙族「不死」属性而背叛了同类，结果用一生追求的不死变成了永恒的疯狂囚禁。他所得到的恰恰是他本来已经拥有的：孤独的存在。",
+        "confidence": "canon",
+        "source_ref": {
+          "site": "in_game",
+          "page_title": "Soul of Seath the Scaleless item description"
+        }
+      }
+    ],
+    "prerequisite_bonfires": ["anor_londo"],
+    "next_bonfires": [],
+    "sources": [
+      {
+        "site": "fextralife",
+        "url": "https://darksouls.wiki.fextralife.com/Duke%27s+Archives",
+        "page_title": "Duke's Archives"
+      }
+    ]
+  },
+  {
+    "id": "catacombs",
+    "name_zh": "地下墓地",
+    "name_en": "The Catacombs",
+    "order": 13,
+    "region": "catacombs",
+    "difficulty_tier": 3,
+    "world_position": [-2.0, -95.0, -168.0],
+    "depth_tier": -2,
+    "cinematic_pose": {
+      "camera_position": [18.0, -82.0, -148.0],
+      "look_at": [-2.0, -95.0, -168.0],
+      "duration_seconds": 9
+    },
+    "cinematic_caption": "黑暗中骸骨复生，死亡已失去意义。",
+    "first_visit_state": "从传火祭祀场向南走，山体裂缝里透出腐臭。地下墓地的走廊里，骷髅战士一旦倒下便会重新站起——除非用神圣属性武器将它们彻底击碎，或找到让它们安息的方法。黑暗中有火把游荡，那是阔卢斯——骸骨牧人。",
+    "lore_text": "地下墓地是通往「巨人陵墓」的前庭，也是DS1探索难度最高的区域之一。无法被普通武器永久击杀的骷髅使这里变成了消耗战场，而阔卢斯的存在则更添绝望——这个隐形火把可以让周围的骷髅无限复活。\n\n地下墓地是前往「巨型黑骑士」提比亚特居所的通道，也是通往「猫尾戒指」和「惩戒契约」的路。但更重要的是，它将玩家引向洛德兰最古老的部分：巨人的陵墓，那里是尼托——「死亡的领主」——的领地。\n\n补丁（Patches）是这里最令人印象深刻的NPC之一：他会将玩家推入陷阱，然后若无其事地以商人身份出现，将那些已经无法被悼念的物品卖给受害者。",
+    "npcs_present": ["patches", "paladin_leeroy"],
+    "items_unlocked": ["rite_of_kindling", "darkmoon_seance_ring"],
+    "events_triggered": ["patches_encounter"],
+    "lore_anchors": [
+      {
+        "type": "item_description",
+        "source_zh": "火焰点燃仪式",
+        "source_en": "Rite of Kindling",
+        "text_en": "Ancient rite used in a burial ceremony of a long-forgotten clan. Allows bonfires to be kindled past their limit.",
+        "text_zh": "远古遗忘氏族葬礼仪式所用的古老礼节，允许篝火被点燃超过其限制。",
+        "interpretation": "点燃仪式的获取恰恰来自死亡领域——这意味着「延续生命（点燃篝火）」的能力本身是从「接受死亡」的仪式中提炼出来的。DS1的很多道具都暗示了生与死不可分割的互依关系。",
+        "confidence": "canon",
+        "source_ref": {
+          "site": "in_game",
+          "page_title": "Rite of Kindling item description"
+        }
+      }
+    ],
+    "prerequisite_bonfires": ["firelink_shrine"],
+    "next_bonfires": ["tomb_of_giants"],
+    "sources": [
+      {
+        "site": "fextralife",
+        "url": "https://darksouls.wiki.fextralife.com/The+Catacombs",
+        "page_title": "The Catacombs"
+      }
+    ]
+  },
+  {
+    "id": "tomb_of_giants",
+    "name_zh": "巨人陵墓",
+    "name_en": "Tomb of the Giants",
+    "order": 14,
+    "region": "tomb_of_giants",
+    "difficulty_tier": 4,
+    "world_position": [-8.0, -118.0, -175.0],
+    "depth_tier": -3,
+    "cinematic_pose": {
+      "camera_position": [12.0, -105.0, -155.0],
+      "look_at": [-8.0, -118.0, -175.0],
+      "duration_seconds": 11
+    },
+    "cinematic_caption": "绝对的黑暗，死亡的领主在此沉眠。",
+    "first_visit_state": "地下墓地的尽头，黑暗忽然变成了绝对的黑暗——完全看不见任何东西。巨人的骨骸散落在宽阔的通道里，猎人用巨大的手爪抓地而行。你需要一个火炬，或者「亮宝石戒指」，否则只能在黑暗中慢慢摸索前行。",
+    "lore_text": "巨人陵墓是洛德兰最深处之一，是「死亡的领主」尼托的领地。尼托是洛德兰最古老的存在之一，他在时代之初找到了死亡魔法并散播至全世界。他的存在本身就是死亡——一个由无数尸骨拼凑而成、身裹缠衣的巨型怪物，静静沉眠在最深的黑暗中。\n\n巨人陵墓的绝对黑暗是游戏设计史上最大胆的决定之一。玩家被迫接受「无法完整看见世界」的恐惧，与游戏对话而非克服游戏。这片黑暗传达的不仅是视觉上的压迫，更是概念上的——踏入死亡的领域，光明本就不该存在。\n\n白袍骑士托马斯·阿斯托拉的女儿妮托会在此地等待玩家，执行「阳光誓约」的最终任务。",
+    "npcs_present": ["nito", "patches", "reah_of_thorolund"],
+    "items_unlocked": ["lord_soul_nito", "gravelord_sword"],
+    "events_triggered": ["nito_defeated", "gravelord_covenant"],
+    "lore_anchors": [
+      {
+        "type": "enemy_description",
+        "source_zh": "尼托——死亡之领主",
+        "source_en": "Gravelord Nito",
+        "text_en": "Gravelord Nito, the first of the dead, administers the death of all manner of beings.",
+        "text_zh": "死者中的第一位，墓穴领主尼托，掌管着各种生灵的死亡。",
+        "interpretation": "尼托的定位是「第一个死去的存在」，这意味着死亡本身是洛德兰的一项发现，而非必然。他的领域是对「死亡归宿」的终极诠释——不是惩罚，而是最终的安息之地。",
+        "confidence": "canon",
+        "source_ref": {
+          "site": "fextralife",
+          "url": "https://darksouls.wiki.fextralife.com/Gravelord+Nito",
+          "page_title": "Gravelord Nito"
+        }
+      }
+    ],
+    "prerequisite_bonfires": ["catacombs"],
+    "next_bonfires": [],
+    "sources": [
+      {
+        "site": "fextralife",
+        "url": "https://darksouls.wiki.fextralife.com/Tomb+of+the+Giants",
+        "page_title": "Tomb of the Giants"
+      }
+    ]
+  },
+  {
     "id": "new_londo_ruins",
     "name_zh": "新隆德废都",
     "name_en": "New Londo Ruins",
-    "order": 2,
+    "order": 15,
     "region": "new_londo",
     "difficulty_tier": 3,
-    "world_position": [2.0, -110.0, -152.0],
+    "world_position": [2.0, -105.0, -152.0],
     "depth_tier": -2,
     "cinematic_pose": {
-      "camera_position": [22.0, -95.0, -132.0],
-      "look_at": [2.0, -110.0, -152.0],
+      "camera_position": [22.0, -90.0, -132.0],
+      "look_at": [2.0, -105.0, -152.0],
       "duration_seconds": 10
     },
     "cinematic_caption": "水淹之城，黑暗将一切吞没。",
     "first_visit_state": "从传火祭祀场向下走，潮湿的电梯带你进入半淹的废墟。幽灵从墙壁穿出，普通武器无法伤害它们。这里曾经繁华，如今只剩黑水与哀嚎。",
-    "lore_text": "新隆德曾是洛德兰最繁华的城市之一，四王在此统治并得到格温赐予的黑暗之魂的力量。然而黑暗诱使他们堕落，四王被暗渊侵蚀，最终化为虚无游荡的存在。\n\n守火神西古梅尔为阻止黑暗蔓延，命令将新隆德引水淹城，困住四王与他们召唤的黑暗存在。死去的市民成为永恒游荡的幽灵，无法被普通武器所伤——只有「诅咒袪除之戒」或「幽灵之刃」才能伤害它们。\n\n洪水在游戏开始时尚未完全退去。要进入四王的领地，需要向幽灵王雅娜获取「黑暗之戒」，并在大洪门处使用它才能排水，揭开深埋于暗渊中的最深处。这里是DS1最晦暗的角落之一——黑暗魔法的发源地，也是薪火体系崩溃威胁最直接的体现。",
+    "lore_text": "新隆德曾是洛德兰最繁华的城市之一，四王在此统治并得到格温赐予的黑暗之魂的力量。然而黑暗诱使他们堕落，四王被暗渊侵蚀，最终化为虚无游荡的存在。\n\n守火神西古梅尔为阻止黑暗蔓延，命令将新隆德引水淹城，困住四王与他们召唤的黑暗存在。死去的市民成为永恒游荡的幽灵，无法被普通武器所伤——只有「诅咒袪除之戒」或「幽灵之刃」才能伤害它们。\n\n洪水在游戏开始时尚未完全退去。要进入四王的领地，需要向幽灵王雅娜获取「黑暗之戒」，并在大洪门处使用它才能排水，揭开深埋于暗渊中的最深处。",
     "npcs_present": ["ingward", "yulva_the_witch"],
     "items_unlocked": ["key_to_the_seal", "dark_ember"],
     "events_triggered": ["seal_opened", "four_kings_accessible"],
@@ -126,7 +671,7 @@
       {
         "type": "item_description",
         "source_zh": "西古梅尔的灵魂",
-        "source_en": "Soul of Sif",
+        "source_en": "Soul of the Four Kings",
         "text_en": "Soul of the Four Kings, who were granted their own kindled Lordvessel.",
         "text_zh": "获得了属于自己的炽燃洛德容器的四王之魂。",
         "interpretation": "四王曾是格温的心腹，被赐予了与洛德容器同等地位的灵魂容器。他们的堕落不是命运的随机，而是格温给予力量后必然产生的熵——这与整个薪火循环的悲剧主题高度一致。",
@@ -136,29 +681,336 @@
           "url": "https://darksouls.wiki.fextralife.com/Soul+of+the+Four+Kings",
           "page_title": "Soul of the Four Kings"
         }
-      },
-      {
-        "type": "environmental",
-        "source_zh": "新隆德的洪水设计",
-        "source_en": "New Londo flood design",
-        "text_en": "The city was purposely flooded to contain the Darkwraiths and Four Kings infected by the Abyss.",
-        "text_zh": "新隆德被有意引水淹没，以困住被暗渊侵染的黑暗鬼将和四王。",
-        "interpretation": "洪水作为封印手段，是格温时代统治者面对黑暗威胁时的惯用策略——毁灭城市来换取世界的短暂稳定。这与整个DS1「以牺牲维持现状」的主题形成呼应。",
-        "confidence": "canon",
-        "source_ref": {
-          "site": "fandom",
-          "url": "https://darksouls.fandom.com/wiki/New_Londo_Ruins",
-          "page_title": "New Londo Ruins"
-        }
       }
     ],
     "prerequisite_bonfires": ["firelink_shrine"],
-    "next_bonfires": ["valley_of_drakes"],
+    "next_bonfires": ["the_abyss"],
     "sources": [
       {
         "site": "fextralife",
         "url": "https://darksouls.wiki.fextralife.com/New+Londo+Ruins",
         "page_title": "New Londo Ruins"
+      }
+    ]
+  },
+  {
+    "id": "the_abyss",
+    "name_zh": "暗渊",
+    "name_en": "The Abyss",
+    "order": 16,
+    "region": "new_londo",
+    "difficulty_tier": 4,
+    "world_position": [2.0, -122.0, -152.0],
+    "depth_tier": -4,
+    "cinematic_pose": {
+      "camera_position": [22.0, -108.0, -132.0],
+      "look_at": [2.0, -122.0, -152.0],
+      "duration_seconds": 12
+    },
+    "cinematic_caption": "存在的终点，黑暗本身的形态。",
+    "first_visit_state": "排干新隆德的洪水，进入大洪门之后的隧道。隧道尽头是一道黑色的圆形传送门——走进去便是暗渊本身。没有地面，没有天空，只有无尽的黑色与来自四方的黑暗鬼将的攻击。",
+    "lore_text": "暗渊是黑暗魂最纯粹的形态，是「黑暗之源」的直接呈现。它没有形状，没有边界，只有侵蚀一切的黑暗本能。四王被侵染后召唤的黑暗鬼将统治着这片区域，而四王本身已化为虚无——当玩家踏入暗渊时，他们从四面八方袭来，轻浮而虚幻，仿佛黑暗本身化形而来。\n\n阿尔托利亚斯唯一的成就是他曾经深入暗渊而没有被吞噬——但他为此付出了极大代价。他用铁甲将自己的幼犬西夫包裹，以结界保护它，而自己则承受了暗渊全部的腐蚀力。当玩家在「阿尔托利亚斯的深渊」DLC中遭遇他时，他已化为一个扭曲的战斗机器。\n\n暗渊之战没有恢宏的背景，没有戏剧性的舞台，只有在黑色无边的空间里对抗一切黑暗想象。这是DS1最抽象也最有力的环境设计。",
+    "npcs_present": ["four_kings"],
+    "items_unlocked": ["lord_soul_four_kings", "covenant_of_artorias"],
+    "events_triggered": ["four_kings_defeated"],
+    "lore_anchors": [
+      {
+        "type": "enemy_description",
+        "source_zh": "四王",
+        "source_en": "Four Kings",
+        "text_en": "Souls of the Four Kings of New Londo who were offered fragments of Gwyn's power, and fell to the abyss.",
+        "text_zh": "新隆德四王之魂，他们被授予格温力量的碎片，最终堕入暗渊。",
+        "interpretation": "四王的堕落是DS1「权力腐蚀」主题的顶峰——格温将自身灵魂力量赐予他人，这些「碎片」最终变成了摧毁一切的深渊。分享力量本身成为了创造毁灭的原罪。",
+        "confidence": "canon",
+        "source_ref": {
+          "site": "fextralife",
+          "url": "https://darksouls.wiki.fextralife.com/Four+Kings",
+          "page_title": "Four Kings"
+        }
+      }
+    ],
+    "prerequisite_bonfires": ["new_londo_ruins"],
+    "next_bonfires": [],
+    "sources": [
+      {
+        "site": "fextralife",
+        "url": "https://darksouls.wiki.fextralife.com/Four+Kings",
+        "page_title": "Four Kings / The Abyss"
+      }
+    ]
+  },
+  {
+    "id": "valley_of_drakes",
+    "name_zh": "飞龙谷",
+    "name_en": "Valley of Drakes",
+    "order": 17,
+    "region": "valley_of_drakes",
+    "difficulty_tier": 2,
+    "world_position": [-18.0, -95.0, -162.0],
+    "depth_tier": -2,
+    "cinematic_pose": {
+      "camera_position": [2.0, -82.0, -142.0],
+      "look_at": [-18.0, -95.0, -162.0],
+      "duration_seconds": 8
+    },
+    "cinematic_caption": "幼龙在悬崖上嗅探，过渡之地。",
+    "first_visit_state": "从传火祭祀场的下行小路，或从暗根盆地的洞穴出口，你来到飞龙谷的断崖。幼龙（Drake）蜷伏在岩石之间，它们的鳞片与真正的永恒之龙相比暗淡许多——只是龙族退化的残影。",
+    "lore_text": "飞龙谷是连接多个区域的隐秘通道：向上通往暗根盆地，向东通往传火祭祀场的底部，向下通往新隆德废都与恶臭之地。这里是洛德兰「中间地带」的完美体现——一个不属于任何势力、处于所有故事边缘的过渡空间。\n\n栖居于此的幼龙是永恒之龙的后代，但它们既不具备永恒之龙的不死之力，也不像博斯那样因被黑暗侵染而化为翼龙。它们就这样在峭壁间守候，没有目的，没有主人，只是以本能猎食经过的旅者。\n\n飞龙谷的篝火没有守护者，只有峭壁间的风声与远处恶臭之地传来的腐败气味。它的存在意义在于连接，而非目的地本身。",
+    "npcs_present": [],
+    "items_unlocked": ["astora_straight_sword", "grass_crest_shield"],
+    "events_triggered": [],
+    "lore_anchors": [
+      {
+        "type": "environmental",
+        "source_zh": "幼龙的存在",
+        "source_en": "Presence of Drakes",
+        "text_en": "Drakes are proto-dragons that lack the immortality of the Everlasting Dragons.",
+        "text_zh": "幼龙是缺乏永恒之龙不死之力的初级龙族。",
+        "interpretation": "幼龙的存在是「龙族衰落」主题的空间体现：永恒之龙时代已逝，留下的后代既不够强大到成为威胁，又足够真实地存在于世界角落，构成一种令人感伤的遗存状态。",
+        "confidence": "canon",
+        "source_ref": {
+          "site": "fextralife",
+          "url": "https://darksouls.wiki.fextralife.com/Valley+of+Drakes",
+          "page_title": "Valley of Drakes"
+        }
+      }
+    ],
+    "prerequisite_bonfires": ["firelink_shrine"],
+    "next_bonfires": ["new_londo_ruins", "blighttown"],
+    "sources": [
+      {
+        "site": "fextralife",
+        "url": "https://darksouls.wiki.fextralife.com/Valley+of+Drakes",
+        "page_title": "Valley of Drakes"
+      }
+    ]
+  },
+  {
+    "id": "demon_ruins",
+    "name_zh": "恶魔废墟",
+    "name_en": "Demon Ruins",
+    "order": 18,
+    "region": "izalith",
+    "difficulty_tier": 4,
+    "world_position": [12.0, -115.0, -172.0],
+    "depth_tier": -3,
+    "cinematic_pose": {
+      "camera_position": [32.0, -102.0, -152.0],
+      "look_at": [12.0, -115.0, -172.0],
+      "duration_seconds": 10
+    },
+    "cinematic_caption": "熔岩之上，远古灾难的遗骸。",
+    "first_visit_state": "越过奎拉格的领域，熔岩平原在脚下展开。地面是冷却了数千年的黑色熔岩，恶魔在岩浆池旁徘徊。这里是以扎里斯之灾的直接产物——曾经的文明城市，现在只剩火与石的废墟。",
+    "lore_text": "恶魔废墟是「迷失以扎里斯」的前庭，是大法师伊扎里斯试图复制初始火焰后产生的灾难区域。她的魔法失控，创造出了「混沌之火」——一种不受控制的原始熔岩力量，将整个以扎里斯城烧成废墟，并催生出世界上第一批恶魔。\n\n恶魔废墟里充斥着各种恶魔变种：火属性恶魔、岩浆恶魔与古老的混沌恶魔残片。地面上有多处熔岩裂缝，直接吸取从更深处流出的混沌之火的余热。\n\n斯托姆鲁尔——石头骑士普理察德的最终守护地——藏在这片废墟深处，记录着武器锻冶的古老知识。",
+    "npcs_present": ["ceaseless_discharge"],
+    "items_unlocked": ["chaos_flame_ember", "demon_titanite"],
+    "events_triggered": ["ceaseless_discharge_defeated"],
+    "lore_anchors": [
+      {
+        "type": "enemy_description",
+        "source_zh": "永无止尽的排泄",
+        "source_en": "Ceaseless Discharge",
+        "text_en": "The Demon who guards the exit from Quelaag's domain, the son of the Witch of Izalith.",
+        "text_zh": "守卫奎拉格领域出口的恶魔，以扎里斯魔女之子。",
+        "interpretation": "「永无止尽的排泄」这个名字本身就是DS1命名哲学的极端体现——将灾难性的力量以最直白、最不诗意的方式命名，消解了恶魔的神秘性，暗示他只是灾难的「副产品」而非有目的的存在。",
+        "confidence": "canon",
+        "source_ref": {
+          "site": "fextralife",
+          "url": "https://darksouls.wiki.fextralife.com/Ceaseless+Discharge",
+          "page_title": "Ceaseless Discharge"
+        }
+      }
+    ],
+    "prerequisite_bonfires": ["quelaags_domain"],
+    "next_bonfires": ["lost_izalith"],
+    "sources": [
+      {
+        "site": "fextralife",
+        "url": "https://darksouls.wiki.fextralife.com/Demon+Ruins",
+        "page_title": "Demon Ruins"
+      }
+    ]
+  },
+  {
+    "id": "lost_izalith",
+    "name_zh": "迷失以扎里斯",
+    "name_en": "Lost Izalith",
+    "order": 19,
+    "region": "izalith",
+    "difficulty_tier": 5,
+    "world_position": [5.0, -122.0, -180.0],
+    "depth_tier": -4,
+    "cinematic_pose": {
+      "camera_position": [25.0, -108.0, -160.0],
+      "look_at": [5.0, -122.0, -180.0],
+      "duration_seconds": 12
+    },
+    "cinematic_caption": "文明的最终燃烬，卡俄斯的摇篮。",
+    "first_visit_state": "恶魔废墟的更深处，熔岩变成了布满树根与肉质触手的「熔岩沼泽」。这里的地形设计被许多玩家认为是DS1最未完成的区域——大量空间感觉粗糙而仓促，恶魔蜥蜴四处乱跑，混沌女巫们被树根困住。",
+    "lore_text": "迷失以扎里斯是曾经伟大的以扎里斯城的废墟，是伊扎里斯之灾将一切文明熔化后留下的终点。这里曾是洛德兰最强大的魔法文明中心，如今只剩扭曲的树根、熔岩与被困住的混沌女巫们。\n\n伊扎里斯的女儿们在灾难中被永久困在了树根里——「混沌女巫」这个名字描述的不是她们的意志，而是她们的命运。她们无法移动，只能在树根间静静腐烂，等待一个不死人来终结这一切。\n\n「混沌之床」（Bed of Chaos）是这片区域的终Boss：这是伊扎里斯魔女与混沌火焰融合后化成的巨大树木怪物，也是世界上所有恶魔的源头。击败它意味着将以扎里斯的灾难终结——但也永久地结束了这片区域存在的意义。",
+    "npcs_present": ["bed_of_chaos", "solaire_of_astora"],
+    "items_unlocked": ["lord_soul_izalith", "sunlight_spear"],
+    "events_triggered": ["bed_of_chaos_defeated", "solaire_fate"],
+    "lore_anchors": [
+      {
+        "type": "enemy_description",
+        "source_zh": "混沌之床",
+        "source_en": "Bed of Chaos",
+        "text_en": "The Bed of Chaos was created when the Witch of Izalith tried to recreate the First Flame. It is the mother of all demons.",
+        "text_zh": "混沌之床是以扎里斯魔女试图重现初始火焰时创造出来的，它是所有恶魔之母。",
+        "interpretation": "「混沌之床」作为Boss的战斗设计备受争议，但其叙事意义无可替代：一个曾经最伟大的女性魔法师，被自己追求「神的力量」的执念彻底吞噬，化为了一张无意识的床——这是对「傲慢」（Hubris）这一主题最残忍的结局诠释。",
+        "confidence": "canon",
+        "source_ref": {
+          "site": "fextralife",
+          "url": "https://darksouls.wiki.fextralife.com/Bed+of+Chaos",
+          "page_title": "Bed of Chaos"
+        }
+      }
+    ],
+    "prerequisite_bonfires": ["demon_ruins"],
+    "next_bonfires": [],
+    "sources": [
+      {
+        "site": "fextralife",
+        "url": "https://darksouls.wiki.fextralife.com/Lost+Izalith",
+        "page_title": "Lost Izalith"
+      }
+    ]
+  },
+  {
+    "id": "great_hollow",
+    "name_zh": "巨树虚洞",
+    "name_en": "The Great Hollow",
+    "order": 20,
+    "region": "ash_lake",
+    "difficulty_tier": 2,
+    "world_position": [-10.0, -118.0, -170.0],
+    "depth_tier": -4,
+    "cinematic_pose": {
+      "camera_position": [10.0, -104.0, -150.0],
+      "look_at": [-10.0, -118.0, -170.0],
+      "duration_seconds": 8
+    },
+    "cinematic_caption": "无尽的树心，通向世界最初的底层。",
+    "first_visit_state": "恶臭之地的沼泽一角，一棵巨大的古树的树根从地面升起。砍开封印树根的雕像，进入树心内部——一个向下延伸无尽的空洞，长着巨大的蘑菇与毒菌，几乎没有脚踏的地方。",
+    "lore_text": "巨树虚洞是一棵可能比洛德兰本身还要古老的巨树的内部空间，是通往「灰烬湖」的唯一通道。树心内部充满了巨型蘑菇与各种菌类，以及剧毒的蜗牛生物，构成了一个几乎与外部世界完全隔绝的生态系统。\n\n这里没有叙事，没有任何NPC，只有「向下」的方向。进入巨树虚洞意味着主动放弃「向上的英雄旅程」，选择下沉到世界最古老的底层。这个选择本身就是游戏对玩家好奇心的奖励——无论是通向灰烬湖的神秘，还是深邃的树洞所带来的孤独感。",
+    "npcs_present": [],
+    "items_unlocked": ["slumbering_dragoncrest_ring", "dragon_scale"],
+    "events_triggered": [],
+    "lore_anchors": [
+      {
+        "type": "environmental",
+        "source_zh": "巨树虚洞的垂直设计",
+        "source_en": "Great Hollow vertical design",
+        "text_en": "The Great Hollow is a massive tree that provides the only access to the Ash Lake hidden beneath Lordran.",
+        "text_zh": "巨树虚洞是一棵为洛德兰地下灰烬湖提供唯一通道的巨大树木。",
+        "interpretation": "巨树虚洞的设计哲学是「对好奇心的纯粹奖励」——没有传说指引这里，没有主线任务要求到达，只有玩家自己的探索意愿。这是FromSoftware最擅长的「隐藏世界」设计的最佳体现之一。",
+        "confidence": "canon",
+        "source_ref": {
+          "site": "fextralife",
+          "url": "https://darksouls.wiki.fextralife.com/The+Great+Hollow",
+          "page_title": "The Great Hollow"
+        }
+      }
+    ],
+    "prerequisite_bonfires": ["blighttown"],
+    "next_bonfires": ["ash_lake"],
+    "sources": [
+      {
+        "site": "fextralife",
+        "url": "https://darksouls.wiki.fextralife.com/The+Great+Hollow",
+        "page_title": "The Great Hollow"
+      }
+    ]
+  },
+  {
+    "id": "ash_lake",
+    "name_zh": "灰烬湖",
+    "name_en": "Ash Lake",
+    "order": 21,
+    "region": "ash_lake",
+    "difficulty_tier": 2,
+    "world_position": [-15.0, -124.0, -175.0],
+    "depth_tier": -5,
+    "cinematic_pose": {
+      "camera_position": [5.0, -110.0, -155.0],
+      "look_at": [-15.0, -124.0, -175.0],
+      "duration_seconds": 14
+    },
+    "cinematic_caption": "世界最初的海岸，永恒之龙的记忆。",
+    "first_visit_state": "巨树虚洞的最底部，你踏出一棵古树的根部，眼前猛然开阔——平静的白色湖面一直延伸到灰蒙蒙的远方，石灰色的巨树屹立在湖中，一只巨大的永恒之龙蜷缩在湖边的树根下沉睡。",
+    "lore_text": "灰烬湖是世界本质最深处的幻影，是永恒之龙时代的最后遗存。在太阳升起之前，在人类出现之前，整个世界就是这样：静谧的灰色湖面，不死的石龙，以及没有时间流逝的永恒。\n\n在灰烬湖栖居的永恒之龙卡拉木拉姆是游戏中唯一一只尚未死去的真正永恒之龙。它不攻击，只是静静地沉睡，接受一切前来瞻仰的旅者。在它旁边，玩家可以加入「龙裔」契约，开始修行「变成龙」的旅程。\n\n灰烬湖没有叙事，没有任何历史说明。它的存在本身就是叙事——一个「时间之外」的所在，让玩家感受到游戏中所有叙事框架之外的那份古老宁静。",
+    "npcs_present": ["everlasting_dragon"],
+    "items_unlocked": ["dragon_greatsword", "path_of_the_dragon"],
+    "events_triggered": ["dragon_covenant"],
+    "lore_anchors": [
+      {
+        "type": "environmental",
+        "source_zh": "灰烬湖的存在意义",
+        "source_en": "Ash Lake's narrative purpose",
+        "text_en": "A primordial lake beneath all of Lordran, remnant of the Age of Ancients before the First Flame.",
+        "text_zh": "洛德兰所有土地之下的原始湖泊，初始火焰点燃之前上古时代的遗存。",
+        "interpretation": "灰烬湖是DS1「时间考古」叙事方法的顶峰。所有其他区域叙述的是火焰时代的历史，唯有这里呈现的是「火焰时代之前」的样子——没有战争，没有王国，只有龙与石与灰色的水。它以沉默告诉玩家：一切文明，都是对这份寂静的打扰。",
+        "confidence": "consensus",
+        "source_ref": {
+          "site": "fandom",
+          "url": "https://darksouls.fandom.com/wiki/Ash_Lake",
+          "page_title": "Ash Lake"
+        }
+      }
+    ],
+    "prerequisite_bonfires": ["great_hollow"],
+    "next_bonfires": [],
+    "sources": [
+      {
+        "site": "fextralife",
+        "url": "https://darksouls.wiki.fextralife.com/Ash+Lake",
+        "page_title": "Ash Lake"
+      }
+    ]
+  },
+  {
+    "id": "kiln_of_the_first_flame",
+    "name_zh": "初始之火炉",
+    "name_en": "Kiln of the First Flame",
+    "order": 22,
+    "region": "kiln",
+    "difficulty_tier": 5,
+    "world_position": [14.0, -67.0, -145.0],
+    "depth_tier": 0,
+    "cinematic_pose": {
+      "camera_position": [34.0, -52.0, -125.0],
+      "look_at": [14.0, -67.0, -145.0],
+      "duration_seconds": 15
+    },
+    "cinematic_caption": "一切的终点，亦是薪火的起始。",
+    "first_visit_state": "收集四位主公的灵魂，回到传火祭祀场，将主公之魂注入洛德容器，最终的传送门在祭祀场深处开启。你走进一片灰烬漫天的空旷地带——黑色骑士的残影在灰烬中游荡，火焰已在这里燃烧了无数轮回。",
+    "lore_text": "初始之火炉是洛德兰最神圣、也最悲哀的地方——格温太阳神在此燃烧自身，将垂死的初始火焰续燃，维持了又一轮的神圣时代。他的黑色骑士卫队随他同赴火海，在灰烬中成为永恒的幽灵。\n\n玩家来到这里时将面对最后的选择：是杀死格温并取代他将身体投入初始之火，续燃这轮薪火循环；还是转身离去，拒绝这场永恒的轮回，让火焰自然熄灭，迎来黑暗时代。\n\n格温本人是一个壳——被火焰燃烧了太久的灵魂只剩下本能，他的攻击猛烈而没有意识。击败他的动作不是英雄的胜利，更像是对一个早已失去自我的人的最后解脱。无论做出何种选择，玩家都将成为下一个轮回的关键节点——而轮回本身，还在继续。",
+    "npcs_present": ["gwyn_lord_of_cinder"],
+    "items_unlocked": ["soul_of_gwyn"],
+    "events_triggered": ["gwyn_defeated", "ending_choice"],
+    "lore_anchors": [
+      {
+        "type": "item_description",
+        "source_zh": "格温之魂",
+        "source_en": "Soul of Gwyn, Lord of Cinder",
+        "text_en": "Soul of Gwyn, Lord of Cinder and once Lord of Lordran. Long ago, Gwyn divided his soul and shared it with his trusted allies.",
+        "text_zh": "薪火领主、昔日洛德兰之王格温之魂。很久以前，格温分割了自己的灵魂并与他信任的盟友分享。",
+        "interpretation": "格温的最终叙事是权力的自我消耗：他将灵魂分给盟友（这些灵魂成为了主线收集的目标），最终连自己本身也燃尽成了「薪柴」。作为游戏起源的神，他的结局是彻底的虚无——最强者不过是维持秩序的消耗品。",
+        "confidence": "canon",
+        "source_ref": {
+          "site": "in_game",
+          "page_title": "Soul of Gwyn, Lord of Cinder item description"
+        }
+      }
+    ],
+    "prerequisite_bonfires": ["firelink_shrine"],
+    "next_bonfires": [],
+    "sources": [
+      {
+        "site": "fextralife",
+        "url": "https://darksouls.wiki.fextralife.com/Kiln+of+the+First+Flame",
+        "page_title": "Kiln of the First Flame"
       }
     ]
   }

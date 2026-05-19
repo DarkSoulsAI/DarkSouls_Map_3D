@@ -2,6 +2,9 @@ import { Suspense } from 'react'
 import { Scene } from './scene/Scene'
 import { Sidebar } from './ui/Sidebar'
 import { ModeToggle } from './ui/ModeToggle'
+import { AudioManager } from './ui/AudioManager'
+import { CinematicCaption } from './ui/CinematicCaption'
+import { PositionEditor } from './scene/PositionEditor'
 
 function LoadingScreen() {
   return (
@@ -20,7 +23,10 @@ export default function App() {
         <Scene />
       </Suspense>
       <ModeToggle />
+      <CinematicCaption />
       <Sidebar />
+      <AudioManager />
+      {import.meta.env.DEV && <PositionEditor />}
     </>
   )
 }

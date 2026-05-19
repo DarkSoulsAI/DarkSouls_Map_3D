@@ -8,7 +8,8 @@ html, body, #root {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background: #0a0a0f;
+  background: #ffffff;
+  position: relative;
 }
 
 body {
@@ -17,7 +18,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Loading screen */
+/* ── Loading screen ─────────────────────────────────────── */
 .loading-screen {
   position: fixed;
   inset: 0;
@@ -25,30 +26,45 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: #0a0a0f;
+  background: #06050d url('/image/dark_souls_remastered_crop.webp') center/cover no-repeat;
   z-index: 9999;
-  gap: 20px;
+  gap: 18px;
+}
+
+.loading-screen::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(6, 5, 13, 0.72);
+}
+
+.loading-screen > * {
+  position: relative;
+  z-index: 1;
 }
 
 .loading-title {
   font-family: 'Cinzel', serif;
-  font-size: 18px;
-  letter-spacing: 0.15em;
+  font-size: 20px;
+  letter-spacing: 0.18em;
   color: #c8a050;
+  text-shadow: 0 0 20px rgba(200, 160, 80, 0.5);
 }
 
 .loading-subtitle {
   font-family: 'Noto Serif SC', serif;
   font-size: 13px;
   color: #5a4e35;
+  letter-spacing: 0.05em;
 }
 
 @keyframes flicker {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.4; }
+  0%, 100% { opacity: 1; transform: scale(1); }
+  45%       { opacity: 0.7; transform: scale(0.93); }
+  50%       { opacity: 1; transform: scale(1.05); }
 }
 
 .loading-flame {
-  font-size: 28px;
-  animation: flicker 1.5s ease-in-out infinite;
+  font-size: 34px;
+  animation: flicker 1.8s ease-in-out infinite;
 }

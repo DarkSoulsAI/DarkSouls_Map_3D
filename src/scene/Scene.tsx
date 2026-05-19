@@ -3,60 +3,62 @@ import { OrbitControls } from '@react-three/drei'
 import { Suspense } from 'react'
 import { LordranModel } from './LordranModel'
 import { BonfireMarkers } from './BonfireMarkers'
+import { CinematicCamera } from './CinematicCamera'
+import { useAppStore } from '../store/useAppStore'
 
-// Model bounding-box center from scene.gltf accessor data
 const MODEL_CENTER: [number, number, number] = [14, -90, -147]
+const FREE_CAM_POS: [number, number, number] = [
+  MODEL_CENTER[0] + 55,
+  MODEL_CENTER[1] + 38,
+  MODEL_CENTER[2] + 72,
+]
 
 function LoadingFallback() {
   return (
     <mesh position={MODEL_CENTER}>
-      <sphereGeometry args={[2, 16, 16]} />
-      <meshStandardMaterial color="#333" wireframe />
+      <sphereGeometry args={[3, 16, 16]} />
+      <meshBasicMaterial color="#c8a050" wireframe />
     </mesh>
   )
 }
 
 export function Scene() {
+  const mode = useAppStore(s => s.mode)
+
   return (
-    <Canvas
-      shadows
-      camera={{
-        position: [MODEL_CENTER[0] + 40, MODEL_CENTER[1] + 30, MODEL_CENTER[2] + 60],
-        fov: 55,
-        near: 0.5,
-        far: 800,
-      }}
-      gl={{ antialias: true, alpha: false }}
-      style={{ background: '#0a0a0f' }}
-    >
-      {/* Ambient — very dark to let bonfires dominate */}
-      <ambientLight intensity={0.08} color="#1a1a2e" />
+    <div style={{ position: 'fixed', top: 0, left: 0, width: '100vw', height: '100vh' }}>
+      <Canvas
+        camera={{ position: FREE_CAM_POS, fov: 52, near: 0.5, far: 1200 }}
+        gl={{ antialias: true, alpha: false }}
+        style={{ background: '#ffffff' }}
+      >
+        {/* White scene background — must be set on scene, not just CSS */}
+        <color attach="background" args={['#f8f6f2']} />
 
-      {/* Distant cool fill from above */}
-      <directionalLight
-        position={[50, 80, 30]}
-        intensity={0.25}
-        color="#3a4060"
-      />
+        {/* Subtle directional to give depth cues on white fills */}
+        <ambientLight intensity={1.0} color="#ffffff" />
+        <directionalLight position={[60, 80, 40]} intensity={0.3} color="#e0ddd8" />
 
-      {/* Atmospheric fog */}
-      <fog attach="fog" args={['#0a0a12', 80, 450]} />
+        <Suspense fallback={<LoadingFallback />}>
+          <LordranModel />
+          <BonfireMarkers />
+        </Suspense>
 
-      <Suspense fallback={<LoadingFallback />}>
-        <LordranModel />
-        <BonfireMarkers />
-      </Suspense>
-
-      <OrbitControls
-        target={MODEL_CENTER}
-        minDistance={5}
-        maxDistance={350}
-        enablePan
-        panSpeed={0.6}
-        rotateSpeed={0.5}
-        zoomSpeed={0.8}
-        makeDefault
-      />
-    </Canvas>
+        {mode === 'cinema' ? (
+          <CinematicCamera />
+        ) : (
+          <OrbitControls
+            target={MODEL_CENTER}
+            minDistance={8}
+            maxDistance={550}
+            enablePan
+            panSpeed={0.5}
+            rotateSpeed={0.45}
+            zoomSpeed={0.9}
+            makeDefault
+          />
+        )}
+      </Canvas>
+    </div>
   )
 }

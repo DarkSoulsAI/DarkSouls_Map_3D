@@ -1,6 +1,76 @@
+# ── Dependencies ──────────────────────────────────────────────────────────────
 node_modules/
+
+# ── Build & bundler ───────────────────────────────────────────────────────────
 dist/
-.env
-.env.local
+dist-ssr/
+.vite/
 *.local
+
+# TypeScript incremental build (tsc -b)
+*.tsbuildinfo
+
+# ── Environment & secrets ─────────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+
+# Cloudflare Workers / Pages local secrets
+.dev.vars
+
+# ── Content pipeline (wiki scrape drafts — see LEGAL.md) ───────────────────────
+**/bonfires.draft.json
+**/npcs.draft.json
+**/events.draft.json
+**/regions.draft.json
+scripts/scrape_output/
+
+# ── 3D assets — generated variants only (source glTF in public/ stays tracked) ─
+# public/models/**/*.draco.glb
+# public/models/**/*.drc
+*_compressed.gltf
+*_compressed.bin
+*.optimized.gltf
+
+# ── Logs & debug ────────────────────────────────────────────────────────────────
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ── Test / coverage (future) ────────────────────────────────────────────────────
+coverage/
+
+# ── Editors & IDEs ──────────────────────────────────────────────────────────────
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ── OS junk ─────────────────────────────────────────────────────────────────────
 .DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ── AI assistant local state ────────────────────────────────────────────────────
+.claude/
+
+# ── Static hosting / deploy tooling ─────────────────────────────────────────────
+.wrangler/
+.vercel/
+.netlify/
+
+# ── Misc caches ─────────────────────────────────────────────────────────────────
+.cache/
+.eslintcache
+.stylelintcache
+*.tmp
+*.temp

@@ -1,6 +1,6 @@
 export type BonfireState = 'unvisited' | 'current' | 'visited'
 
-export type LoreAnchorType = 'dialogue' | 'item_description' | 'environmental'
+export type LoreAnchorType = 'dialogue' | 'item_description' | 'environmental' | 'enemy_description'
 export type Confidence = 'canon' | 'consensus' | 'theory' | 'personal'
 
 export interface SourceRef {
@@ -33,7 +33,7 @@ export interface Bonfire {
   name_en: string
   order: number
   region: string
-  difficulty_tier?: 1 | 2 | 3
+  difficulty_tier?: number
   world_position: [number, number, number]
   depth_tier: number
   cinematic_pose: CinematicPose

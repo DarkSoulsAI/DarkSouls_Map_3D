@@ -4,9 +4,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-**罗德兰篝火图谱 · Bonfires of Lordran** — a fan-made, non-commercial interactive 3D visualization of Dark Souls 1 lore. The Lordran 3D model (glTF) by Sketchfab user 9S sits at the center; ~30 bonfire locations serve as narrative nodes the user flies through in Cinema Mode or explores freely.
+**罗德兰篝火图谱 · Bonfires of Lordran** — a fan-made, non-commercial interactive 3D visualization of Dark Souls 1 lore. The Lordran 3D model (glTF) by Sketchfab user 9S sits at the center; 27 bonfire locations serve as narrative nodes the user flies through in Cinema Mode or explores freely.
 
-**Status:** Design/spec phase. `DESIGN.md` and `LEGAL.md` are complete; no source code exists yet.
+**Status:** Phases 1–4 complete. Core infrastructure, all bonfire data, cinema/free camera modes, sidebar, timeline, and branch map are all live. Phase 5 (visual polish) is next.
 
 **Deployment target:** Static site (`vite build` → `dist/`), GitHub Pages or Cloudflare Pages.
 
@@ -15,8 +15,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - **Vite** ^5 + **TypeScript** ^5
 - **React** ^18 + **React Three Fiber** ^8 + **Drei** ^9
 - **Zustand** ^4 (global app state)
-- **Three.js** ^0.160+
-- Optional later: `@react-three/postprocessing`, `d3` (branch map), `leva` (camera debug in Phase 1)
+- **Three.js** ^0.170+
+- Optional later: `@react-three/postprocessing` (bloom), `leva` (camera debug, dev only)
 
 ## Commands
 
@@ -24,51 +24,47 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 npm run dev        # Dev server (Vite HMR)
 npm run build      # Production build → dist/
 npm run preview    # Preview production build locally
-```
-
-Scripts (to be created under `scripts/`):
-```bash
 npx tsx scripts/validate_data.ts   # Validate bonfires.json schema & cross-references
-npx tsx scripts/scrape_wiki.ts     # Draft-fetch bonfire data from Fextralife wiki
 ```
 
 ## Architecture
 
-### Planned `src/` layout
+### `src/` layout
 
 ```
 src/
-├── data/               # Static JSON content
-│   ├── bonfires.json   # ~30 bonfire records (primary content file)
-│   ├── npcs.json
-│   ├── events.json
-│   └── regions.json
+├── data/
+│   ├── bonfires.json   # 27 bonfire records — primary content file
+│   ├── npcs.json       # 21 NPC records
+│   └── (events.json / regions.json — not yet created)
 ├── scene/              # R3F 3D components
-│   ├── Scene.tsx           # Root canvas + lighting
-│   ├── LordranModel.tsx    # glTF loader for dark_souls_map/scene.gltf
-│   ├── BonfireMarker.tsx   # Single fire sprite billboard
-│   ├── BonfireMarkers.tsx  # All markers from bonfires.json
-│   ├── CameraRig.tsx       # Switches between cinema/free mode
-│   ├── CinematicCamera.tsx # CatmullRomCurve3 spline flythrough
-│   └── FreeCamera.tsx      # OrbitControls
-├── ui/                 # React DOM overlay components
-│   ├── Sidebar.tsx         # Right-side lore panel
-│   ├── Timeline.tsx        # Bottom bonfire progress bar
-│   ├── BranchMap.tsx       # Lower-left SVG/D3 network graph
-│   ├── CinematicCaption.tsx
-│   ├── ModeToggle.tsx
-│   └── Tooltip.tsx
+│   ├── Scene.tsx           # Root Canvas + lighting + camera switching
+│   ├── LordranModel.tsx    # glTF loader; resets anomalous scale≈1302 node
+│   ├── BonfireMarker.tsx   # Single fire marker: ring + pulsing ember + sparkles + hover tooltip
+│   ├── BonfireMarkers.tsx  # Renders all markers from bonfires.json
+│   ├── CinematicCamera.tsx # Dwell/fly state machine; lerp between cinematic_pose waypoints
+│   ├── PositionEditor.tsx  # Dev-only leva panel for calibrating world_position
+│   └── ProceduralMap.tsx   # Fallback procedural map (unused if glTF loads)
+├── ui/
+│   ├── Sidebar.tsx             # Right-side lore panel (slides in on bonfire click)
+│   ├── Sidebar.module.css
+│   ├── Timeline.tsx            # Bottom bar: 27 clickable dots, auto-scrolls to current
+│   ├── Timeline.module.css
+│   ├── BranchMap.tsx           # Lower-left collapsible SVG network graph (depth_tier × order)
+│   ├── BranchMap.module.css
+│   ├── CinematicCaption.tsx    # Top-center fade title card in cinema mode
+│   ├── ModeToggle.tsx          # Cinema / Free mode toggle (top center)
+│   ├── AudioManager.tsx        # Ambient + bonfire SFX
+│   └── PositionPickerUI.tsx    # Dev-only: click-to-place bonfire position tool
 ├── store/
-│   └── useAppStore.ts      # Zustand store: currentBonfire, mode, visited set
-├── hooks/
-│   ├── useBonfireData.ts
-│   └── useCameraTransition.ts
-└── utils/
-    ├── spline.ts
-    └── i18n.ts
+│   └── useAppStore.ts      # Zustand: currentBonfireId, mode, visitedIds, sidebarOpen, positionOverrides
+├── styles/
+│   └── global.css          # Fonts (Cinzel + Noto Serif SC), loading screen, base reset
+├── types.ts                # Bonfire, LoreAnchor, CinematicPose, SourceRef interfaces
+└── main.tsx
 ```
 
-The 3D model lives at `dark_souls_map/scene.gltf` + `scene.bin` (~69 MB binary). Never move or rename these; the path is referenced directly by `LordranModel.tsx`.
+The 3D model lives at `dark_souls_map/scene.gltf` + `scene.bin` (~69 MB binary). **Never move or rename these**; the path is hardcoded in `LordranModel.tsx`.
 
 ### Key data shape — `bonfires.json`
 
@@ -77,55 +73,58 @@ interface Bonfire {
   id: string;
   name_zh: string;
   name_en: string;
-  order: number;                    // narrative sequence (unique)
+  order: number;                    // narrative sequence 1–27 (unique, sorted)
   region: string;
-  world_position: [number, number, number];  // hand-calibrated in Phase 1 with leva
+  difficulty_tier?: number;
+  world_position: [number, number, number];  // hand-calibrated with PositionEditor (leva)
+  depth_tier: number;               // vertical level: 0=Firelink, +3=Anor Londo, -5=Ash Lake
   cinematic_pose: {
     camera_position: [number, number, number];
     look_at: [number, number, number];
-    duration: number;               // seconds at this stop
+    duration_seconds: number;
   };
+  cinematic_caption: string;        // one-line quote shown in cinema mode
   first_visit_state: string;        // 2-3 sentence scene-setting (Chinese)
-  lore_text: string;                // 200-300 word lore body (Chinese)
+  lore_text: string;                // 200-300 char lore body (Chinese)
   npcs_present: string[];           // references npcs.json ids
+  items_unlocked: string[];
+  events_triggered: string[];
+  lore_anchors: LoreAnchor[];
   prerequisite_bonfires: string[];
-  next_bonfires: string[];
-  lore_anchors: Array<{
-    type: 'dialogue' | 'item_description' | 'environmental';
-    text_en: string;
-    text_zh: string;
-    interpretation: string;
-    confidence: 'canon' | 'consensus' | 'theory' | 'personal';
-    source_ref: { site: string; url: string; page_title: string };
-  }>;
+  next_bonfires: string[];          // used by BranchMap edges
+  sources: SourceRef[];
 }
 ```
 
 ### Camera / mode system
 
-Two camera modes share `CameraRig.tsx`:
-- **Cinema Mode (default):** auto-flies through bonfires in `order` sequence using `CatmullRomCurve3` between `cinematic_pose` waypoints; ~8 s per stop. Space bar pauses; clicking a bonfire jumps.
-- **Free Mode:** Drei `OrbitControls`.
-- **Section View (Phase 6):** orthographic side-view for vertical level topology.
-
-Bonfire markers have three visual states: `unvisited` (dark), `current` (bright animated), `visited` (dim).
+- **Cinema Mode:** auto-flies through bonfires in `order` sequence via `CinematicCamera.tsx`. State machine: `dwell` (hold at bonfire for `duration_seconds`) → `fly` (lerp to next pose over 3.5 s). Space-bar pause **not yet implemented**.
+- **Free Mode:** Drei `OrbitControls`, target=MODEL_CENTER `[14,-90,-147]`.
+- **Section View (Phase 6):** not yet built.
 
 ### State management
 
-Single Zustand store (`useAppStore.ts`) owns: `currentBonfireId`, `mode` (`cinema | free | section`), `visitedIds: Set<string>`, `sidebarOpen: boolean`. All components read/write through this store — no prop-drilling.
+Single Zustand store (`useAppStore.ts`) owns: `currentBonfireId`, `mode` (`'cinema' | 'free'`), `visitedIds: Set<string>`, `sidebarOpen: boolean`, `positionOverrides` (dev), `pickingBonfireId` (dev). No prop-drilling.
 
 ## Implementation Phases
 
-| Phase | Scope | Key output |
+| Phase | Scope | Status |
 |---|---|---|
-| 1 | MVP: 3 bonfires, free camera, sidebar | Repo scaffold + glTF loading + 3 fire markers + sidebar |
-| 2 | All ~30 bonfires, lore content, NPC data | Complete `bonfires.json` + validation script |
-| 3 | Cinema camera + spline flythrough | `CinematicCamera.tsx`, caption titles, mode toggle |
-| 4 | Timeline + branch map | Bottom slider, D3/SVG graph |
-| 5 | Visual polish | Fire animations, fonts (Cinzel + Noto Serif SC), responsive |
-| 6 | Advanced (optional) | Section view, Draco compression, mobile perf |
+| 1 | MVP: glTF model, free camera, bonfire markers, sidebar | ✅ Complete |
+| 2 | All ~30 bonfires, lore content, NPC data, validation script | ✅ Complete (27 bonfires, 21 NPCs; 5 new bonfire `world_position` values are placeholder) |
+| 3 | Cinema camera + flythrough + caption titles + mode toggle | ✅ Complete (lerp interpolation; space-bar pause not yet added) |
+| 4 | Timeline bottom bar + BranchMap SVG | ✅ Complete |
+| 5 | Visual polish: fire animation, sidebar polish, fonts, responsive | 🔲 Next |
+| 6 | Section view, Bloom, Draco compression, mobile | 🔲 Optional |
 
-Use `leva` in Phase 1 to dial in `world_position` coordinates for bonfire markers — model coordinate space is untested.
+## Phase 5 TODO
+
+- Fire sprite animation (sprite sheet or procedural shader on BonfireMarker)
+- NPC portrait placeholders in Sidebar (§7.8 of DESIGN.md) — placeholder images go in `public/image/npc/`; filename = `<npc_id>.png`
+- Sidebar: display `difficulty_tier` badge, region label (Chinese name from regions.json)
+- Sidebar slide-in/out CSS transition (already has open/close state)
+- Space-bar pause/resume in Cinema Mode
+- Responsive layout for 768px tablet
 
 ## Content & Legal
 
@@ -135,6 +134,6 @@ See `LEGAL.md` for full details. Short version:
 - **Game dialogue/item text**: small quotes under fair use for `lore_anchors`; do not reproduce large blocks.
 - **Wiki scraping**: max 1 req/s, respect `robots.txt`; scraped output is a draft, not for direct publication.
 
-Lore text is Chinese-primary. English proper nouns (character names, item names, place names) are kept in English inline.
+Lore text is Chinese-primary. English proper nouns (character names, item names, place names) are kept inline in English.
 
-The `confidence` field on every `lore_anchor` conveys epistemic status: `canon` (explicitly stated in-game) → `consensus` (widely accepted reading) → `theory` (plausible) → `personal` (author interpretation).
+The `confidence` field on every `lore_anchor` conveys epistemic status: `canon` → `consensus` → `theory` → `personal`.

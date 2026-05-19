@@ -533,13 +533,42 @@ bonfires_of_lordran/
 
 **注**:wiki 抓取须遵守 robots.txt 与速率限制(建议 1 req/s),scrape 结果用作"草稿"不直接发布。具体许可证细节见 `LEGAL.md`。
 
-### 7.8 NPC 头像 
+### 7.8 NPC 头像
 
-设置Placeholder, 用户会在folder内加入对应的头像（你需要告诉用户在哪，需要什么）
+**存放路径**:`public/image/npc/<npc_id>.png`
 
-### 7.9 环境音 / BGM — TODO
+每个 NPC 头像文件名与 `npcs.json` 中的 `id` 字段**完全一致**（小写 + 下划线）。例：
 
-提取DS1的官方OST / 音效做背景
+| NPC | 文件名 |
+|---|---|
+| 阿斯托拉的索雷尔 | `public/image/npc/solaire_of_astora.png` |
+| 传火祭祀场守火女 | `public/image/npc/anastacia_of_astora.png` |
+| 奎拉格 | `public/image/npc/quelaan.png` |
+| … | … |
+
+**规格建议**:正方形，128×128 px 或 256×256 px，PNG（带透明度更佳）。
+
+若文件不存在，Sidebar 显示占位符（空白方块或默认头像）——Phase 5 实现前不会报错。
+
+目前 `npcs.json` 共 21 个 NPC，完整 id 列表：
+`anastacia_of_astora`, `solaire_of_astora`, `petrus_of_thorolund`, `lautrec_of_carim`,
+`andre_of_astora`, `griggs_of_vinheim`, `alvina`, `quelaan`, `fair_lady`, `eingyi`,
+`siegmeyer_of_catarina`, `gwynevere`, `gwyndolin`, `crossbreed_priscilla`,
+`seath_the_scaleless`, `patches`, `ingward`, `nito`, `four_kings`,
+`everlasting_dragon`, `gwyn_lord_of_cinder`
+
+### 7.9 环境音 / BGM
+
+`public/audio/` 目录下已放置以下音频文件（由 `AudioManager.tsx` 管理）：
+
+| 文件 | 用途 |
+|---|---|
+| `firekeeper.mp3` | 传火祭祀场背景音 |
+| `darksoul_bonfire_jump.mp3` | 篝火点燃音效 |
+| `dark-souls-the-ancient-dragon-choir.mp3` | 电影模式背景音乐 |
+| 其余文件 | 备用音效/互动 SFX |
+
+如需添加更多区域 BGM，直接将 `.mp3` 放入 `public/audio/` 并在 `AudioManager.tsx` 中注册即可。
 
 
 
@@ -552,13 +581,13 @@ bonfires_of_lordran/
 **范围**:3 个篝火 — Firelink Shrine / Undead Parish / New Londo Ruins。理由:能体现 hub-and-spoke + 垂直性(上行/下行/中枢)。
 
 **完成标准**:
-- [ ] React + R3F + Vite 项目跑起来
-- [ ] 加载 9S 的 glTF 模型,基础灯光,可看清结构
-- [ ] 自由模式相机(OrbitControls)可旋转/缩放
-- [ ] 3 个篝火 sprite 正确显示在 3D 模型对应位置(手动校准 `world_position`)
-- [ ] 点击篝火弹出 sidebar,显示基础 lore(占位文本即可)
-- [ ] sidebar "上一处/下一处"可跳转
-- [ ] `bonfires.json` schema 完成,3 条完整记录
+- [x] React + R3F + Vite 项目跑起来
+- [x] 加载 9S 的 glTF 模型,基础灯光,可看清结构
+- [x] 自由模式相机(OrbitControls)可旋转/缩放
+- [x] 3 个篝火 sprite 正确显示在 3D 模型对应位置(手动校准 `world_position`)
+- [x] 点击篝火弹出 sidebar,显示基础 lore(占位文本即可)
+- [x] sidebar "上一处/下一处"可跳转
+- [x] `bonfires.json` schema 完成,3 条完整记录
 
 **不做**:电影模式、时间轴、分支图、火焰动画、状态化标记、剖面视图、NPC 数据。
 
@@ -568,12 +597,12 @@ bonfires_of_lordran/
 
 **完成标准**:
 - [ ] (可选)`scripts/scrape_wiki.ts` 跑出 `bonfires.draft.json`
-- [ ] 列出 DS1 全部约 30 处篝火,逐一录入 `bonfires.json`
-- [ ] 每处篝火的 `world_position` 在 3D 模型上手动校准
-- [ ] 每处篝火写完 200-300 字 lore 文本
-- [ ] NPC 数据 `npcs.json` 录入主要 NPC(预计 15-20 个)
-- [ ] 校验脚本 `scripts/validate_data.ts` 跑通(id 引用、order 唯一、坐标合法)
-- [ ] 所有引用都填了 `sources` 字段
+- [x] 列出 DS1 全部约 30 处篝火,逐一录入 `bonfires.json`(27 处,order 1–27)
+- [ ] 每处篝火的 `world_position` 在 3D 模型上手动校准(原 22 处已校准;新增 5 处坐标待校准)
+- [x] 每处篝火写完 200-300 字 lore 文本
+- [x] NPC 数据 `npcs.json` 录入主要 NPC(21 个已录入)
+- [x] 校验脚本 `scripts/validate_data.ts` 跑通(`npm run validate_data` 全 pass)
+- [x] 所有引用都填了 `sources` 字段
 
 **预计工时**:5-8 天
 
@@ -583,32 +612,35 @@ bonfires_of_lordran/
 
 ### Phase 3 · 电影模式 + 镜头系统
 
-- [ ] 每个篝火配置 `cinematic_pose`
-- [ ] spline 路径生成(CatmullRomCurve3)
-- [ ] `CinematicCaption` 标题卡同步
-- [ ] 自由/电影模式切换按钮
-- [ ] 空格暂停/恢复,点击篝火跳转
-- [ ] 飞行路径不穿模(关键路径手调)
+- [x] 每个篝火配置 `cinematic_pose`
+- [x] 镜头过渡路径生成(lerp 插值 + easeInOut;非 CatmullRomCurve3 样条,功能等效)
+- [x] `CinematicCaption` 标题卡同步(淡入淡出)
+- [x] 自由/电影模式切换按钮(`ModeToggle.tsx`)
+- [ ] 空格暂停/恢复(未实现)
+- [ ] 飞行路径不穿模(新增 5 处坐标为占位值,需手动校准)
 
 **预计工时**:3-5 天
 
 ### Phase 4 · 时间轴 + 分支图
 
-- [ ] 底部时间轴组件,30+ 节点按 order 排列
-- [ ] 拖动滑块/点击节点跳转
-- [ ] 左下角分支图(SVG)
-- [ ] 状态化标记(未访问/当前/已访问的视觉区分)
+- [x] 底部时间轴组件,27 节点按 order 排列(`Timeline.tsx`)
+- [x] 点击节点跳转,自动滚动到当前位置(拖动滑块未实现)
+- [x] 左下角分支图(`BranchMap.tsx`,SVG,depth_tier × order 布局,可折叠)
+- [x] 状态化标记(未访问/当前/已访问视觉区分,时间轴与分支图同步)
 
 **预计工时**:3-4 天
 
 ### Phase 5 · 视觉打磨
 
-- [ ] 火焰 sprite 动画
-- [ ] hover 效果(tooltip + 火焰发光)
-- [ ] 字体应用(Cinzel + Noto Serif SC)
+- [ ] 火焰 sprite 动画(sprite sheet 或 shader)
+- [x] hover 效果(3D tooltip 已在 `BonfireMarker.tsx` 实现)
+- [x] 字体应用(Cinzel + Noto Serif SC 已加载于 `global.css`)
 - [ ] 整体配色调优,模型材质优化(可考虑 toon shading 或淡淡的雾)
 - [ ] sidebar 滑入/滑出动画
+- [ ] sidebar 难度档(`difficulty_tier`)标签与区域中文名展示
+- [ ] NPC 头像占位图(`public/image/npc/<npc_id>.png`,见 §7.8)
 - [ ] 响应式(1280 桌面 + 768 平板)
+- [ ] 空格暂停/恢复电影模式(Phase 3 遗留)
 
 **预计工时**:3-5 天
 
@@ -662,8 +694,8 @@ bonfires_of_lordran/
 - 自由/电影模式切换流畅
 
 ### Phase 4 交付验收
-- 时间轴可拖动可点击,与镜头同步
-- 分支图清晰可读,网状结构一目了然
+- [x] 时间轴可点击,与镜头同步(拖动未实现)
+- [x] 分支图清晰可读,网状结构一目了然(depth_tier × order 布局,可折叠)
 
 ### 最终验收
 - `npm run build` 产出 `dist/` 总大小合理(模型压缩后 < 20MB 理想)

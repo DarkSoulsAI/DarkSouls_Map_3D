@@ -1,0 +1,42 @@
+.widget {
+  position: fixed;
+  left: 12px;
+  bottom: 74px; /* sits above the Timeline (62px) + 12px gap */
+  background: rgba(6, 5, 10, 0.92);
+  border: 1px solid #1e1808;
+  border-radius: 3px;
+  z-index: 149;
+  overflow: hidden;
+  transition: width 0.2s;
+}
+
+.toggleBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: 100%;
+  padding: 6px 10px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #1e1808;
+  color: #3a2e18;
+  font-family: 'Cinzel', serif;
+  font-size: 8px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: left;
+  transition: color 0.15s;
+}
+.toggleBtn:hover { color: #c8a050; }
+
+.collapsed .toggleBtn { border-bottom: none; }
+
+.toggleIcon {
+  font-size: 8px;
+  color: #5a4e35;
+}
+
+.svg {
+  display: block;
+}

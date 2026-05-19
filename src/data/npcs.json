@@ -1,0 +1,262 @@
+[
+  {
+    "id": "anastacia_of_astora",
+    "name_zh": "阿斯托拉的阿娜斯塔西亚",
+    "name_en": "Anastacia of Astora",
+    "faction": "Firelink",
+    "bonfires_present": ["firelink_shrine"],
+    "arc_summary": "传火祭祀场的守火女，被割去舌头、无法言语。她的生命力维持着传火祭祀场的篝火燃烧，与篝火同生共死。拉特雷克在玩家外出后将她杀死，取走她的灵魂，导致传火祭祀场的篝火熄灭。玩家需夺回她的灵魂并复活她。",
+    "voice_lines": [],
+    "fate": "被拉特雷克杀死后可被玩家复活，重新点燃传火祭祀场的篝火。",
+    "sources": [{ "site": "fextralife", "url": "https://darksouls.wiki.fextralife.com/Anastacia+of+Astora", "page_title": "Anastacia of Astora" }]
+  },
+  {
+    "id": "solaire_of_astora",
+    "name_zh": "阿斯托拉的索雷尔",
+    "name_en": "Solaire of Astora",
+    "faction": "Warriors of Sunlight",
+    "bonfires_present": ["undead_burg", "undead_parish", "sunlight_altar", "anor_londo", "lost_izalith"],
+    "arc_summary": "一路同行的阳光骑士，以「寻找属于自己的太阳」为使命。他在各地对召唤标记以金色形态援助旅者，热忱而真诚。若玩家未干预，他在迷失以扎里斯找到了「属于自己的太阳」——一只驱使他发狂的虫蛊。若玩家在关键时刻切断地狱虫的来源，索雷尔得以在初始之火炉前作为援助出现，最终完成使命。",
+    "voice_lines": [
+      { "text_en": "Praise the Sun!", "text_zh": "赞美太阳！", "context": "索雷尔的口头禅与契约仪式" },
+      { "text_en": "I am Solaire of Astora, an adherent to the Lord of Sunlight.", "text_zh": "我是阿斯托拉的索雷尔，阳光之主的信徒。", "context": "初次相遇" }
+    ],
+    "fate": "取决于玩家行动：可能发疯死于迷失以扎里斯，也可能在初始之火炉前作为援助出现。",
+    "sources": [{ "site": "fextralife", "url": "https://darksouls.wiki.fextralife.com/Solaire+of+Astora", "page_title": "Solaire of Astora" }]
+  },
+  {
+    "id": "petrus_of_thorolund",
+    "name_zh": "索鲁蒙德的彼特鲁斯",
+    "name_en": "Petrus of Thorolund",
+    "faction": "Way of White",
+    "bonfires_present": ["firelink_shrine"],
+    "arc_summary": "表面上是莉娅一行人的护卫，实则有着不可告人的目的。在玩家前往巨人陵墓后，他会杀死同行的修女莉娅并取走她的物品。他是DS1中最具道德争议的NPC之一：外表虔诚，内心自私。",
+    "voice_lines": [
+      { "text_en": "What do you want? Don't touch me.", "text_zh": "你想干什么？别碰我。", "context": "被多次交谈后的不耐烦回应" }
+    ],
+    "fate": "若玩家在地下墓地前杀死彼特鲁斯，可以阻止他杀害莉娅；否则莉娅死亡，彼特鲁斯消失。",
+    "sources": [{ "site": "fextralife", "url": "https://darksouls.wiki.fextralife.com/Petrus+of+Thorolund", "page_title": "Petrus of Thorolund" }]
+  },
+  {
+    "id": "lautrec_of_carim",
+    "name_zh": "卡里姆的拉特雷克",
+    "name_en": "Lautrec of Carim",
+    "faction": "None",
+    "bonfires_present": ["firelink_shrine", "undead_parish"],
+    "arc_summary": "被关押在不死教区牢笼中的金甲骑士，解救后迁至传火祭祀场。他会趁玩家外出杀死守火女阿娜斯塔西亚，夺取她的灵魂。玩家可追踪他至安鲁多神都，在高台将他击杀，夺回守火女的灵魂。",
+    "voice_lines": [
+      { "text_en": "You freed me? Thanks. I won't forget it.", "text_zh": "你救了我？谢谢。我不会忘记的。", "context": "被释放时，语气冷漠" }
+    ],
+    "fate": "被玩家击杀于安鲁多神都高台，掉落守火女之魂与戒指。",
+    "sources": [{ "site": "fextralife", "url": "https://darksouls.wiki.fextralife.com/Lautrec+of+Carim", "page_title": "Lautrec of Carim" }]
+  },
+  {
+    "id": "andre_of_astora",
+    "name_zh": "阿斯托拉的安德烈",
+    "name_en": "Andre of Astora",
+    "faction": "None",
+    "bonfires_present": ["undead_parish"],
+    "arc_summary": "不死教区的锻冶师，永远在叮叮当当地打铁。为整个游戏提供武器升级服务，从不移动，从不离开他的熔炉。他是洛德兰最稳定的存在——世界在他身边崩溃，他只是继续锻造。",
+    "voice_lines": [
+      { "text_en": "Fine Arms? You've come to the right place, I suppose.", "text_zh": "精良武器？你找对地方了，我想。", "context": "第一次交谈" }
+    ],
+    "fate": "全游戏驻留于不死教区，是少数几个不会移动或死亡的NPC。",
+    "sources": [{ "site": "fextralife", "url": "https://darksouls.wiki.fextralife.com/Andre+of+Astora", "page_title": "Andre of Astora" }]
+  },
+  {
+    "id": "griggs_of_vinheim",
+    "name_zh": "温海姆的格里格斯",
+    "name_en": "Griggs of Vinheim",
+    "faction": "Vinheim Dragon School",
+    "bonfires_present": ["lower_undead_burg", "firelink_shrine"],
+    "arc_summary": "被关押于不死镇下层的魔法师，解救后迁至传火祭祀场出售魔法。他寻找他的老师大巫师洛根。若玩家引导洛根进入公爵档案馆并触发洛根疯狂事件，格里格斯会前往寻找老师，最终死于水晶洞窟附近。",
+    "voice_lines": [
+      { "text_en": "Well I never, you found me! How did you get into this cell?", "text_zh": "天哪，你找到我了！你是怎么进这个牢房的？", "context": "被释放时" }
+    ],
+    "fate": "可能死于追寻老师洛根的旅途中。",
+    "sources": [{ "site": "fextralife", "url": "https://darksouls.wiki.fextralife.com/Griggs+of+Vinheim", "page_title": "Griggs of Vinheim" }]
+  },
+  {
+    "id": "alvina",
+    "name_zh": "阿尔维娜",
+    "name_en": "Alvina",
+    "faction": "Forest Hunters",
+    "bonfires_present": ["darkroot_garden"],
+    "arc_summary": "栖居于暗根庭园的神秘大猫，森林猎人契约的首领。她以傲慢而古老的语气与玩家对话，对闯入者充满警惕。她是庭园历史记忆的守护者，了解庭园所有的古老秘密。",
+    "voice_lines": [
+      { "text_en": "Hmm, you seem... interesting. Care to join our covenant?", "text_zh": "嗯，你看起来……有趣。愿意加入我们的契约吗？", "context": "邀请玩家加入森林猎人" }
+    ],
+    "fate": "全游戏驻留于暗根庭园。",
+    "sources": [{ "site": "fextralife", "url": "https://darksouls.wiki.fextralife.com/Alvina", "page_title": "Alvina" }]
+  },
+  {
+    "id": "quelaan",
+    "name_zh": "奎拉格",
+    "name_en": "Quelaag",
+    "faction": "Chaos Servants",
+    "bonfires_present": ["quelaags_domain"],
+    "arc_summary": "以扎里斯魔女之女，人蛛融合体，守护第二口觉醒之钟与她失去双腿的姐妹克蕾特。她是玩家必须击败的Boss之一，但她的行为动机是保护家人而非恶意。击败她后进入内部，才能见到克蕾特与「卡俄斯仆役」契约。",
+    "voice_lines": [],
+    "fate": "被玩家击败，但她守护姐妹的心愿在克蕾特的感谢中得到了回应。",
+    "sources": [{ "site": "fextralife", "url": "https://darksouls.wiki.fextralife.com/Quelaag", "page_title": "Quelaag" }]
+  },
+  {
+    "id": "fair_lady",
+    "name_zh": "公平女士（克蕾特）",
+    "name_en": "Fair Lady (Quelaan)",
+    "faction": "Chaos Servants",
+    "bonfires_present": ["daughter_of_chaos"],
+    "arc_summary": "奎拉格的双胞胎姐妹，在以扎里斯之灾中失去双腿，被混沌毒素侵蚀，且已失明。她在混沌之女炉边等待旅者，接受「卡俄斯仆役」契约成员的人性供奉，每份人性都能短暂缓解她的痛苦。她是DS1中最令人心痛的NPC之一。",
+    "voice_lines": [
+      { "text_en": "Oh, you... You've come to see me? How very kind...", "text_zh": "哦，你……你来看我了？真是太好了……", "context": "玩家前来拜访时" }
+    ],
+    "fate": "全游戏驻留于混沌之女炉，无法行动，只能等待。",
+    "sources": [{ "site": "fextralife", "url": "https://darksouls.wiki.fextralife.com/Daughter+of+Chaos", "page_title": "Daughter of Chaos" }]
+  },
+  {
+    "id": "eingyi",
+    "name_zh": "恩吉",
+    "name_en": "Eingyi",
+    "faction": "Chaos Servants",
+    "bonfires_present": ["daughter_of_chaos"],
+    "arc_summary": "混沌之女炉的守门人，因蛋头变异而被世界遗弃，却心甘情愿地侍奉克蕾特。他为中毒旅者提供卵孵虫膏，出售火焰魔法，将所有对克蕾特有益的事放在第一位。",
+    "voice_lines": [
+      { "text_en": "Trespassers will be punished... by her.", "text_zh": "闯入者将受到……她的惩罚。", "context": "警告靠近者" }
+    ],
+    "fate": "全游戏驻留于混沌之女炉。",
+    "sources": [{ "site": "fextralife", "url": "https://darksouls.wiki.fextralife.com/Eingyi", "page_title": "Eingyi" }]
+  },
+  {
+    "id": "siegmeyer_of_catarina",
+    "name_zh": "卡塔利纳的西格迈尔",
+    "name_en": "Siegmeyer of Catarina",
+    "faction": "None",
+    "bonfires_present": ["sens_fortress", "anor_londo", "lost_izalith"],
+    "arc_summary": "洋葱骑士，永远在「苦思对策」中打盹。他的友好、天真与笑声是DS1最温暖的存在之一。他的女儿西格琳德最终找到了他。若玩家在失落的以扎里斯前未能充分援助他，西格迈尔会失去生存意志，被女儿所杀。",
+    "voice_lines": [
+      { "text_en": "Hmm... I'm in quite a spot here. Hmm... Hrm...", "text_zh": "嗯……我陷入了相当麻烦的处境。嗯……嗯……", "context": "在各处「苦思对策」时" }
+    ],
+    "fate": "取决于玩家援助次数：可能失去自我意志，最终被女儿哀悼地终结。",
+    "sources": [{ "site": "fextralife", "url": "https://darksouls.wiki.fextralife.com/Siegmeyer+of+Catarina", "page_title": "Siegmeyer of Catarina" }]
+  },
+  {
+    "id": "gwynevere",
+    "name_zh": "关拿维尔公主",
+    "name_en": "Gwynevere, Princess of Sunlight",
+    "faction": "Gods of Anor Londo",
+    "bonfires_present": ["anor_londo_cathedral"],
+    "arc_summary": "安鲁多神都最高塔中赐予玩家洛德容器的大公主，格温之女。然而她的存在是格温之子古温多林用幻术维持的假象——真正的关拿维尔早已离开洛德兰。击杀幻象后，安鲁多神都的假阳光熄灭，神都进入永夜，古温多林之宫开启。",
+    "voice_lines": [
+      { "text_en": "Brave Undead... I am Gwynevere, Princess of Sunlight. Please accept this... the Lordvessel.", "text_zh": "勇敢的不死人……我是阳光公主关拿维尔。请接受这个……洛德容器。", "context": "赐予洛德容器" }
+    ],
+    "fate": "作为幻象被击杀后消散，安鲁多进入永夜。真正的关拿维尔已嫁给火之神弗兰姆普特，定居于他处。",
+    "sources": [{ "site": "fextralife", "url": "https://darksouls.wiki.fextralife.com/Gwynevere", "page_title": "Gwynevere" }]
+  },
+  {
+    "id": "gwyndolin",
+    "name_zh": "古温多林",
+    "name_en": "Dark Sun Gwyndolin",
+    "faction": "Darkmoon Blades",
+    "bonfires_present": ["anor_londo_cathedral"],
+    "arc_summary": "格温最小的儿子，因月亮本质而被以女性身份养育。他用幻术维持着安鲁多的假阳光与关拿维尔的幻象，以欺骗不死人继续为薪火循环服务。他是「月之刃」契约的领袖，派遣信徒惩戒背誓者。击杀关拿维尔幻象后，通往他的秘室的入口将开放。",
+    "voice_lines": [
+      { "text_en": "Thou has trespassed upon the tomb of the gods... begone, I implore thee.", "text_zh": "你已闯入神之墓……我恳求你，离开。", "context": "玩家进入其秘室时" }
+    ],
+    "fate": "可被击杀（终结幻象维持）或作为「月之刃」契约首领被允许驻留。在DS3中被阿尔德里希所噬。",
+    "sources": [{ "site": "fextralife", "url": "https://darksouls.wiki.fextralife.com/Gwyndolin", "page_title": "Dark Sun Gwyndolin" }]
+  },
+  {
+    "id": "crossbreed_priscilla",
+    "name_zh": "龙巫女普里西拉",
+    "name_en": "Crossbreed Priscilla",
+    "faction": "None",
+    "bonfires_present": ["painted_world"],
+    "arc_summary": "绘画世界阿尔雅米斯的守护者，格温的半血孙女，拥有龙血。她因「不被世界所容」而自愿住在这幅画中，请求玩家离开而不是战斗。若玩家强行攻击，她会拿出生命猎镰进行防御，但她的诉求始终是「被遗忘」而非「被击败」。",
+    "voice_lines": [
+      { "text_en": "Thou must returneth from whence thou came. This land is peaceful, its inhabitants kind.", "text_zh": "你应回到你来处。这片土地安宁，其居民善良。", "context": "请求玩家离开绘画世界" }
+    ],
+    "fate": "若不攻击则永居绘画世界；被击杀可获得生命猎镰，但这是一个可选的悲剧结局。",
+    "sources": [{ "site": "fextralife", "url": "https://darksouls.wiki.fextralife.com/Crossbreed+Priscilla", "page_title": "Crossbreed Priscilla" }]
+  },
+  {
+    "id": "seath_the_scaleless",
+    "name_zh": "无鳞白龙赛司",
+    "name_en": "Seath the Scaleless",
+    "faction": "None",
+    "bonfires_present": ["dukes_archives", "crystal_cave"],
+    "arc_summary": "洛德兰最伟大的魔法师，曾背叛同类龙族将其秘密泄露给格温。获得一片永恒之龙的鳞片后，他开始追求真正的不死——但过度的结晶魔法侵蚀了他的理性。如今他已完全疯狂，在水晶洞窟中繁殖水晶，用人类进行实验，失去了所有曾经伟大的学识。",
+    "voice_lines": [],
+    "fate": "被玩家击败于水晶洞窟，其主公之魂成为四主公之魂之一。",
+    "sources": [{ "site": "fextralife", "url": "https://darksouls.wiki.fextralife.com/Seath+the+Scaleless", "page_title": "Seath the Scaleless" }]
+  },
+  {
+    "id": "patches",
+    "name_zh": "坏心眼帕奇",
+    "name_en": "Patches",
+    "faction": "None",
+    "bonfires_present": ["catacombs", "tomb_of_giants", "firelink_shrine"],
+    "arc_summary": "地下墓地与巨人陵墓的无良商人，以将玩家推入陷阱为乐，然后若无其事地开店。他自称「不喜欢牧师」，但实际上以强者为食，以弱者为猎物。他的存在是DS1对「江湖骗子」形象最人性化的描绘——坏，但不是恶；自私，但有自己的逻辑。",
+    "voice_lines": [
+      { "text_en": "Well, if you insist on going down there, can't exactly stop you... *pushes*", "text_zh": "好吧，如果你坚持要下去，我也没办法阻止你……*推*", "context": "在巨人陵墓将玩家推入陷阱" }
+    ],
+    "fate": "最终在传火祭祀场开店，成为一个相对稳定的商人来源。",
+    "sources": [{ "site": "fextralife", "url": "https://darksouls.wiki.fextralife.com/Patches", "page_title": "Patches" }]
+  },
+  {
+    "id": "ingward",
+    "name_zh": "英加尔德",
+    "name_en": "Ingward",
+    "faction": "None",
+    "bonfires_present": ["new_londo_ruins"],
+    "arc_summary": "新隆德废都守护者三人之一，保管着开启大洪门的封印钥匙。他用自己的生命守护这片区域，防止黑暗再度蔓延。他拥有解除诅咒的能力，是玩家最早可以获得解咒服务的NPC之一。",
+    "voice_lines": [
+      { "text_en": "The seal is mine to protect. I cannot open it... unless the bells have rung.", "text_zh": "封印由我守护。我无法打开它……除非钟声已响。", "context": "玩家索要封印钥匙时" }
+    ],
+    "fate": "全游戏驻留于新隆德废都屋顶，封印守护者。",
+    "sources": [{ "site": "fextralife", "url": "https://darksouls.wiki.fextralife.com/Ingward", "page_title": "Ingward" }]
+  },
+  {
+    "id": "nito",
+    "name_zh": "墓穴领主尼托",
+    "name_en": "Gravelord Nito",
+    "faction": "Gravelord Servants",
+    "bonfires_present": ["tomb_of_giants"],
+    "arc_summary": "死亡的领主，洛德兰最古老的存在之一。他在时代之初找到了死亡魔法，并将其散播至全世界。他的身体由无数尸骨拼凑而成，沉眠于巨人陵墓最深处。他是四位主公之一，其主公之魂必须被获取方能进入薪火循环的终点。",
+    "voice_lines": [],
+    "fate": "被玩家击败，其主公之魂成为四主公之魂之一。",
+    "sources": [{ "site": "fextralife", "url": "https://darksouls.wiki.fextralife.com/Gravelord+Nito", "page_title": "Gravelord Nito" }]
+  },
+  {
+    "id": "four_kings",
+    "name_zh": "四王",
+    "name_en": "Four Kings",
+    "faction": "None",
+    "bonfires_present": ["the_abyss"],
+    "arc_summary": "新隆德的四位统治者，曾被格温赐予黑暗之魂的力量碎片。这份力量最终将他们引向堕落，被暗渊吞噬，化为虚无游荡的存在。他们是四位主公之一，其主公之魂在暗渊的绝对黑暗中守护。",
+    "voice_lines": [],
+    "fate": "被玩家击败，其主公之魂成为四主公之魂之一。",
+    "sources": [{ "site": "fextralife", "url": "https://darksouls.wiki.fextralife.com/Four+Kings", "page_title": "Four Kings" }]
+  },
+  {
+    "id": "everlasting_dragon",
+    "name_zh": "永恒之龙",
+    "name_en": "Everlasting Dragon",
+    "faction": "Path of the Dragon",
+    "bonfires_present": ["ash_lake"],
+    "arc_summary": "灰烬湖唯一尚存的真正永恒之龙。它不攻击，不说话，只是静静地沉眠在古老的湖边。玩家可在它身旁加入「龙裔」契约，开始修行「变成龙」的旅程。它的存在是「上古时代」最后的活证人。",
+    "voice_lines": [],
+    "fate": "全游戏驻留于灰烬湖，是极少数在DS1中不会死亡也无法被击杀的存在之一（仅受有限伤害）。",
+    "sources": [{ "site": "fextralife", "url": "https://darksouls.wiki.fextralife.com/Ash+Lake", "page_title": "Ash Lake / Everlasting Dragon" }]
+  },
+  {
+    "id": "gwyn_lord_of_cinder",
+    "name_zh": "薪火领主格温",
+    "name_en": "Gwyn, Lord of Cinder",
+    "faction": "Gods of Anor Londo",
+    "bonfires_present": ["kiln_of_the_first_flame"],
+    "arc_summary": "洛德兰的创建者与统治者，太阳神格温。他将自己的主公之魂分给盟友，以维持初始火焰而投身其中，成为「薪柴」。如今他只剩下被火焰燃烧殆尽的本能意识，在初始之火炉中游荡，用攻击与外来者对话。击败他意味着玩家的最终选择：续燃薪火循环，还是让黑暗降临。",
+    "voice_lines": [],
+    "fate": "被玩家击败，由玩家决定是否续燃薪火——DS1最终的叙事节点。",
+    "sources": [{ "site": "fextralife", "url": "https://darksouls.wiki.fextralife.com/Gwyn,+Lord+of+Cinder", "page_title": "Gwyn, Lord of Cinder" }]
+  }
+]

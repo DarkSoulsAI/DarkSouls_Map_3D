@@ -1,0 +1,3395 @@
+{
+  "accessors": [
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 65534,
+      "max": [
+        81.06855773925781,
+        -52.993385314941406,
+        -90.69316101074219
+      ],
+      "min": [
+        -53.45579147338867,
+        -127.65234375,
+        -204.3480987548828
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 786408,
+      "componentType": 5126,
+      "count": 65534,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 131316,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 1572816,
+      "componentType": 5126,
+      "count": 39872,
+      "max": [
+        64.42906188964844,
+        -70.20822143554688,
+        -107.6464614868164
+      ],
+      "min": [
+        -37.3207893371582,
+        -113.77667236328125,
+        -219.98867797851563
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 2051280,
+      "componentType": 5126,
+      "count": 39872,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 525264,
+      "componentType": 5125,
+      "count": 75870,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 2529744,
+      "componentType": 5126,
+      "count": 65532,
+      "max": [
+        140.32322692871094,
+        50.26295471191406,
+        99.37213897705078
+      ],
+      "min": [
+        -138.25306701660156,
+        -66.6005859375,
+        -122.37129211425781
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 3316128,
+      "componentType": 5126,
+      "count": 65532,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 828744,
+      "componentType": 5125,
+      "count": 126345,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 4102512,
+      "componentType": 5126,
+      "count": 65533,
+      "max": [
+        144.17747497558594,
+        84.75643157958984,
+        94.56690216064453
+      ],
+      "min": [
+        -49.47507858276367,
+        -32.60911560058594,
+        -66.586669921875
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 4888908,
+      "componentType": 5126,
+      "count": 65533,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 1334124,
+      "componentType": 5125,
+      "count": 125064,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 5675304,
+      "componentType": 5126,
+      "count": 65532,
+      "max": [
+        129.914794921875,
+        43.16146469116211,
+        99.15766143798828
+      ],
+      "min": [
+        -125.47418212890625,
+        -53.356231689453125,
+        -64.83268737792969
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 6461688,
+      "componentType": 5126,
+      "count": 65532,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 1834380,
+      "componentType": 5125,
+      "count": 117021,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 7248072,
+      "componentType": 5126,
+      "count": 61748,
+      "max": [
+        -7.031595230102539,
+        18.72327423095703,
+        54.32392120361328
+      ],
+      "min": [
+        -122.88421630859375,
+        -96.64575958251953,
+        -86.30194854736328
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 7989048,
+      "componentType": 5126,
+      "count": 61748,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 2302464,
+      "componentType": 5125,
+      "count": 102051,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 8730024,
+      "componentType": 5126,
+      "count": 2182,
+      "max": [
+        142.8468017578125,
+        69.76142883300781,
+        66.2873306274414
+      ],
+      "min": [
+        -125.48681640625,
+        -55.700523376464844,
+        -59.53466033935547
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 8756208,
+      "componentType": 5126,
+      "count": 2182,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 2710668,
+      "componentType": 5125,
+      "count": 3582,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 8782392,
+      "componentType": 5126,
+      "count": 65533,
+      "max": [
+        152.61312866210938,
+        33.899085998535156,
+        -3.219935894012451
+      ],
+      "min": [
+        -20.09690284729004,
+        -128.83616638183594,
+        -97.70438385009766
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 9568788,
+      "componentType": 5126,
+      "count": 65533,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 2724996,
+      "componentType": 5125,
+      "count": 114987,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 10355184,
+      "componentType": 5126,
+      "count": 31238,
+      "max": [
+        205.9563751220703,
+        -2.8954010009765625,
+        0.5767390131950378
+      ],
+      "min": [
+        -50.83306884765625,
+        -133.6671905517578,
+        -115.71116638183594
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 10730040,
+      "componentType": 5126,
+      "count": 31238,
+      "max": [
+        1.0,
+        1.0,
+        0.9999650716781616
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 3184944,
+      "componentType": 5125,
+      "count": 73497,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 11104896,
+      "componentType": 5126,
+      "count": 65532,
+      "max": [
+        88.26717376708984,
+        33.66463088989258,
+        320.0227966308594
+      ],
+      "min": [
+        -363.91278076171875,
+        -39.8225212097168,
+        69.16577911376953
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 11891280,
+      "componentType": 5126,
+      "count": 65532,
+      "max": [
+        0.9999977350234985,
+        1.0,
+        0.9999815225601196
+      ],
+      "min": [
+        -0.999977707862854,
+        -0.9993172883987427,
+        -0.9996538162231445
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 3478932,
+      "componentType": 5125,
+      "count": 158997,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 12677664,
+      "componentType": 5126,
+      "count": 65532,
+      "max": [
+        74.88774108886719,
+        42.020973205566406,
+        326.8536682128906
+      ],
+      "min": [
+        -324.34710693359375,
+        -95.67595672607422,
+        31.073265075683594
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 13464048,
+      "componentType": 5126,
+      "count": 65532,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 4114920,
+      "componentType": 5125,
+      "count": 140022,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 14250432,
+      "componentType": 5126,
+      "count": 65532,
+      "max": [
+        147.82147216796875,
+        18.171913146972656,
+        305.57318115234375
+      ],
+      "min": [
+        -367.9806823730469,
+        -74.72891998291016,
+        30.15941619873047
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 15036816,
+      "componentType": 5126,
+      "count": 65532,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 4675008,
+      "componentType": 5125,
+      "count": 190155,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 15823200,
+      "componentType": 5126,
+      "count": 57592,
+      "max": [
+        79.69304656982422,
+        35.40584945678711,
+        322.73468017578125
+      ],
+      "min": [
+        -240.7373504638672,
+        -48.286312103271484,
+        131.7030029296875
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 16514304,
+      "componentType": 5126,
+      "count": 57592,
+      "max": [
+        0.9999982118606567,
+        1.0,
+        0.9999020099639893
+      ],
+      "min": [
+        -0.9999808073043823,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 5435628,
+      "componentType": 5125,
+      "count": 110940,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 17205408,
+      "componentType": 5126,
+      "count": 1067,
+      "max": [
+        79.69493103027344,
+        48.53580856323242,
+        238.22872924804688
+      ],
+      "min": [
+        -289.99237060546875,
+        -71.7342758178711,
+        48.14350891113281
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 17218212,
+      "componentType": 5126,
+      "count": 1067,
+      "max": [
+        0.9999982118606567,
+        1.0,
+        0.9998784065246582
+      ],
+      "min": [
+        -0.9969156980514526,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 5879388,
+      "componentType": 5125,
+      "count": 2988,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 17231016,
+      "componentType": 5126,
+      "count": 65532,
+      "max": [
+        344.794677734375,
+        -80.88327026367188,
+        82.01216888427734
+      ],
+      "min": [
+        133.83868408203125,
+        -166.1131591796875,
+        -21.112159729003906
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 18017400,
+      "componentType": 5126,
+      "count": 65532,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 5891340,
+      "componentType": 5125,
+      "count": 218367,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 18803784,
+      "componentType": 5126,
+      "count": 3309,
+      "max": [
+        295.7078552246094,
+        -109.54302978515625,
+        56.17475891113281
+      ],
+      "min": [
+        210.0994873046875,
+        -139.8650360107422,
+        29.340229034423828
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 18843492,
+      "componentType": 5126,
+      "count": 3309,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -0.9999361038208008
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 6764808,
+      "componentType": 5125,
+      "count": 12294,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 18883200,
+      "componentType": 5126,
+      "count": 65534,
+      "max": [
+        141.81285095214844,
+        -133.435791015625,
+        108.13580322265625
+      ],
+      "min": [
+        -73.95285034179688,
+        -273.197998046875,
+        -182.84263610839844
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 19669608,
+      "componentType": 5126,
+      "count": 65534,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 6813984,
+      "componentType": 5125,
+      "count": 200739,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 20456016,
+      "componentType": 5126,
+      "count": 22488,
+      "max": [
+        197.29498291015625,
+        -129.24110412597656,
+        138.4624786376953
+      ],
+      "min": [
+        -65.98707580566406,
+        -312.6708679199219,
+        -59.77399444580078
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 20725872,
+      "componentType": 5126,
+      "count": 22488,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 7616940,
+      "componentType": 5125,
+      "count": 75168,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 20995728,
+      "componentType": 5126,
+      "count": 65532,
+      "max": [
+        187.08798217773438,
+        -128.05410766601563,
+        -275.75225830078125
+      ],
+      "min": [
+        -383.364990234375,
+        -464.21478271484375,
+        -755.271728515625
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 21782112,
+      "componentType": 5126,
+      "count": 65532,
+      "max": [
+        0.999975323677063,
+        1.0,
+        0.9999682903289795
+      ],
+      "min": [
+        -0.9999986886978149,
+        -1.0,
+        -0.999996542930603
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 7917612,
+      "componentType": 5125,
+      "count": 265800,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 22568496,
+      "componentType": 5126,
+      "count": 5229,
+      "max": [
+        134.17153930664063,
+        -332.3050842285156,
+        -306.3405456542969
+      ],
+      "min": [
+        87.94845581054688,
+        -392.96929931640625,
+        -351.20172119140625
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 22631244,
+      "componentType": 5126,
+      "count": 5229,
+      "max": [
+        0.9999667406082153,
+        0.9999514818191528,
+        0.9998821020126343
+      ],
+      "min": [
+        -0.999958872795105,
+        -0.9999921321868896,
+        -0.9997938871383667
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 8980812,
+      "componentType": 5125,
+      "count": 20301,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 22693992,
+      "componentType": 5126,
+      "count": 65533,
+      "max": [
+        218.02261352539063,
+        -50.83082580566406,
+        146.87506103515625
+      ],
+      "min": [
+        -38.98186492919922,
+        -259.37030029296875,
+        -392.5895080566406
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 23480388,
+      "componentType": 5126,
+      "count": 65533,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 9062016,
+      "componentType": 5125,
+      "count": 233598,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 24266784,
+      "componentType": 5126,
+      "count": 43971,
+      "max": [
+        179.3122100830078,
+        -35.95198059082031,
+        157.48452758789063
+      ],
+      "min": [
+        9.639480590820313,
+        -265.8945007324219,
+        -374.2186279296875
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 24794436,
+      "componentType": 5126,
+      "count": 43971,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 9996408,
+      "componentType": 5125,
+      "count": 165282,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 25322088,
+      "componentType": 5126,
+      "count": 65532,
+      "max": [
+        479.7426452636719,
+        -279.0191650390625,
+        611.2951049804688
+      ],
+      "min": [
+        -29.128135681152344,
+        -557.3795166015625,
+        87.90858459472656
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 26108472,
+      "componentType": 5126,
+      "count": 65532,
+      "max": [
+        0.9999450445175171,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -0.999996542930603,
+        -1.0,
+        -0.9999706745147705
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 10657536,
+      "componentType": 5125,
+      "count": 256773,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 26894856,
+      "componentType": 5126,
+      "count": 65532,
+      "max": [
+        401.75823974609375,
+        -198.1525115966797,
+        530.065185546875
+      ],
+      "min": [
+        -39.72801971435547,
+        -384.99871826171875,
+        88.12593078613281
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 27681240,
+      "componentType": 5126,
+      "count": 65532,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 11684628,
+      "componentType": 5125,
+      "count": 189246,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 28467624,
+      "componentType": 5126,
+      "count": 43637,
+      "max": [
+        460.33502197265625,
+        -242.96522521972656,
+        593.443115234375
+      ],
+      "min": [
+        -36.5306396484375,
+        -441.04864501953125,
+        89.09803009033203
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 28991268,
+      "componentType": 5126,
+      "count": 43637,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 12441612,
+      "componentType": 5125,
+      "count": 130671,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 29514912,
+      "componentType": 5126,
+      "count": 358,
+      "max": [
+        363.2917785644531,
+        -244.00827026367188,
+        427.5515441894531
+      ],
+      "min": [
+        112.72576141357422,
+        -354.4058837890625,
+        126.4150390625
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 29519208,
+      "componentType": 5126,
+      "count": 358,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 12964296,
+      "componentType": 5125,
+      "count": 642,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 29523504,
+      "componentType": 5126,
+      "count": 65534,
+      "max": [
+        336.5578918457031,
+        100.57063293457031,
+        148.75
+      ],
+      "min": [
+        175.65142822265625,
+        -1.1000000085914508e-05,
+        59.417850494384766
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 30309912,
+      "componentType": 5126,
+      "count": 65534,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 12966864,
+      "componentType": 5125,
+      "count": 98583,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 31096320,
+      "componentType": 5126,
+      "count": 65532,
+      "max": [
+        306.0,
+        94.5,
+        129.49996948242188
+      ],
+      "min": [
+        112.61315155029297,
+        -0.00646999990567565,
+        59.000003814697266
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 31882704,
+      "componentType": 5126,
+      "count": 65532,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 13361196,
+      "componentType": 5125,
+      "count": 109419,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 32669088,
+      "componentType": 5126,
+      "count": 17726,
+      "max": [
+        319.9000244140625,
+        92.0,
+        123.99993896484375
+      ],
+      "min": [
+        216.14651489257813,
+        27.999998092651367,
+        67.19999694824219
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 32881800,
+      "componentType": 5126,
+      "count": 17726,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 13798872,
+      "componentType": 5125,
+      "count": 34287,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 33094512,
+      "componentType": 5126,
+      "count": 1172,
+      "max": [
+        322.74542236328125,
+        92.5,
+        140.0
+      ],
+      "min": [
+        176.6999969482422,
+        -1.1000000085914508e-05,
+        56.000003814697266
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 33108576,
+      "componentType": 5126,
+      "count": 1172,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -0.8994479179382324,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 13936020,
+      "componentType": 5125,
+      "count": 2100,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 33122640,
+      "componentType": 5126,
+      "count": 65534,
+      "max": [
+        411.4625244140625,
+        217.5414276123047,
+        634.2999877929688
+      ],
+      "min": [
+        160.0,
+        54.85454559326172,
+        163.03671264648438
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 33909048,
+      "componentType": 5126,
+      "count": 65534,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 13944420,
+      "componentType": 5125,
+      "count": 114168,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 34695456,
+      "componentType": 5126,
+      "count": 65534,
+      "max": [
+        328.9671325683594,
+        198.36581420898438,
+        633.7474365234375
+      ],
+      "min": [
+        154.72027587890625,
+        32.400001525878906,
+        193.99998474121094
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 35481864,
+      "componentType": 5126,
+      "count": 65534,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 14401092,
+      "componentType": 5125,
+      "count": 94068,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 36268272,
+      "componentType": 5126,
+      "count": 65532,
+      "max": [
+        305.0,
+        211.3203582763672,
+        531.40869140625
+      ],
+      "min": [
+        125.76243591308594,
+        49.99989318847656,
+        165.93637084960938
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 37054656,
+      "componentType": 5126,
+      "count": 65532,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 14777364,
+      "componentType": 5125,
+      "count": 96999,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 37841040,
+      "componentType": 5126,
+      "count": 24003,
+      "max": [
+        275.94384765625,
+        183.1912384033203,
+        641.5
+      ],
+      "min": [
+        194.50152587890625,
+        135.96923828125,
+        445.9534912109375
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 38129076,
+      "componentType": 5126,
+      "count": 24003,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 15165360,
+      "componentType": 5125,
+      "count": 32187,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 38417112,
+      "componentType": 5126,
+      "count": 6840,
+      "max": [
+        342.0,
+        210.85122680664063,
+        641.0
+      ],
+      "min": [
+        163.0,
+        40.4676513671875,
+        163.50698852539063
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 38499192,
+      "componentType": 5126,
+      "count": 6840,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 15294108,
+      "componentType": 5125,
+      "count": 10122,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 38581272,
+      "componentType": 5126,
+      "count": 65532,
+      "max": [
+        116.98636627197266,
+        -64.40000915527344,
+        186.69229125976563
+      ],
+      "min": [
+        -113.15017700195313,
+        -210.00003051757813,
+        -70.95474243164063
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 39367656,
+      "componentType": 5126,
+      "count": 65532,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 15334596,
+      "componentType": 5125,
+      "count": 156318,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 40154040,
+      "componentType": 5126,
+      "count": 56249,
+      "max": [
+        99.61038970947266,
+        -109.49998474121094,
+        130.03665161132813
+      ],
+      "min": [
+        -34.800941467285156,
+        -204.91526794433594,
+        -71.15718841552734
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 40829028,
+      "componentType": 5126,
+      "count": 56249,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 15959868,
+      "componentType": 5125,
+      "count": 113346,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 41504016,
+      "componentType": 5126,
+      "count": 65532,
+      "max": [
+        882.3941040039063,
+        357.2574768066406,
+        427.83575439453125
+      ],
+      "min": [
+        394.40289306640625,
+        83.21551513671875,
+        71.82177734375
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 42290400,
+      "componentType": 5126,
+      "count": 65532,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 16413252,
+      "componentType": 5125,
+      "count": 104544,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 43076784,
+      "componentType": 5126,
+      "count": 65532,
+      "max": [
+        915.2230224609375,
+        338.142333984375,
+        433.29425048828125
+      ],
+      "min": [
+        505.1822509765625,
+        36.37237548828125,
+        126.1847152709961
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 43863168,
+      "componentType": 5126,
+      "count": 65532,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -0.9999997615814209,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 16831428,
+      "componentType": 5125,
+      "count": 124992,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 44649552,
+      "componentType": 5126,
+      "count": 65532,
+      "max": [
+        602.7155151367188,
+        357.3770751953125,
+        358.32171630859375
+      ],
+      "min": [
+        484.07159423828125,
+        274.9062805175781,
+        239.49415588378906
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 45435936,
+      "componentType": 5126,
+      "count": 65532,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 17331396,
+      "componentType": 5125,
+      "count": 142695,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 46222320,
+      "componentType": 5126,
+      "count": 65532,
+      "max": [
+        597.0783081054688,
+        421.6796569824219,
+        437.2220458984375
+      ],
+      "min": [
+        505.18231201171875,
+        228.68231201171875,
+        263.68280029296875
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 47008704,
+      "componentType": 5126,
+      "count": 65532,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -0.9999997615814209
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 17902176,
+      "componentType": 5125,
+      "count": 131535,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 47795088,
+      "componentType": 5126,
+      "count": 47294,
+      "max": [
+        759.1262817382813,
+        397.06951904296875,
+        402.64697265625
+      ],
+      "min": [
+        504.02166748046875,
+        229.19769287109375,
+        232.52114868164063
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 48362616,
+      "componentType": 5126,
+      "count": 47294,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -0.9999997615814209,
+        -1.0,
+        -0.9999995231628418
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 18428316,
+      "componentType": 5125,
+      "count": 75537,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 48930144,
+      "componentType": 5126,
+      "count": 53112,
+      "max": [
+        251.69497680664063,
+        -31.61724090576172,
+        449.014892578125
+      ],
+      "min": [
+        26.2281494140625,
+        -215.25543212890625,
+        -15.952651977539063
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 49567488,
+      "componentType": 5126,
+      "count": 53112,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 18730464,
+      "componentType": 5125,
+      "count": 102486,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "9S (https://sketchfab.com/NlNES)",
+      "license": "CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)",
+      "source": "https://sketchfab.com/3d-models/dark-souls-map-b75a883eb9c94104beb170c98dc5216c",
+      "title": "Dark Souls Map"
+    },
+    "generator": "Sketchfab-12.68.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 19140408,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 50204832,
+      "byteOffset": 19140408,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 69345240,
+      "uri": "scene.bin"
+    }
+  ],
+  "extensionsRequired": [
+    "KHR_materials_pbrSpecularGlossiness"
+  ],
+  "extensionsUsed": [
+    "KHR_materials_pbrSpecularGlossiness"
+  ],
+  "materials": [
+    {
+      "extensions": {
+        "KHR_materials_pbrSpecularGlossiness": {
+          "diffuseFactor": [
+            0.281009,
+            0.0988286,
+            0.0,
+            1.0
+          ],
+          "glossinessFactor": 0.4,
+          "specularFactor": [
+            0.1,
+            0.05472235689932116,
+            0.004825934533322087
+          ]
+        }
+      },
+      "name": "Dephts"
+    },
+    {
+      "extensions": {
+        "KHR_materials_pbrSpecularGlossiness": {
+          "diffuseFactor": [
+            0.16171999999999995,
+            0.08239339999999998,
+            0.23301499999999994,
+            1.0
+          ],
+          "glossinessFactor": 0.4,
+          "specularFactor": [
+            0.03984621081153974,
+            0.007815172394660569,
+            0.1
+          ]
+        }
+      },
+      "name": "Undead_Burg"
+    },
+    {
+      "alphaMode": "BLEND",
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_pbrSpecularGlossiness": {
+          "diffuseFactor": [
+            0.0875868,
+            0.0196945,
+            0.12824,
+            0.5
+          ],
+          "glossinessFactor": 0.003501539666933206,
+          "specularFactor": [
+            0.05,
+            0.05,
+            0.05
+          ]
+        }
+      },
+      "name": "Undead_Burg_-_Transparent"
+    },
+    {
+      "extensions": {
+        "KHR_materials_pbrSpecularGlossiness": {
+          "diffuseFactor": [
+            0.029144699999999996,
+            0.08870640000000002,
+            0.45753100000000013,
+            1.0
+          ],
+          "glossinessFactor": 0.4,
+          "specularFactor": [
+            0.02887443810399064,
+            0.033453826092015804,
+            0.09602083826516893
+          ]
+        }
+      },
+      "name": "Firelink_Shrine"
+    },
+    {
+      "extensions": {
+        "KHR_materials_pbrSpecularGlossiness": {
+          "diffuseFactor": [
+            0.0478944,
+            0.184469,
+            0.0,
+            1.0
+          ],
+          "glossinessFactor": 0.30000000000000004,
+          "specularFactor": [
+            0.03951853250765431,
+            0.07325329854895471,
+            0.027305322495040592
+          ]
+        }
+      },
+      "name": "Darkroot_Garden"
+    },
+    {
+      "alphaMode": "BLEND",
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_pbrSpecularGlossiness": {
+          "diffuseFactor": [
+            0.019263500000000006,
+            0.053582400000000016,
+            0.0021033300000000013,
+            0.4
+          ],
+          "glossinessFactor": 0.009518810124367968,
+          "specularFactor": [
+            0.05,
+            0.05,
+            0.05
+          ]
+        }
+      },
+      "name": "Darkroot_Garden_-_Transparent"
+    },
+    {
+      "extensions": {
+        "KHR_materials_pbrSpecularGlossiness": {
+          "diffuseFactor": [
+            0.128239,
+            0.128239,
+            0.128239,
+            1.0
+          ],
+          "glossinessFactor": 0.4,
+          "specularFactor": [
+            0.1,
+            0.1,
+            0.1
+          ]
+        }
+      },
+      "name": "Catacombs"
+    },
+    {
+      "extensions": {
+        "KHR_materials_pbrSpecularGlossiness": {
+          "diffuseFactor": [
+            0.0444547,
+            0.0444547,
+            0.0444547,
+            1.0
+          ],
+          "glossinessFactor": 0.4,
+          "specularFactor": [
+            0.1,
+            0.1,
+            0.1
+          ]
+        }
+      },
+      "name": "Tomb_of_the_Giants"
+    },
+    {
+      "extensions": {
+        "KHR_materials_pbrSpecularGlossiness": {
+          "diffuseFactor": [
+            0.012938500000000002,
+            0.2529429999999997,
+            0.19412600000000008,
+            1.0
+          ],
+          "glossinessFactor": 0.4,
+          "specularFactor": [
+            0.01717234471995979,
+            0.1,
+            0.04193976934296444
+          ]
+        }
+      },
+      "name": "Ash_Lake"
+    },
+    {
+      "extensions": {
+        "KHR_materials_pbrSpecularGlossiness": {
+          "diffuseFactor": [
+            0.13605711284839642,
+            0.2527695292606712,
+            0.014657071982341095,
+            1.0
+          ],
+          "glossinessFactor": 0.4,
+          "specularFactor": [
+            0.0736774566654234,
+            0.1,
+            0.020594136762876553
+          ]
+        }
+      },
+      "name": "Blighttown"
+    },
+    {
+      "extensions": {
+        "KHR_materials_pbrSpecularGlossiness": {
+          "diffuseFactor": [
+            0.661864,
+            0.03467939999999998,
+            0.017652400000000002,
+            1.0
+          ],
+          "glossinessFactor": 0.4,
+          "specularFactor": [
+            0.09504074916579608,
+            0.025277341682428886,
+            0.010600489239586973
+          ]
+        }
+      },
+      "name": "Demon_Ruins"
+    },
+    {
+      "alphaMode": "BLEND",
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_pbrSpecularGlossiness": {
+          "diffuseFactor": [
+            0.5488529999999999,
+            0.03638920000000001,
+            0.022322400000000013,
+            0.2
+          ],
+          "glossinessFactor": 0.044021694810118625,
+          "specularFactor": [
+            0.05,
+            0.05,
+            0.05
+          ]
+        }
+      },
+      "name": "Demon_Ruins_-_Transparent"
+    },
+    {
+      "extensions": {
+        "KHR_materials_pbrSpecularGlossiness": {
+          "diffuseFactor": [
+            0.047366800000000056,
+            0.152298,
+            0.29569199999999973,
+            1.0
+          ],
+          "glossinessFactor": 0.4,
+          "specularFactor": [
+            0.0,
+            0.014430706441529793,
+            0.1
+          ]
+        }
+      },
+      "name": "Sens_Fortress"
+    },
+    {
+      "alphaMode": "BLEND",
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_pbrSpecularGlossiness": {
+          "diffuseFactor": [
+            0.015265699999999997,
+            0.024158,
+            0.08353149999999997,
+            0.2
+          ],
+          "glossinessFactor": 0.005937713877037644,
+          "specularFactor": [
+            0.05,
+            0.05,
+            0.05
+          ]
+        }
+      },
+      "name": "Sens_Fortress_-_Transparent"
+    },
+    {
+      "extensions": {
+        "KHR_materials_pbrSpecularGlossiness": {
+          "diffuseFactor": [
+            0.310813,
+            0.282997,
+            0.0539702,
+            1.0
+          ],
+          "glossinessFactor": 0.4,
+          "specularFactor": [
+            0.1,
+            0.08745958724439618,
+            0.014107431122548626
+          ]
+        }
+      },
+      "name": "Anor_Londo"
+    },
+    {
+      "alphaMode": "BLEND",
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_pbrSpecularGlossiness": {
+          "diffuseFactor": [
+            0.16019200000000003,
+            0.17335500000000004,
+            0.0135653,
+            0.2
+          ],
+          "glossinessFactor": 0.03555789257306132,
+          "specularFactor": [
+            0.05,
+            0.05,
+            0.05
+          ]
+        }
+      },
+      "name": "Anor__Londo_-_Transarent"
+    },
+    {
+      "extensions": {
+        "KHR_materials_pbrSpecularGlossiness": {
+          "diffuseFactor": [
+            0.01632400000000001,
+            0.178862,
+            0.018517300000000007,
+            1.0
+          ],
+          "glossinessFactor": 0.4,
+          "specularFactor": [
+            0.03288899736107011,
+            0.1,
+            0.02573057854079805
+          ]
+        }
+      },
+      "name": "New_Londo_Ruins"
+    },
+    {
+      "extensions": {
+        "KHR_materials_pbrSpecularGlossiness": {
+          "diffuseFactor": [
+            0.005726659999999996,
+            0.19704600000000028,
+            0.27383099999999994,
+            1.0
+          ],
+          "glossinessFactor": 0.5,
+          "specularFactor": [
+            0.018272736393587025,
+            0.08168462506255224,
+            0.1
+          ]
+        }
+      },
+      "name": "Dukes_Archives"
+    },
+    {
+      "extensions": {
+        "KHR_materials_pbrSpecularGlossiness": {
+          "diffuseFactor": [
+            0.35884000000000005,
+            0.09879220000000005,
+            0.06858449999999998,
+            1.0
+          ],
+          "glossinessFactor": 0.4,
+          "specularFactor": [
+            0.07926760664667008,
+            0.029030054458868984,
+            0.029030054458868984
+          ]
+        }
+      },
+      "name": "Kiln_of_the_First_Flame"
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Depths_Dephts_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0
+          },
+          "indices": 2,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Depths_Dephts_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 4,
+            "POSITION": 3
+          },
+          "indices": 5,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Undead Burg_Undead Burg_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 7,
+            "POSITION": 6
+          },
+          "indices": 8,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Undead Burg_Undead Burg_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 10,
+            "POSITION": 9
+          },
+          "indices": 11,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Undead Burg_Undead Burg_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 13,
+            "POSITION": 12
+          },
+          "indices": 14,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Undead Burg_Undead Burg_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 16,
+            "POSITION": 15
+          },
+          "indices": 17,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Undead Burg_Undead Burg - Transparent_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 19,
+            "POSITION": 18
+          },
+          "indices": 20,
+          "material": 2,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Firelink Shrine_Firelink Shrine_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 22,
+            "POSITION": 21
+          },
+          "indices": 23,
+          "material": 3,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Firelink Shrine_Firelink Shrine_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 25,
+            "POSITION": 24
+          },
+          "indices": 26,
+          "material": 3,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Darkroot Garden and Basin_Darkroot Garden_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 28,
+            "POSITION": 27
+          },
+          "indices": 29,
+          "material": 4,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Darkroot Garden and Basin_Darkroot Garden_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 31,
+            "POSITION": 30
+          },
+          "indices": 32,
+          "material": 4,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Darkroot Garden and Basin_Darkroot Garden_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 34,
+            "POSITION": 33
+          },
+          "indices": 35,
+          "material": 4,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Darkroot Garden and Basin_Darkroot Garden_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 37,
+            "POSITION": 36
+          },
+          "indices": 38,
+          "material": 4,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Darkroot Garden and Basin_Darkroot Garden - Transparent_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 40,
+            "POSITION": 39
+          },
+          "indices": 41,
+          "material": 5,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Catacombs_Catacombs_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 43,
+            "POSITION": 42
+          },
+          "indices": 44,
+          "material": 6,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Catacombs_Catacombs_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 46,
+            "POSITION": 45
+          },
+          "indices": 47,
+          "material": 6,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Tomb of the Giants_Tomb of the Giants_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 49,
+            "POSITION": 48
+          },
+          "indices": 50,
+          "material": 7,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Tomb of the Giants_Tomb of the Giants_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 52,
+            "POSITION": 51
+          },
+          "indices": 53,
+          "material": 7,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Ash Lake_Ash Lake_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 55,
+            "POSITION": 54
+          },
+          "indices": 56,
+          "material": 8,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Ash Lake_Ash Lake_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 58,
+            "POSITION": 57
+          },
+          "indices": 59,
+          "material": 8,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Blighttown_Blighttown_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 61,
+            "POSITION": 60
+          },
+          "indices": 62,
+          "material": 9,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Blighttown_Blighttown_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 64,
+            "POSITION": 63
+          },
+          "indices": 65,
+          "material": 9,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Demon Ruins and Lost Izalith_Demon Ruins_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 67,
+            "POSITION": 66
+          },
+          "indices": 68,
+          "material": 10,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Demon Ruins and Lost Izalith_Demon Ruins_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 70,
+            "POSITION": 69
+          },
+          "indices": 71,
+          "material": 10,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Demon Ruins and Lost Izalith_Demon Ruins_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 73,
+            "POSITION": 72
+          },
+          "indices": 74,
+          "material": 10,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Demon Ruins and Lost Izalith_Demon Ruins - Transparent_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 76,
+            "POSITION": 75
+          },
+          "indices": 77,
+          "material": 11,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Sen's Fortress_Sens Fortress_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 79,
+            "POSITION": 78
+          },
+          "indices": 80,
+          "material": 12,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Sen's Fortress_Sens Fortress_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 82,
+            "POSITION": 81
+          },
+          "indices": 83,
+          "material": 12,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Sen's Fortress_Sens Fortress_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 85,
+            "POSITION": 84
+          },
+          "indices": 86,
+          "material": 12,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Sen's Fortress_Sens Fortress - Transparent_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 88,
+            "POSITION": 87
+          },
+          "indices": 89,
+          "material": 13,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Anor Londo_Anor Londo_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 91,
+            "POSITION": 90
+          },
+          "indices": 92,
+          "material": 14,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Anor Londo_Anor Londo_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 94,
+            "POSITION": 93
+          },
+          "indices": 95,
+          "material": 14,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Anor Londo_Anor Londo_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 97,
+            "POSITION": 96
+          },
+          "indices": 98,
+          "material": 14,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Anor Londo_Anor Londo_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 100,
+            "POSITION": 99
+          },
+          "indices": 101,
+          "material": 14,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Anor Londo_Anor  Londo - Transarent_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 103,
+            "POSITION": 102
+          },
+          "indices": 104,
+          "material": 15,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "New Londo Ruins and Valley of Drakes_New Londo Ruins_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 106,
+            "POSITION": 105
+          },
+          "indices": 107,
+          "material": 16,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "New Londo Ruins and Valley of Drakes_New Londo Ruins_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 109,
+            "POSITION": 108
+          },
+          "indices": 110,
+          "material": 16,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Duke's Archive and Crystal Caves_Duke's Archives_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 112,
+            "POSITION": 111
+          },
+          "indices": 113,
+          "material": 17,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Duke's Archive and Crystal Caves_Duke's Archives_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 115,
+            "POSITION": 114
+          },
+          "indices": 116,
+          "material": 17,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Duke's Archive and Crystal Caves_Duke's Archives_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 118,
+            "POSITION": 117
+          },
+          "indices": 119,
+          "material": 17,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Duke's Archive and Crystal Caves_Duke's Archives_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 121,
+            "POSITION": 120
+          },
+          "indices": 122,
+          "material": 17,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Duke's Archive and Crystal Caves_Duke's Archives_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 124,
+            "POSITION": 123
+          },
+          "indices": 125,
+          "material": 17,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Kiln of the first Flame_Kiln of the First Flame_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 127,
+            "POSITION": 126
+          },
+          "indices": 128,
+          "material": 18,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Map.fbx"
+    },
+    {
+      "children": [
+        3,
+        6,
+        12,
+        15,
+        21,
+        24,
+        27,
+        30,
+        33,
+        38,
+        43,
+        49,
+        52,
+        58
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        4,
+        5
+      ],
+      "matrix": [
+        1301.68310546875,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1301.6831054687327,
+        0.00021207110312162957,
+        0.0,
+        0.0,
+        -0.00021207110312162957,
+        1301.6831054687327,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Depths"
+    },
+    {
+      "mesh": 0,
+      "name": "Depths_Dephts_0"
+    },
+    {
+      "mesh": 1,
+      "name": "Depths_Dephts_0"
+    },
+    {
+      "children": [
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "matrix": [
+        1301.68310546875,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1301.6831054687327,
+        0.00021207110312162957,
+        0.0,
+        0.0,
+        -0.00021207110312162957,
+        1301.6831054687327,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Undead Burg"
+    },
+    {
+      "mesh": 2,
+      "name": "Undead Burg_Undead Burg_0"
+    },
+    {
+      "mesh": 3,
+      "name": "Undead Burg_Undead Burg_0"
+    },
+    {
+      "mesh": 4,
+      "name": "Undead Burg_Undead Burg_0"
+    },
+    {
+      "mesh": 5,
+      "name": "Undead Burg_Undead Burg_0"
+    },
+    {
+      "mesh": 6,
+      "name": "Undead Burg_Undead Burg - Transparent_0"
+    },
+    {
+      "children": [
+        13,
+        14
+      ],
+      "matrix": [
+        1301.68310546875,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1301.6831054687327,
+        0.00021207110312162957,
+        0.0,
+        0.0,
+        -0.00021207110312162957,
+        1301.6831054687327,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Firelink Shrine"
+    },
+    {
+      "mesh": 7,
+      "name": "Firelink Shrine_Firelink Shrine_0"
+    },
+    {
+      "mesh": 8,
+      "name": "Firelink Shrine_Firelink Shrine_0"
+    },
+    {
+      "children": [
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "matrix": [
+        1301.68310546875,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1301.6831054687327,
+        0.00021207110312162957,
+        0.0,
+        0.0,
+        -0.00021207110312162957,
+        1301.6831054687327,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Darkroot Garden and Basin"
+    },
+    {
+      "mesh": 9,
+      "name": "Darkroot Garden and Basin_Darkroot Garden_0"
+    },
+    {
+      "mesh": 10,
+      "name": "Darkroot Garden and Basin_Darkroot Garden_0"
+    },
+    {
+      "mesh": 11,
+      "name": "Darkroot Garden and Basin_Darkroot Garden_0"
+    },
+    {
+      "mesh": 12,
+      "name": "Darkroot Garden and Basin_Darkroot Garden_0"
+    },
+    {
+      "mesh": 13,
+      "name": "Darkroot Garden and Basin_Darkroot Garden - Transparent_0"
+    },
+    {
+      "children": [
+        22,
+        23
+      ],
+      "matrix": [
+        1301.68310546875,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1301.6831054687327,
+        0.00021207110312162957,
+        0.0,
+        0.0,
+        -0.00021207110312162957,
+        1301.6831054687327,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Catacombs"
+    },
+    {
+      "mesh": 14,
+      "name": "Catacombs_Catacombs_0"
+    },
+    {
+      "mesh": 15,
+      "name": "Catacombs_Catacombs_0"
+    },
+    {
+      "children": [
+        25,
+        26
+      ],
+      "matrix": [
+        1301.68310546875,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1301.6831054687327,
+        0.00021207110312162957,
+        0.0,
+        0.0,
+        -0.00021207110312162957,
+        1301.6831054687327,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Tomb of the Giants"
+    },
+    {
+      "mesh": 16,
+      "name": "Tomb of the Giants_Tomb of the Giants_0"
+    },
+    {
+      "mesh": 17,
+      "name": "Tomb of the Giants_Tomb of the Giants_0"
+    },
+    {
+      "children": [
+        28,
+        29
+      ],
+      "matrix": [
+        1301.68310546875,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1301.6831054687327,
+        0.00021207110312162957,
+        0.0,
+        0.0,
+        -0.00021207110312162957,
+        1301.6831054687327,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Ash Lake"
+    },
+    {
+      "mesh": 18,
+      "name": "Ash Lake_Ash Lake_0"
+    },
+    {
+      "mesh": 19,
+      "name": "Ash Lake_Ash Lake_0"
+    },
+    {
+      "children": [
+        31,
+        32
+      ],
+      "matrix": [
+        1301.68310546875,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1301.6831054687327,
+        0.00021207110312162957,
+        0.0,
+        0.0,
+        -0.00021207110312162957,
+        1301.6831054687327,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Blighttown"
+    },
+    {
+      "mesh": 20,
+      "name": "Blighttown_Blighttown_0"
+    },
+    {
+      "mesh": 21,
+      "name": "Blighttown_Blighttown_0"
+    },
+    {
+      "children": [
+        34,
+        35,
+        36,
+        37
+      ],
+      "matrix": [
+        1301.68310546875,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1301.6831054687327,
+        0.00021207110312162957,
+        0.0,
+        0.0,
+        -0.00021207110312162957,
+        1301.6831054687327,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Demon Ruins and Lost Izalith"
+    },
+    {
+      "mesh": 22,
+      "name": "Demon Ruins and Lost Izalith_Demon Ruins_0"
+    },
+    {
+      "mesh": 23,
+      "name": "Demon Ruins and Lost Izalith_Demon Ruins_0"
+    },
+    {
+      "mesh": 24,
+      "name": "Demon Ruins and Lost Izalith_Demon Ruins_0"
+    },
+    {
+      "mesh": 25,
+      "name": "Demon Ruins and Lost Izalith_Demon Ruins - Transparent_0"
+    },
+    {
+      "children": [
+        39,
+        40,
+        41,
+        42
+      ],
+      "matrix": [
+        1301.68310546875,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1301.6831054687327,
+        0.00021207110312162957,
+        0.0,
+        0.0,
+        -0.00021207110312162957,
+        1301.6831054687327,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sen's Fortress"
+    },
+    {
+      "mesh": 26,
+      "name": "Sen's Fortress_Sens Fortress_0"
+    },
+    {
+      "mesh": 27,
+      "name": "Sen's Fortress_Sens Fortress_0"
+    },
+    {
+      "mesh": 28,
+      "name": "Sen's Fortress_Sens Fortress_0"
+    },
+    {
+      "mesh": 29,
+      "name": "Sen's Fortress_Sens Fortress - Transparent_0"
+    },
+    {
+      "children": [
+        44,
+        45,
+        46,
+        47,
+        48
+      ],
+      "matrix": [
+        1301.68310546875,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1301.6831054687327,
+        0.00021207110312162957,
+        0.0,
+        0.0,
+        -0.00021207110312162957,
+        1301.6831054687327,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Anor Londo"
+    },
+    {
+      "mesh": 30,
+      "name": "Anor Londo_Anor Londo_0"
+    },
+    {
+      "mesh": 31,
+      "name": "Anor Londo_Anor Londo_0"
+    },
+    {
+      "mesh": 32,
+      "name": "Anor Londo_Anor Londo_0"
+    },
+    {
+      "mesh": 33,
+      "name": "Anor Londo_Anor Londo_0"
+    },
+    {
+      "mesh": 34,
+      "name": "Anor Londo_Anor  Londo - Transarent_0"
+    },
+    {
+      "children": [
+        50,
+        51
+      ],
+      "matrix": [
+        1301.68310546875,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1301.6831054687327,
+        0.00021207110312162957,
+        0.0,
+        0.0,
+        -0.00021207110312162957,
+        1301.6831054687327,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "New Londo Ruins and Valley of Drakes"
+    },
+    {
+      "mesh": 35,
+      "name": "New Londo Ruins and Valley of Drakes_New Londo Ruins_0"
+    },
+    {
+      "mesh": 36,
+      "name": "New Londo Ruins and Valley of Drakes_New Londo Ruins_0"
+    },
+    {
+      "children": [
+        53,
+        54,
+        55,
+        56,
+        57
+      ],
+      "matrix": [
+        1301.68310546875,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1301.6831054687327,
+        0.00021207110312162957,
+        0.0,
+        0.0,
+        -0.00021207110312162957,
+        1301.6831054687327,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Duke's Archive and Crystal Caves"
+    },
+    {
+      "mesh": 37,
+      "name": "Duke's Archive and Crystal Caves_Duke's Archives_0"
+    },
+    {
+      "mesh": 38,
+      "name": "Duke's Archive and Crystal Caves_Duke's Archives_0"
+    },
+    {
+      "mesh": 39,
+      "name": "Duke's Archive and Crystal Caves_Duke's Archives_0"
+    },
+    {
+      "mesh": 40,
+      "name": "Duke's Archive and Crystal Caves_Duke's Archives_0"
+    },
+    {
+      "mesh": 41,
+      "name": "Duke's Archive and Crystal Caves_Duke's Archives_0"
+    },
+    {
+      "children": [
+        59
+      ],
+      "matrix": [
+        1301.68310546875,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1301.6831054687327,
+        0.00021207110312162957,
+        0.0,
+        0.0,
+        -0.00021207110312162957,
+        1301.6831054687327,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Kiln of the first Flame"
+    },
+    {
+      "mesh": 42,
+      "name": "Kiln of the first Flame_Kiln of the First Flame_0"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}

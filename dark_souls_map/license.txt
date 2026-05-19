@@ -1,0 +1,11 @@
+Model Information:
+* title:	Dark Souls Map
+* source:	https://sketchfab.com/3d-models/dark-souls-map-b75a883eb9c94104beb170c98dc5216c
+* author:	9S (https://sketchfab.com/NlNES)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Dark Souls Map" (https://sketchfab.com/3d-models/dark-souls-map-b75a883eb9c94104beb170c98dc5216c) by 9S (https://sketchfab.com/NlNES) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)

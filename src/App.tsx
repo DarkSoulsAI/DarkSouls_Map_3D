@@ -4,6 +4,8 @@ import { Sidebar } from './ui/Sidebar'
 import { ModeToggle } from './ui/ModeToggle'
 import { AudioManager } from './ui/AudioManager'
 import { CinematicCaption } from './ui/CinematicCaption'
+import { Timeline } from './ui/Timeline'
+import { BranchMap } from './ui/BranchMap'
 import { PositionEditor } from './scene/PositionEditor'
 import { PositionPickerUI } from './ui/PositionPickerUI'
 
@@ -26,6 +28,8 @@ export default function App() {
       <ModeToggle />
       <CinematicCaption />
       <Sidebar />
+      <Timeline />
+      <BranchMap />
       <AudioManager />
       {import.meta.env.DEV && <PositionEditor />}
       {import.meta.env.DEV && <PositionPickerUI />}

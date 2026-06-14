@@ -207,17 +207,28 @@ def place(regions, bonfires):
 # ---------------------------------------------------------- cinematic pose ---
 # Depths centroid == OrbitControls target in the app; use it as the map's core.
 MODEL_CENTER = [13.81, -90.32, -155.34]
-VIEW_DIST = 100.0   # how far the dwell camera sits from the bonfire
-VIEW_LIFT = 40.0    # extra vertical lift so the shot looks down onto the fire
 
-def make_pose(p):
+def region_span(box):
+    return max(box["max"][d] - box["min"][d] for d in range(3))
+
+def view_distance(regions, bid):
+    """Pull-back distance scales with region size so big regions (Anor Londo,
+    Duke's) get framed with context instead of a flat wall filling the view."""
+    if bid in INTERPOLATE:
+        ra, rb, _ = INTERPOLATE[bid]
+        span = (region_span(regions[ra]) + region_span(regions[rb])) / 2
+    else:
+        span = region_span(regions[REGION[bid]])
+    return max(110.0, min(0.55 * span, 260.0))
+
+def make_pose(p, dist):
     """Frame a bonfire from outside the map looking inward: pull the camera back
     along (bonfire - MODEL_CENTER) so it never sits inside geometry, then lift."""
     dx = [p[i] - MODEL_CENTER[i] for i in range(3)]
-    dist = math.sqrt(sum(v * v for v in dx))
-    direction = [v / dist for v in dx] if dist > 1e-3 else [0.0, 0.3, -1.0]
-    cam = [p[i] + direction[i] * VIEW_DIST for i in range(3)]
-    cam[1] += VIEW_LIFT
+    d = math.sqrt(sum(v * v for v in dx))
+    direction = [v / d for v in dx] if d > 1e-3 else [0.0, 0.3, -1.0]
+    cam = [p[i] + direction[i] * dist for i in range(3)]
+    cam[1] += 0.3 * dist
     return [round(v, 1) for v in cam], [round(v, 1) for v in p]
 
 # ----------------------------------------------------------------- main ------
@@ -246,7 +257,7 @@ def main():
         if write:
             b["world_position"] = new
         if poses:
-            cam, look = make_pose(new)
+            cam, look = make_pose(new, view_distance(regions, b["id"]))
             b["cinematic_pose"]["camera_position"] = cam
             b["cinematic_pose"]["look_at"] = look
             # duration_seconds (pacing) is preserved as-authored

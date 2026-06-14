@@ -204,9 +204,26 @@ def place(regions, bonfires):
 
     return pos
 
+# ---------------------------------------------------------- cinematic pose ---
+# Depths centroid == OrbitControls target in the app; use it as the map's core.
+MODEL_CENTER = [13.81, -90.32, -155.34]
+VIEW_DIST = 100.0   # how far the dwell camera sits from the bonfire
+VIEW_LIFT = 40.0    # extra vertical lift so the shot looks down onto the fire
+
+def make_pose(p):
+    """Frame a bonfire from outside the map looking inward: pull the camera back
+    along (bonfire - MODEL_CENTER) so it never sits inside geometry, then lift."""
+    dx = [p[i] - MODEL_CENTER[i] for i in range(3)]
+    dist = math.sqrt(sum(v * v for v in dx))
+    direction = [v / dist for v in dx] if dist > 1e-3 else [0.0, 0.3, -1.0]
+    cam = [p[i] + direction[i] * VIEW_DIST for i in range(3)]
+    cam[1] += VIEW_LIFT
+    return [round(v, 1) for v in cam], [round(v, 1) for v in p]
+
 # ----------------------------------------------------------------- main ------
 def main():
     write = "--write" in sys.argv
+    poses = "--poses" in sys.argv
     regions = extract_regions()
     json.dump(regions, open(ANCHORS, "w"), ensure_ascii=False, indent=2)
     print(f"wrote {ANCHORS} ({len(regions)} regions)\n")
@@ -228,6 +245,17 @@ def main():
         print(f"{b['id']:26s} {fo:>22s}  ->  {fn:>22s}")
         if write:
             b["world_position"] = new
+        if poses:
+            cam, look = make_pose(new)
+            b["cinematic_pose"]["camera_position"] = cam
+            b["cinematic_pose"]["look_at"] = look
+            # duration_seconds (pacing) is preserved as-authored
+
+    if poses:
+        print("\n-- regenerated cinematic_pose (camera looks inward at each fire) --")
+        for b in sorted(bonfires, key=lambda b: b["order"]):
+            cam = b["cinematic_pose"]["camera_position"]
+            print(f"{b['id']:26s} cam={cam}  look={b['cinematic_pose']['look_at']}")
 
     if write:
         with open(BONFIRES, "w") as f:

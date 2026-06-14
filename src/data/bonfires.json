@@ -14,14 +14,14 @@
     "depth_tier": 0,
     "cinematic_pose": {
       "camera_position": [
-        28,
-        -65,
-        -125
+        129.2,
+        22.8,
+        21.5
       ],
       "look_at": [
-        8,
-        -78,
-        -148
+        77.6,
+        -49.9,
+        -57.6
       ],
       "duration_seconds": 8
     },
@@ -99,14 +99,14 @@
     "depth_tier": 1,
     "cinematic_pose": {
       "camera_position": [
-        38,
-        -58,
-        -112
+        96.6,
+        82.4,
+        70.7
       ],
       "look_at": [
-        18,
-        -70,
-        -132
+        66.5,
+        -5.9,
+        -11.5
       ],
       "duration_seconds": 7
     },
@@ -169,14 +169,14 @@
     "depth_tier": 1,
     "cinematic_pose": {
       "camera_position": [
-        42,
-        -50,
-        -108
+        -2.1,
+        74.0,
+        130.0
       ],
       "look_at": [
-        20,
-        -62,
-        -128
+        3.0,
+        -5.9,
+        38.4
       ],
       "duration_seconds": 8
     },
@@ -241,14 +241,14 @@
     "depth_tier": 0,
     "cinematic_pose": {
       "camera_position": [
-        5,
-        -60,
-        -128
+        3.7,
+        68.3,
+        274.9
       ],
       "look_at": [
-        -15,
-        -72,
-        -148
+        6.0,
+        1.7,
+        178.5
       ],
       "duration_seconds": 9
     },
@@ -310,14 +310,14 @@
     "depth_tier": -1,
     "cinematic_pose": {
       "camera_position": [
-        -2,
-        -72,
-        -138
+        -284.2,
+        1.2,
+        259.3
       ],
       "look_at": [
-        -22,
-        -85,
-        -158
+        -226.1,
+        -48.8,
+        178.5
       ],
       "duration_seconds": 8
     },
@@ -379,14 +379,14 @@
     "depth_tier": -1,
     "cinematic_pose": {
       "camera_position": [
-        32,
-        -82,
-        -120
+        -8.0,
+        -6.7,
+        -68.0
       ],
       "look_at": [
-        12,
-        -95,
-        -140
+        13.8,
+        -90.3,
+        -155.3
       ],
       "duration_seconds": 7
     },
@@ -449,14 +449,14 @@
     "depth_tier": -2,
     "cinematic_pose": {
       "camera_position": [
-        18,
-        -95,
-        -138
+        242.5,
+        -85.2,
+        -90.5
       ],
       "look_at": [
-        -2,
-        -108,
-        -158
+        147.3,
+        -110.7,
+        -117.5
       ],
       "duration_seconds": 10
     },
@@ -519,14 +519,14 @@
     "depth_tier": -3,
     "cinematic_pose": {
       "camera_position": [
-        12,
-        -98,
-        -145
+        48.1,
+        -243.6,
+        -82.9
       ],
       "look_at": [
-        -8,
-        -112,
-        -165
+        31.7,
+        -191.2,
+        -117.5
       ],
       "duration_seconds": 10
     },
@@ -591,14 +591,14 @@
     "depth_tier": 2,
     "cinematic_pose": {
       "camera_position": [
-        42,
-        -47,
-        -100
+        282.9,
+        129.2,
+        173.7
       ],
       "look_at": [
-        22,
-        -60,
-        -120
+        224.6,
+        50.3,
+        102.4
       ],
       "duration_seconds": 9
     },
@@ -662,14 +662,14 @@
     "depth_tier": 3,
     "cinematic_pose": {
       "camera_position": [
-        48,
-        -42,
-        -88
+        380.0,
+        196.8,
+        484.6
       ],
       "look_at": [
-        28,
-        -57,
-        -108
+        332.9,
+        125.0,
+        402.3
       ],
       "duration_seconds": 12
     },
@@ -734,14 +734,14 @@
     "depth_tier": 3,
     "cinematic_pose": {
       "camera_position": [
-        70,
-        -50,
-        -92
+        276.4,
+        203.6,
+        392.2
       ],
       "look_at": [
-        50,
-        -62,
-        -112
+        236.5,
+        125.0,
+        309.0
       ],
       "duration_seconds": 10
     },
@@ -800,14 +800,14 @@
     "depth_tier": 2,
     "cinematic_pose": {
       "camera_position": [
-        65,
-        -50,
-        -98
+        854.5,
+        303.7,
+        299.1
       ],
       "look_at": [
-        45,
-        -63,
-        -118
+        772.0,
+        229.0,
+        254.5
       ],
       "duration_seconds": 9
     },
@@ -870,14 +870,14 @@
     "depth_tier": -2,
     "cinematic_pose": {
       "camera_position": [
-        18,
-        -82,
-        -148
+        316.0,
+        -94.8,
+        93.6
       ],
       "look_at": [
-        -2,
-        -95,
-        -168
+        239.3,
+        -123.5,
+        30.4
       ],
       "duration_seconds": 9
     },
@@ -939,14 +939,14 @@
     "depth_tier": -3,
     "cinematic_pose": {
       "camera_position": [
-        12,
-        -105,
-        -155
+        86.6,
+        -248.8,
+        46.9
       ],
       "look_at": [
-        -8,
-        -118,
-        -175
+        61.7,
+        -221.0,
+        -22.2
       ],
       "duration_seconds": 11
     },
@@ -1009,14 +1009,14 @@
     "depth_tier": -2,
     "cinematic_pose": {
       "camera_position": [
-        22,
-        -90,
-        -132
+        72.0,
+        -81.5,
+        155.6
       ],
       "look_at": [
-        2,
-        -105,
-        -152
+        53.7,
+        -111.7,
+        57.8
       ],
       "duration_seconds": 10
     },
@@ -1080,14 +1080,14 @@
     "depth_tier": -4,
     "cinematic_pose": {
       "camera_position": [
-        22,
-        -108,
-        -132
+        -37.7,
+        -149.0,
+        203.5
       ],
       "look_at": [
-        2,
-        -122,
-        -152
+        -24.0,
+        -162.7,
+        108.0
       ],
       "duration_seconds": 12
     },
@@ -1147,14 +1147,14 @@
     "depth_tier": -2,
     "cinematic_pose": {
       "camera_position": [
-        2,
-        -82,
-        -142
+        -46.4,
+        -84.4,
+        104.1
       ],
       "look_at": [
-        -18,
-        -95,
-        -162
+        -24.0,
+        -111.7,
+        7.5
       ],
       "duration_seconds": 8
     },
@@ -1213,14 +1213,14 @@
     "depth_tier": -3,
     "cinematic_pose": {
       "camera_position": [
-        32,
-        -102,
-        -152
+        183.9,
+        -308.7,
+        543.0
       ],
       "look_at": [
-        12,
-        -115,
-        -172
+        161.6,
+        -314.9,
+        451.6
       ],
       "duration_seconds": 10
     },
@@ -1282,14 +1282,14 @@
     "depth_tier": -4,
     "cinematic_pose": {
       "camera_position": [
-        25,
-        -108,
-        -160
+        188.3,
+        -463.8,
+        320.3
       ],
       "look_at": [
-        5,
-        -122,
-        -180
+        161.6,
+        -440.6,
+        247.6
       ],
       "duration_seconds": 12
     },
@@ -1351,14 +1351,14 @@
     "depth_tier": -4,
     "cinematic_pose": {
       "camera_position": [
-        10,
-        -104,
-        -150
+        -37.7,
+        -256.6,
+        -436.0
       ],
       "look_at": [
-        -10,
-        -118,
-        -170
+        -23.1,
+        -238.0,
+        -356.3
       ],
       "duration_seconds": 8
     },
@@ -1416,14 +1416,14 @@
     "depth_tier": -5,
     "cinematic_pose": {
       "camera_position": [
-        5,
-        -110,
-        -155
+        -124.1,
+        -304.0,
+        -599.3
       ],
       "look_at": [
-        -15,
-        -124,
-        -175
+        -98.1,
+        -296.1,
+        -515.5
       ],
       "duration_seconds": 14
     },
@@ -1483,14 +1483,14 @@
     "depth_tier": 0,
     "cinematic_pose": {
       "camera_position": [
-        34,
-        -52,
-        -125
+        170.8,
+        -91.8,
+        310.9
       ],
       "look_at": [
-        14,
-        -67,
-        -145
+        139.0,
+        -123.4,
+        216.5
       ],
       "duration_seconds": 15
     },
@@ -1549,14 +1549,14 @@
     "depth_tier": 2,
     "cinematic_pose": {
       "camera_position": [
-        43,
-        -45,
-        -101
+        -97.9,
+        124.1,
+        60.7
       ],
       "look_at": [
-        23,
-        -57,
-        -121
+        -60.6,
+        25.8,
+        -11.5
       ],
       "duration_seconds": 8
     },
@@ -1615,14 +1615,14 @@
     "depth_tier": 0,
     "cinematic_pose": {
       "camera_position": [
-        35,
-        -67,
-        -116
+        -7.0,
+        50.9,
+        25.4
       ],
       "look_at": [
-        15,
-        -80,
-        -136
+        3.0,
+        -37.7,
+        -61.4
       ],
       "duration_seconds": 7
     },
@@ -1684,14 +1684,14 @@
     "depth_tier": -3,
     "cinematic_pose": {
       "camera_position": [
-        10,
-        -101,
-        -148
+        387.4,
+        -310.0,
+        428.5
       ],
       "look_at": [
-        -10,
-        -115,
-        -168
+        336.9,
+        -314.9,
+        349.6
       ],
       "duration_seconds": 10
     },
@@ -1754,14 +1754,14 @@
     "depth_tier": 3,
     "cinematic_pose": {
       "camera_position": [
-        51,
-        -41,
-        -83
+        267.4,
+        194.9,
+        585.8
       ],
       "look_at": [
-        31,
-        -54,
-        -103
+        236.5,
+        125.0,
+        495.5
       ],
       "duration_seconds": 12
     },
@@ -1831,14 +1831,14 @@
     "depth_tier": 2,
     "cinematic_pose": {
       "camera_position": [
-        70,
-        -47,
-        -91
+        608.6,
+        312.3,
+        310.1
       ],
       "look_at": [
-        50,
-        -60,
-        -111
+        537.6,
+        229.0,
+        254.5
       ],
       "duration_seconds": 10
     },

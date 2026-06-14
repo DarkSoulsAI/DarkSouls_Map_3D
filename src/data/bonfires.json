@@ -7,9 +7,9 @@
     "region": "firelink",
     "difficulty_tier": 1,
     "world_position": [
-      55.3,
-      -60.6,
-      -52.2
+      77.6,
+      -49.9,
+      -57.6
     ],
     "depth_tier": 0,
     "cinematic_pose": {
@@ -92,9 +92,9 @@
     "region": "undead_burg",
     "difficulty_tier": 1,
     "world_position": [
-      18,
-      -70,
-      -132
+      66.5,
+      -5.9,
+      -11.5
     ],
     "depth_tier": 1,
     "cinematic_pose": {
@@ -162,9 +162,9 @@
     "region": "undead_parish",
     "difficulty_tier": 1,
     "world_position": [
-      20,
-      -62,
-      -128
+      3.0,
+      -5.9,
+      38.4
     ],
     "depth_tier": 1,
     "cinematic_pose": {
@@ -234,9 +234,9 @@
     "region": "darkroot",
     "difficulty_tier": 2,
     "world_position": [
-      -15,
-      -72,
-      -148
+      6.0,
+      1.7,
+      178.5
     ],
     "depth_tier": 0,
     "cinematic_pose": {
@@ -303,9 +303,9 @@
     "region": "darkroot",
     "difficulty_tier": 2,
     "world_position": [
-      -22,
-      -85,
-      -158
+      -226.1,
+      -48.8,
+      178.5
     ],
     "depth_tier": -1,
     "cinematic_pose": {
@@ -372,9 +372,9 @@
     "region": "depths",
     "difficulty_tier": 2,
     "world_position": [
-      12,
-      -95,
-      -140
+      13.8,
+      -90.3,
+      -155.3
     ],
     "depth_tier": -1,
     "cinematic_pose": {
@@ -442,9 +442,9 @@
     "region": "blighttown",
     "difficulty_tier": 3,
     "world_position": [
-      -2,
-      -108,
-      -158
+      147.3,
+      -110.7,
+      -117.5
     ],
     "depth_tier": -2,
     "cinematic_pose": {
@@ -512,9 +512,9 @@
     "region": "blighttown",
     "difficulty_tier": 3,
     "world_position": [
-      -8,
-      -112,
-      -165
+      31.7,
+      -191.2,
+      -117.5
     ],
     "depth_tier": -3,
     "cinematic_pose": {
@@ -584,9 +584,9 @@
     "region": "sens_fortress",
     "difficulty_tier": 3,
     "world_position": [
-      22,
-      -60,
-      -120
+      224.6,
+      50.3,
+      102.4
     ],
     "depth_tier": 2,
     "cinematic_pose": {
@@ -655,9 +655,9 @@
     "region": "anor_londo",
     "difficulty_tier": 3,
     "world_position": [
-      28,
-      -57,
-      -108
+      332.9,
+      125.0,
+      402.3
     ],
     "depth_tier": 3,
     "cinematic_pose": {
@@ -727,9 +727,9 @@
     "region": "painted_world",
     "difficulty_tier": 3,
     "world_position": [
-      50,
-      -62,
-      -112
+      236.5,
+      125.0,
+      309.0
     ],
     "depth_tier": 3,
     "cinematic_pose": {
@@ -793,9 +793,9 @@
     "region": "crystal_cave",
     "difficulty_tier": 4,
     "world_position": [
-      45,
-      -63,
-      -118
+      772.0,
+      229.0,
+      254.5
     ],
     "depth_tier": 2,
     "cinematic_pose": {
@@ -863,9 +863,9 @@
     "region": "catacombs",
     "difficulty_tier": 3,
     "world_position": [
-      -2,
-      -95,
-      -168
+      239.3,
+      -123.5,
+      30.4
     ],
     "depth_tier": -2,
     "cinematic_pose": {
@@ -932,9 +932,9 @@
     "region": "tomb_of_giants",
     "difficulty_tier": 4,
     "world_position": [
-      -8,
-      -118,
-      -175
+      61.7,
+      -221.0,
+      -22.2
     ],
     "depth_tier": -3,
     "cinematic_pose": {
@@ -1002,9 +1002,9 @@
     "region": "new_londo",
     "difficulty_tier": 3,
     "world_position": [
-      2,
-      -105,
-      -152
+      53.7,
+      -111.7,
+      57.8
     ],
     "depth_tier": -2,
     "cinematic_pose": {
@@ -1073,9 +1073,9 @@
     "region": "new_londo",
     "difficulty_tier": 4,
     "world_position": [
-      2,
-      -122,
-      -152
+      -24.0,
+      -162.7,
+      108.0
     ],
     "depth_tier": -4,
     "cinematic_pose": {
@@ -1140,9 +1140,9 @@
     "region": "valley_of_drakes",
     "difficulty_tier": 2,
     "world_position": [
-      -18,
-      -95,
-      -162
+      -24.0,
+      -111.7,
+      7.5
     ],
     "depth_tier": -2,
     "cinematic_pose": {
@@ -1206,9 +1206,9 @@
     "region": "izalith",
     "difficulty_tier": 4,
     "world_position": [
-      12,
-      -115,
-      -172
+      161.6,
+      -314.9,
+      451.6
     ],
     "depth_tier": -3,
     "cinematic_pose": {
@@ -1275,9 +1275,9 @@
     "region": "izalith",
     "difficulty_tier": 5,
     "world_position": [
-      5,
-      -122,
-      -180
+      161.6,
+      -440.6,
+      247.6
     ],
     "depth_tier": -4,
     "cinematic_pose": {
@@ -1344,9 +1344,9 @@
     "region": "ash_lake",
     "difficulty_tier": 2,
     "world_position": [
-      -10,
-      -118,
-      -170
+      -23.1,
+      -238.0,
+      -356.3
     ],
     "depth_tier": -4,
     "cinematic_pose": {
@@ -1409,9 +1409,9 @@
     "region": "ash_lake",
     "difficulty_tier": 2,
     "world_position": [
-      -15,
-      -124,
-      -175
+      -98.1,
+      -296.1,
+      -515.5
     ],
     "depth_tier": -5,
     "cinematic_pose": {
@@ -1476,9 +1476,9 @@
     "region": "kiln",
     "difficulty_tier": 5,
     "world_position": [
-      14,
-      -67,
-      -145
+      139.0,
+      -123.4,
+      216.5
     ],
     "depth_tier": 0,
     "cinematic_pose": {
@@ -1542,9 +1542,9 @@
     "region": "undead_parish",
     "difficulty_tier": 1,
     "world_position": [
-      23,
-      -57,
-      -121
+      -60.6,
+      25.8,
+      -11.5
     ],
     "depth_tier": 2,
     "cinematic_pose": {
@@ -1608,9 +1608,9 @@
     "region": "undead_burg",
     "difficulty_tier": 2,
     "world_position": [
-      15,
-      -80,
-      -136
+      3.0,
+      -37.7,
+      -61.4
     ],
     "depth_tier": 0,
     "cinematic_pose": {
@@ -1677,9 +1677,9 @@
     "region": "blighttown",
     "difficulty_tier": 3,
     "world_position": [
-      -10,
-      -115,
-      -168
+      336.9,
+      -314.9,
+      349.6
     ],
     "depth_tier": -3,
     "cinematic_pose": {
@@ -1747,9 +1747,9 @@
     "region": "anor_londo",
     "difficulty_tier": 4,
     "world_position": [
-      31,
-      -54,
-      -103
+      236.5,
+      125.0,
+      495.5
     ],
     "depth_tier": 3,
     "cinematic_pose": {
@@ -1824,9 +1824,9 @@
     "region": "crystal_cave",
     "difficulty_tier": 4,
     "world_position": [
-      50,
-      -60,
-      -111
+      537.6,
+      229.0,
+      254.5
     ],
     "depth_tier": 2,
     "cinematic_pose": {

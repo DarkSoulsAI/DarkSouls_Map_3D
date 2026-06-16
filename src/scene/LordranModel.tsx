@@ -26,15 +26,58 @@ const REGION_BANDS: Array<{ minY: number; color: string }> = [
   { minY: -999, color: '#3a7888' },
 ]
 
+// Procedurally-generated clay/stone matcap. The model has no UVs and no
+// textures, so we fake lit surface material with a matcap (sphere-shaded
+// lookup keyed by view-space normal) — no UVs and no external asset needed.
+function norm3(x: number, y: number, z: number): [number, number, number] {
+  const l = Math.hypot(x, y, z); return [x / l, y / l, z / l]
+}
+
+function buildMatcapTexture(size = 256): THREE.Texture {
+  const data = new Uint8Array(size * size * 4)
+  const L1 = norm3(-0.4, 0.7, 0.55)   // key light, upper-left
+  const L2 = norm3(0.5, -0.25, 0.5)   // fill light, lower-right
+  const hz = L1[2] + 1
+  const hl = Math.hypot(L1[0], L1[1], hz)
+  for (let y = 0; y < size; y++) {
+    for (let x = 0; x < size; x++) {
+      const u = ((x + 0.5) / size) * 2 - 1
+      const v = ((y + 0.5) / size) * 2 - 1
+      const nx = u, ny = -v
+      const r2 = nx * nx + ny * ny
+      const nz = r2 < 1 ? Math.sqrt(1 - r2) : 0
+      const diff = Math.max(nx * L1[0] + ny * L1[1] + nz * L1[2], 0)
+      const fill = Math.max(nx * L2[0] + ny * L2[1] + nz * L2[2], 0) * 0.22
+      const spec = Math.pow(Math.max((nx * L1[0] + ny * L1[1] + nz * hz) / hl, 0), 28) * 0.3
+      const rim = Math.pow(1 - nz, 3) * 0.4
+      const i = Math.min(0.30 + 0.85 * diff + fill + spec + rim, 1)
+      const o = (y * size + x) * 4
+      data[o]     = Math.min(i * 255, 255)          // warm stone tint
+      data[o + 1] = Math.min(i * 247, 255)
+      data[o + 2] = Math.min(i * 230, 255)
+      data[o + 3] = 255
+    }
+  }
+  const tex = new THREE.DataTexture(data, size, size, THREE.RGBAFormat)
+  tex.colorSpace = THREE.SRGBColorSpace
+  tex.minFilter = THREE.LinearFilter
+  tex.magFilter = THREE.LinearFilter
+  tex.needsUpdate = true
+  return tex
+}
+
+const MATCAP_TEX = buildMatcapTexture()
+
+// Matcap shading, tinted per elevation band so regions stay distinguishable.
 const REGION_MATS = REGION_BANDS.map(b =>
-  new THREE.MeshBasicMaterial({ color: b.color, side: THREE.DoubleSide })
+  new THREE.MeshMatcapMaterial({ matcap: MATCAP_TEX, color: b.color, side: THREE.DoubleSide })
 )
 
-const EDGE_MAT = new THREE.LineBasicMaterial({ color: '#ffffff', linewidth: 1 })
+const EDGE_MAT = new THREE.LineBasicMaterial({ color: '#ffffff', transparent: true, opacity: 0.16 })
 const CURSOR_MAT = new THREE.MeshBasicMaterial({ color: '#ffdd44', transparent: true, opacity: 0.9 })
 const CURSOR_RING_MAT = new THREE.MeshBasicMaterial({ color: '#ffffff', transparent: true, opacity: 0.6, wireframe: true })
 
-function getRegionMat(worldCenterY: number): THREE.MeshBasicMaterial {
+function getRegionMat(worldCenterY: number): THREE.MeshMatcapMaterial {
   for (let i = 0; i < REGION_BANDS.length; i++) {
     if (worldCenterY >= REGION_BANDS[i].minY) return REGION_MATS[i]
   }

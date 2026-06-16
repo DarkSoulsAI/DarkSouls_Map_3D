@@ -7,6 +7,10 @@ import { useAppStore } from '../store/useAppStore'
 
 interface Props { bonfire: Bonfire }
 
+// Bonfires now sit on the model's true geometry (~1000-unit span), so markers
+// are scaled up from their original ~0.5-unit size to stay readable.
+const MARKER_SCALE = 10
+
 export function BonfireMarker({ bonfire }: Props) {
   const currentBonfireId   = useAppStore(s => s.currentBonfireId)
   const visitedIds         = useAppStore(s => s.visitedIds)
@@ -36,7 +40,7 @@ export function BonfireMarker({ bonfire }: Props) {
   const emissive    = isCurrent ? 2.5 : isVisited ? 1.5 : 0.6
 
   return (
-    <group position={positionOverride ?? bonfire.world_position}>
+    <group position={positionOverride ?? bonfire.world_position} scale={MARKER_SCALE}>
       {/* Outer ring / base — visible from far away */}
       <mesh rotation={[-Math.PI / 2, 0, 0]}>
         <ringGeometry args={[0.45, 0.62, 20]} />

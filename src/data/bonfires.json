@@ -7,21 +7,21 @@
     "region": "firelink",
     "difficulty_tier": 1,
     "world_position": [
-      55.3,
-      -60.6,
-      -52.2
+      77.6,
+      -49.9,
+      -57.6
     ],
     "depth_tier": 0,
     "cinematic_pose": {
       "camera_position": [
-        28,
-        -65,
-        -125
+        150.5,
+        38.7,
+        54.2
       ],
       "look_at": [
-        8,
-        -78,
-        -148
+        77.6,
+        -49.9,
+        -57.6
       ],
       "duration_seconds": 8
     },
@@ -92,21 +92,21 @@
     "region": "undead_burg",
     "difficulty_tier": 1,
     "world_position": [
-      18,
-      -70,
-      -132
+      66.5,
+      -5.9,
+      -11.5
     ],
     "depth_tier": 1,
     "cinematic_pose": {
       "camera_position": [
-        38,
-        -58,
-        -112
+        113.3,
+        115.7,
+        116.2
       ],
       "look_at": [
-        18,
-        -70,
-        -132
+        66.5,
+        -5.9,
+        -11.5
       ],
       "duration_seconds": 7
     },
@@ -162,21 +162,21 @@
     "region": "undead_parish",
     "difficulty_tier": 1,
     "world_position": [
-      20,
-      -62,
-      -128
+      3.0,
+      -5.9,
+      38.4
     ],
     "depth_tier": 1,
     "cinematic_pose": {
       "camera_position": [
-        42,
-        -50,
-        -108
+        -4.9,
+        102.7,
+        180.6
       ],
       "look_at": [
-        20,
-        -62,
-        -128
+        3.0,
+        -5.9,
+        38.4
       ],
       "duration_seconds": 8
     },
@@ -234,21 +234,21 @@
     "region": "darkroot",
     "difficulty_tier": 2,
     "world_position": [
-      -15,
-      -72,
-      -148
+      6.0,
+      1.7,
+      178.5
     ],
     "depth_tier": 0,
     "cinematic_pose": {
       "camera_position": [
-        5,
-        -60,
-        -128
+        0.1,
+        148.8,
+        429.1
       ],
       "look_at": [
-        -15,
-        -72,
-        -148
+        6.0,
+        1.7,
+        178.5
       ],
       "duration_seconds": 9
     },
@@ -303,21 +303,21 @@
     "region": "darkroot",
     "difficulty_tier": 2,
     "world_position": [
-      -22,
-      -85,
-      -158
+      -226.1,
+      -48.8,
+      178.5
     ],
     "depth_tier": -1,
     "cinematic_pose": {
       "camera_position": [
-        -2,
-        -72,
-        -138
+        -377.1,
+        55.3,
+        388.6
       ],
       "look_at": [
-        -22,
-        -85,
-        -158
+        -226.1,
+        -48.8,
+        178.5
       ],
       "duration_seconds": 8
     },
@@ -372,21 +372,21 @@
     "region": "depths",
     "difficulty_tier": 2,
     "world_position": [
-      12,
-      -95,
-      -140
+      13.8,
+      -90.3,
+      -155.3
     ],
     "depth_tier": -1,
     "cinematic_pose": {
       "camera_position": [
-        32,
-        -82,
-        -120
+        -10.2,
+        -9.3,
+        -59.3
       ],
       "look_at": [
-        12,
-        -95,
-        -140
+        13.8,
+        -90.3,
+        -155.3
       ],
       "duration_seconds": 7
     },
@@ -442,21 +442,21 @@
     "region": "blighttown",
     "difficulty_tier": 3,
     "world_position": [
-      -2,
-      -108,
-      -158
+      147.3,
+      -110.7,
+      -117.5
     ],
     "depth_tier": -2,
     "cinematic_pose": {
       "camera_position": [
-        18,
-        -95,
-        -138
+        394.8,
+        -70.5,
+        -47.3
       ],
       "look_at": [
-        -2,
-        -108,
-        -158
+        147.3,
+        -110.7,
+        -117.5
       ],
       "duration_seconds": 10
     },
@@ -512,21 +512,21 @@
     "region": "blighttown",
     "difficulty_tier": 3,
     "world_position": [
-      -8,
-      -112,
-      -165
+      31.7,
+      -191.2,
+      -117.5
     ],
     "depth_tier": -3,
     "cinematic_pose": {
       "camera_position": [
-        12,
-        -98,
-        -145
+        74.3,
+        -353.3,
+        -27.4
       ],
       "look_at": [
-        -8,
-        -112,
-        -165
+        31.7,
+        -191.2,
+        -117.5
       ],
       "duration_seconds": 10
     },
@@ -584,21 +584,21 @@
     "region": "sens_fortress",
     "difficulty_tier": 3,
     "world_position": [
-      22,
-      -60,
-      -120
+      224.6,
+      50.3,
+      102.4
     ],
     "depth_tier": 2,
     "cinematic_pose": {
       "camera_position": [
-        42,
-        -47,
-        -100
+        296.4,
+        135.2,
+        190.2
       ],
       "look_at": [
-        22,
-        -60,
-        -120
+        224.6,
+        50.3,
+        102.4
       ],
       "duration_seconds": 9
     },
@@ -655,21 +655,21 @@
     "region": "anor_londo",
     "difficulty_tier": 3,
     "world_position": [
-      28,
-      -57,
-      -108
+      332.9,
+      125.0,
+      402.3
     ],
     "depth_tier": 3,
     "cinematic_pose": {
       "camera_position": [
-        48,
-        -42,
-        -88
+        455.3,
+        285.6,
+        616.3
       ],
       "look_at": [
-        28,
-        -57,
-        -108
+        332.9,
+        125.0,
+        402.3
       ],
       "duration_seconds": 12
     },
@@ -727,21 +727,21 @@
     "region": "painted_world",
     "difficulty_tier": 3,
     "world_position": [
-      50,
-      -62,
-      -112
+      236.5,
+      125.0,
+      309.0
     ],
     "depth_tier": 3,
     "cinematic_pose": {
       "camera_position": [
-        70,
-        -50,
-        -92
+        340.2,
+        303.3,
+        525.3
       ],
       "look_at": [
-        50,
-        -62,
-        -112
+        236.5,
+        125.0,
+        309.0
       ],
       "duration_seconds": 10
     },
@@ -793,21 +793,21 @@
     "region": "crystal_cave",
     "difficulty_tier": 4,
     "world_position": [
-      45,
-      -63,
-      -118
+      772.0,
+      229.0,
+      254.5
     ],
     "depth_tier": 2,
     "cinematic_pose": {
       "camera_position": [
-        65,
-        -50,
-        -98
+        986.5,
+        397.3,
+        370.4
       ],
       "look_at": [
-        45,
-        -63,
-        -118
+        772.0,
+        229.0,
+        254.5
       ],
       "duration_seconds": 9
     },
@@ -863,21 +863,21 @@
     "region": "catacombs",
     "difficulty_tier": 3,
     "world_position": [
-      -2,
-      -95,
-      -168
+      239.3,
+      -123.5,
+      30.4
     ],
     "depth_tier": -2,
     "cinematic_pose": {
       "camera_position": [
-        18,
-        -82,
-        -148
+        328.3,
+        -101.8,
+        103.7
       ],
       "look_at": [
-        -2,
-        -95,
-        -168
+        239.3,
+        -123.5,
+        30.4
       ],
       "duration_seconds": 9
     },
@@ -932,21 +932,21 @@
     "region": "tomb_of_giants",
     "difficulty_tier": 4,
     "world_position": [
-      -8,
-      -118,
-      -175
+      61.7,
+      -221.0,
+      -22.2
     ],
     "depth_tier": -3,
     "cinematic_pose": {
       "camera_position": [
-        12,
-        -105,
-        -155
+        105.6,
+        -287.9,
+        100.0
       ],
       "look_at": [
-        -8,
-        -118,
-        -175
+        61.7,
+        -221.0,
+        -22.2
       ],
       "duration_seconds": 11
     },
@@ -1002,21 +1002,21 @@
     "region": "new_londo",
     "difficulty_tier": 3,
     "world_position": [
-      2,
-      -105,
-      -152
+      53.7,
+      -111.7,
+      57.8
     ],
     "depth_tier": -2,
     "cinematic_pose": {
       "camera_position": [
-        22,
-        -90,
-        -132
+        79.7,
+        -83.1,
+        196.5
       ],
       "look_at": [
-        2,
-        -105,
-        -152
+        53.7,
+        -111.7,
+        57.8
       ],
       "duration_seconds": 10
     },
@@ -1073,21 +1073,21 @@
     "region": "new_londo",
     "difficulty_tier": 4,
     "world_position": [
-      2,
-      -122,
-      -152
+      -24.0,
+      -162.7,
+      108.0
     ],
     "depth_tier": -4,
     "cinematic_pose": {
       "camera_position": [
-        22,
-        -108,
-        -132
+        -43.4,
+        -157.4,
+        243.5
       ],
       "look_at": [
-        2,
-        -122,
-        -152
+        -24.0,
+        -162.7,
+        108.0
       ],
       "duration_seconds": 12
     },
@@ -1140,21 +1140,21 @@
     "region": "valley_of_drakes",
     "difficulty_tier": 2,
     "world_position": [
-      -18,
-      -95,
-      -162
+      -24.0,
+      -111.7,
+      7.5
     ],
     "depth_tier": -2,
     "cinematic_pose": {
       "camera_position": [
-        2,
-        -82,
-        -142
+        -55.8,
+        -87.1,
+        144.5
       ],
       "look_at": [
-        -18,
-        -95,
-        -162
+        -24.0,
+        -111.7,
+        7.5
       ],
       "duration_seconds": 8
     },
@@ -1206,21 +1206,21 @@
     "region": "izalith",
     "difficulty_tier": 4,
     "world_position": [
-      12,
-      -115,
-      -172
+      161.6,
+      -314.9,
+      451.6
     ],
     "depth_tier": -3,
     "cinematic_pose": {
       "camera_position": [
-        32,
-        -102,
-        -152
+        219.5,
+        -324.9,
+        689.3
       ],
       "look_at": [
-        12,
-        -115,
-        -172
+        161.6,
+        -314.9,
+        451.6
       ],
       "duration_seconds": 10
     },
@@ -1275,21 +1275,21 @@
     "region": "izalith",
     "difficulty_tier": 5,
     "world_position": [
-      5,
-      -122,
-      -180
+      161.6,
+      -440.6,
+      247.6
     ],
     "depth_tier": -4,
     "cinematic_pose": {
       "camera_position": [
-        25,
-        -108,
-        -160
+        231.0,
+        -527.0,
+        436.7
       ],
       "look_at": [
-        5,
-        -122,
-        -180
+        161.6,
+        -440.6,
+        247.6
       ],
       "duration_seconds": 12
     },
@@ -1344,21 +1344,21 @@
     "region": "ash_lake",
     "difficulty_tier": 2,
     "world_position": [
-      -10,
-      -118,
-      -170
+      -23.1,
+      -238.0,
+      -356.3
     ],
     "depth_tier": -4,
     "cinematic_pose": {
       "camera_position": [
-        10,
-        -104,
-        -150
+        -61.2,
+        -312.3,
+        -563.6
       ],
       "look_at": [
-        -10,
-        -118,
-        -170
+        -23.1,
+        -238.0,
+        -356.3
       ],
       "duration_seconds": 8
     },
@@ -1409,21 +1409,21 @@
     "region": "ash_lake",
     "difficulty_tier": 2,
     "world_position": [
-      -15,
-      -124,
-      -175
+      -98.1,
+      -296.1,
+      -515.5
     ],
     "depth_tier": -5,
     "cinematic_pose": {
       "camera_position": [
-        5,
-        -110,
-        -155
+        -165.8,
+        -342.6,
+        -733.5
       ],
       "look_at": [
-        -15,
-        -124,
-        -175
+        -98.1,
+        -296.1,
+        -515.5
       ],
       "duration_seconds": 14
     },
@@ -1476,21 +1476,21 @@
     "region": "kiln",
     "difficulty_tier": 5,
     "world_position": [
-      14,
-      -67,
-      -145
+      139.0,
+      -123.4,
+      216.5
     ],
     "depth_tier": 0,
     "cinematic_pose": {
       "camera_position": [
-        34,
-        -52,
-        -125
+        220.3,
+        -68.2,
+        458.0
       ],
       "look_at": [
-        14,
-        -67,
-        -145
+        139.0,
+        -123.4,
+        216.5
       ],
       "duration_seconds": 15
     },
@@ -1542,21 +1542,21 @@
     "region": "undead_parish",
     "difficulty_tier": 1,
     "world_position": [
-      23,
-      -57,
-      -121
+      -60.6,
+      25.8,
+      -11.5
     ],
     "depth_tier": 2,
     "cinematic_pose": {
       "camera_position": [
-        43,
-        -45,
-        -101
+        -118.6,
+        162.9,
+        100.6
       ],
       "look_at": [
-        23,
-        -57,
-        -121
+        -60.6,
+        25.8,
+        -11.5
       ],
       "duration_seconds": 8
     },
@@ -1608,21 +1608,21 @@
     "region": "undead_burg",
     "difficulty_tier": 2,
     "world_position": [
-      15,
-      -80,
-      -136
+      3.0,
+      -37.7,
+      -61.4
     ],
     "depth_tier": 0,
     "cinematic_pose": {
       "camera_position": [
-        35,
-        -67,
-        -116
+        -12.5,
+        84.4,
+        73.4
       ],
       "look_at": [
-        15,
-        -80,
-        -136
+        3.0,
+        -37.7,
+        -61.4
       ],
       "duration_seconds": 7
     },
@@ -1677,21 +1677,21 @@
     "region": "blighttown",
     "difficulty_tier": 3,
     "world_position": [
-      -10,
-      -115,
-      -168
+      336.9,
+      -314.9,
+      349.6
     ],
     "depth_tier": -3,
     "cinematic_pose": {
       "camera_position": [
-        10,
-        -101,
-        -148
+        468.1,
+        -328.1,
+        554.7
       ],
       "look_at": [
-        -10,
-        -115,
-        -168
+        336.9,
+        -314.9,
+        349.6
       ],
       "duration_seconds": 10
     },
@@ -1747,21 +1747,21 @@
     "region": "anor_londo",
     "difficulty_tier": 4,
     "world_position": [
-      31,
-      -54,
-      -103
+      236.5,
+      125.0,
+      495.5
     ],
     "depth_tier": 3,
     "cinematic_pose": {
       "camera_position": [
-        51,
-        -41,
-        -83
+        316.8,
+        280.7,
+        730.3
       ],
       "look_at": [
-        31,
-        -54,
-        -103
+        236.5,
+        125.0,
+        495.5
       ],
       "duration_seconds": 12
     },
@@ -1824,21 +1824,21 @@
     "region": "crystal_cave",
     "difficulty_tier": 4,
     "world_position": [
-      50,
-      -60,
-      -111
+      537.6,
+      229.0,
+      254.5
     ],
     "depth_tier": 2,
     "cinematic_pose": {
       "camera_position": [
-        70,
-        -47,
-        -91
+        722.2,
+        419.5,
+        398.9
       ],
       "look_at": [
-        50,
-        -60,
-        -111
+        537.6,
+        229.0,
+        254.5
       ],
       "duration_seconds": 10
     },

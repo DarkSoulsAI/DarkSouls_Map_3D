@@ -85,6 +85,33 @@ src/
 
 ---
 
+## Dev Log
+
+### Bonfire repositioning + matcap shading
+
+The original `world_position` values were hand-placed in a tight cluster near
+the origin and didn't correspond to the model's actual geometry. The 9S glTF
+bakes each region into named mesh groups whose vertices already live in world
+space, so `scripts/place_bonfires_from_model.py` reads each region's true
+bounding box straight from the model and drops every bonfire onto it
+(`src/data/region_anchors.json` caches the per-region boxes for reuse). Camera
+poses were regenerated to view each bonfire from outside the map looking inward,
+and markers were scaled up to stay readable at the model's ~1000-unit span.
+
+The model ships with **no textures and no UVs** (only `POSITION` + `NORMAL`), so
+image texturing isn't possible without generating UVs. Instead, surface material
+is faked with a procedurally-generated clay/stone **matcap** (no UVs, no external
+asset), tinted per elevation band so regions stay distinguishable. Flat color
+blocks now show real sculpted depth.
+
+| Anor Londo | Firelink Shrine |
+|---|---|
+| ![Anor Londo](public/results/devlog/matcap-anor-londo.png) | ![Firelink Shrine](public/results/devlog/matcap-firelink.png) |
+| **Blighttown** | **Duke's Archives** |
+| ![Blighttown](public/results/devlog/matcap-blighttown.png) | ![Duke's Archives](public/results/devlog/matcap-dukes-archives.png) |
+
+---
+
 ## Legal
 
 - **9S Lordran model** (`dark_souls_map/`): CC BY-NC 4.0 — attribution required, non-commercial only.

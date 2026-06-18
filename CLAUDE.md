@@ -25,7 +25,35 @@ npm run dev        # Dev server (Vite HMR)
 npm run build      # Production build → dist/
 npm run preview    # Preview production build locally
 npx tsx scripts/validate_data.ts   # Validate bonfires.json schema & cross-references
+
+npm run docs:dev      # Docs site (VitePress) dev server
+npm run docs:build    # Build docs → docs/.vitepress/dist
+npm run docs:preview  # Preview built docs
 ```
+
+## Documentation Policy (REQUIRED)
+
+**Every feature change ships with its docs in the same PR.** Docs live in `docs/`
+(VitePress, deployed to GitHub Pages via `.github/workflows/deploy-docs.yml`).
+Treat documentation as part of "done" — a feature is not complete until the docs
+reflect it. When you change behavior, you MUST, in the same commit/PR:
+
+1. **Append a Dev Log entry.** Add a page under `docs/devlog/` (one file per
+   feature) and link it from `docs/devlog/index.md`. Describe what changed, why,
+   and the key files. Include before/after screenshots where visual.
+2. **Update the affected reference page(s):**
+   - New/changed npm script or tool → `docs/guide/scripts.md` **and** the
+     Commands block above.
+   - New/changed data field or schema → `docs/guide/data-model.md`.
+   - New/changed component, state, or coordinate/render behavior →
+     `docs/guide/architecture.md` (and the `src/` layout below).
+   - New top-level capability → `docs/index.md` features + `README.md`.
+3. **Verify the docs build:** run `npm run docs:build` before committing.
+4. Put screenshots used by docs in `docs/public/` and reference them as
+   `/path.png` (VitePress serves `docs/public/` at the site root).
+
+If a change is genuinely doc-irrelevant (pure refactor, dependency bump), say so
+explicitly in the PR rather than silently skipping.
 
 ## Architecture
 

@@ -7,6 +7,10 @@ dist-ssr/
 .vite/
 *.local
 
+# ── VitePress (docs site) ─────────────────────────────────────────────────────
+**/.vitepress/dist/
+**/.vitepress/cache/
+
 # TypeScript incremental build (tsc -b)
 *.tsbuildinfo
 

@@ -33,6 +33,10 @@ jobs:
       - name: Build VitePress
         run: npm run docs:build
       - uses: actions/configure-pages@v4
+        with:
+          # Enable Pages with the GitHub Actions build type if it isn't already,
+          # so this doesn't fail when Source is still "Deploy from a branch".
+          enablement: true
       - uses: actions/upload-pages-artifact@v3
         with:
           path: docs/.vitepress/dist
